@@ -590,4 +590,4 @@ university:
   
 ---
 
-Welcome to CS474!  Some material has been adapted from [Dr. Alvin Grissom's 2020 HCI course](https://github.com/acgrissom/courses/blob/master/2020-hci/syllabus.md).
+Welcome to CS474!  Some material has been adapted from Dr. Alvin Grissom's 2020 HCI course.
