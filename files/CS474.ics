@@ -22,836 +22,346 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:00000000-0000-0000-0000-044f9e042800
-DTSTAMP;TZID=US-Eastern:20220117T090000
-DTSTART;TZID=US-Eastern:20220117T090000
-DTEND;TZID=US-Eastern:20220117T095000
-RRULE:FREQ=WEEKLY;BYDAY=MO;INTERVAL=1;UNTIL=20220505T235959Z
-EXDATE:20220117
-EXDATE:20220118
-EXDATE:20220305
-EXDATE:20220306
-EXDATE:20220307
-EXDATE:20220308
-EXDATE:20220309
-EXDATE:20220310
-EXDATE:20220311
-EXDATE:20220312
-EXDATE:20220313
-EXDATE:20220504
+DTSTAMP;TZID=US-Eastern:20240116T150000
+DTSTART;TZID=US-Eastern:20240116T150000
+DTEND;TZID=US-Eastern:20240116T161500
+RRULE:FREQ=WEEKLY;BYDAY=TU;INTERVAL=1;UNTIL=20240501T235959Z
+EXDATE:20240115
+EXDATE:20240304
+EXDATE:20240305
+EXDATE:20240306
+EXDATE:20240307
+EXDATE:20240308
 SUMMARY:CS474 Human Computer Interaction Section A Class Meeting
-LOCATION:Pfahler 007
+LOCATION:Pfahler 107
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:00000000-0000-0000-0000-044f9e042801
-DTSTAMP;TZID=US-Eastern:20220117T090000
-DTSTART;TZID=US-Eastern:20220117T090000
-DTEND;TZID=US-Eastern:20220117T095000
-RRULE:FREQ=WEEKLY;BYDAY=WE;INTERVAL=1;UNTIL=20220505T235959Z
-EXDATE:20220117
-EXDATE:20220118
-EXDATE:20220305
-EXDATE:20220306
-EXDATE:20220307
-EXDATE:20220308
-EXDATE:20220309
-EXDATE:20220310
-EXDATE:20220311
-EXDATE:20220312
-EXDATE:20220313
-EXDATE:20220504
+DTSTAMP;TZID=US-Eastern:20240118T150000
+DTSTART;TZID=US-Eastern:20240118T150000
+DTEND;TZID=US-Eastern:20240118T161500
+RRULE:FREQ=WEEKLY;BYDAY=TH;INTERVAL=1;UNTIL=20240501T235959Z
+EXDATE:20240115
+EXDATE:20240304
+EXDATE:20240305
+EXDATE:20240306
+EXDATE:20240307
+EXDATE:20240308
 SUMMARY:CS474 Human Computer Interaction Section A Class Meeting
-LOCATION:Pfahler 007
+LOCATION:Pfahler 107
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:00000000-0000-0000-0000-044f9e042802
-DTSTAMP;TZID=US-Eastern:20220117T090000
-DTSTART;TZID=US-Eastern:20220117T090000
-DTEND;TZID=US-Eastern:20220117T095000
-RRULE:FREQ=WEEKLY;BYDAY=FR;INTERVAL=1;UNTIL=20220505T235959Z
-EXDATE:20220117
-EXDATE:20220118
-EXDATE:20220305
-EXDATE:20220306
-EXDATE:20220307
-EXDATE:20220308
-EXDATE:20220309
-EXDATE:20220310
-EXDATE:20220311
-EXDATE:20220312
-EXDATE:20220313
-EXDATE:20220504
-SUMMARY:CS474 Human Computer Interaction Section A Class Meeting
-LOCATION:Pfahler 007
-DESCRIPTION:
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042803
-DTSTAMP:20220119T000000Z
-DTSTART;VALUE=DATE:20220119
+DTSTAMP:20240117T000000Z
+DTSTART;VALUE=DATE:20240117
 SUMMARY:CS474 Human Computer Interaction: Homework Assignment: Warmup Handed Out
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042804
-DTSTAMP:20220119T000000Z
-DTSTART;VALUE=DATE:20220119
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022//Ursinus-CS474-Overview\nDeliverable: Homework Assignment: Warmup Handed Out https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Written/Warmup
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042805
-DTSTAMP:20220121T000000Z
-DTSTART;VALUE=DATE:20220121
+UID:00000000-0000-0000-0000-044f9e042803
+DTSTAMP:20240122T000000Z
+DTSTART;VALUE=DATE:20240122
 SUMMARY:CS474 Human Computer Interaction: Homework Assignment: The Mother of All Demos Handed Out
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042806
-DTSTAMP:20220121T000000Z
-DTSTART;VALUE=DATE:20220121
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nReading: Bush, V. - As We May Think https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/\nDeliverable: Homework Assignment: The Mother of All Demos Handed Out https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Written/MOAD
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042807
-DTSTAMP:20220124T000000Z
-DTSTART;VALUE=DATE:20220124
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/VoicePrompt\nReading: Schalk, Z. - Humans in Control: Thoughts on the Past, Present, and Future of HCI https://blogs.commons.georgetown.edu/cctp-797-fall2013/archives/807\nReading: How Eye Control Empowers People with Disabilities https://www.youtube.com/watch?v=NXOzDf26FnU\nReading: How to Use Eye Control on a PC Running Windows 10 https://www.youtube.com/watch?v=4Bqs9JkMcCA
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042808
-DTSTAMP:20220126T000000Z
-DTSTART;VALUE=DATE:20220126
+UID:00000000-0000-0000-0000-044f9e042804
+DTSTAMP:20240124T000000Z
+DTSTART;VALUE=DATE:20240124
 SUMMARY:CS474 Human Computer Interaction: Homework Assignment: Warmup Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042809
-DTSTAMP:20220126T000000Z
-DTSTART;VALUE=DATE:20220126
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/EyeTracking\nReading: 50 Years Later, We Still Don't Grasp the Mother of All Demos https://www.wired.com/story/50-years-later-we-still-dont-grasp-the-mother-of-all-demos/\nDeliverable: Homework Assignment: Warmup Due https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Written/Warmup
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04280a
-DTSTAMP:20220128T000000Z
-DTSTART;VALUE=DATE:20220128
+UID:00000000-0000-0000-0000-044f9e042805
+DTSTAMP:20240129T000000Z
+DTSTART;VALUE=DATE:20240129
 SUMMARY:CS474 Human Computer Interaction: Homework Assignment: The Mother of All Demos Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04280b
-DTSTAMP:20220128T000000Z
-DTSTART;VALUE=DATE:20220128
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/CourseTools\nReading: Haubursin, C. - It's not you.  Phones are designed to be addicting. https://www.vox.com/2018/2/27/17053758/phone-addictive-design-google-apple\nReading: Norman Ch. 1\nDeliverable: Homework Assignment: The Mother of All Demos Due https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Written/MOAD
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04280c
-DTSTAMP:20220131T000000Z
-DTSTART;VALUE=DATE:20220131
+UID:00000000-0000-0000-0000-044f9e042806
+DTSTAMP:20240129T000000Z
+DTSTART;VALUE=DATE:20240129
 SUMMARY:CS474 Human Computer Interaction: Homework Assignment: Voice Prompts Handed Out
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04280d
-DTSTAMP:20220131T000000Z
-DTSTART;VALUE=DATE:20220131
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/Interactions\nReading: EU mulls five-year ban on facial recognition tech in public areas https://www.reuters.com/article/us-eu-ai/eu-mulls-five-year-ban-on-facial-recognition-tech-in-public-areas-idUSKBN1ZF2QL\nReading: What are Affordances? https://www.interaction-design.org/literature/topics/affordances\nReading: What are Signifiers? https://www.interaction-design.org/literature/topics/signifiers\nDeliverable: Homework Assignment: Voice Prompts Handed Out https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Programming/VoicePrompt
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04280e
-DTSTAMP:20220202T000000Z
-DTSTART;VALUE=DATE:20220202
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/DarkPatterns\nReading: Fresh Cambridge Analytica leak 'shows global manipulation is out of control' https://www.theguardian.com/uk-news/2020/jan/04/cambridge-analytica-data-leak-global-election-manipulation\nReading: Eyal Ch. 1
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04280f
-DTSTAMP:20220204T000000Z
-DTSTART;VALUE=DATE:20220204
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nReading: Types of Dark Patterns https://www.darkpatterns.org/types-of-dark-pattern\nReading: Dark Patterns - the Worst Counterexamples of User Experience Design https://medium.com/@maud.im.marechal/darkpatterns-c938502cee49
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042810
-DTSTAMP:20220207T000000Z
-DTSTART;VALUE=DATE:20220207
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/HumanFactors\nReading: A cartoon Mark Zuckerberg toured hurricane-struck Puerto Rico in virtual reality https://www.theverge.com/2017/10/9/16450346/zuckerberg-facebook-spaces-puerto-rico-virtual-reality-hurricane\nReading: Shepard Tones - The Sound Illusion that Makes Dunkirk so Intense https://www.youtube.com/watch?v=LVWTQcZbLgY\nReading: Adobe - 6 Ways to Reduce Cognitive Load https://xd.adobe.com/ideas/process/information-architecture/6-ways-to-reduce-cognitive-load-for-a-better-ui/
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042811
-DTSTAMP:20220209T000000Z
-DTSTART;VALUE=DATE:20220209
+UID:00000000-0000-0000-0000-044f9e042807
+DTSTAMP:20240207T000000Z
+DTSTART;VALUE=DATE:20240207
 SUMMARY:CS474 Human Computer Interaction: Homework Assignment: Voice Prompts Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042812
-DTSTAMP:20220209T000000Z
-DTSTART;VALUE=DATE:20220209
+UID:00000000-0000-0000-0000-044f9e042808
+DTSTAMP:20240207T000000Z
+DTSTART;VALUE=DATE:20240207
 SUMMARY:CS474 Human Computer Interaction: Homework Assignment: Eye Tracking Handed Out
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042813
-DTSTAMP:20220209T000000Z
-DTSTART;VALUE=DATE:20220209
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nReading: Mind-Controlled VR Game Really Works https://www.technologyreview.com/2017/08/09/68005/mind-controlled-vr-game-really-works/\nDeliverable: Homework Assignment: Voice Prompts Due https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Programming/VoicePrompt\nDeliverable: Homework Assignment: Eye Tracking Handed Out https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Programming/EyeTracking
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042814
-DTSTAMP:20220211T000000Z
-DTSTART;VALUE=DATE:20220211
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/Triggers\nReading: ICE Is Using Location Data From Games and Apps to Track and Arrest Immigrants, Report Says https://www.vice.com/en/article/v7479m/ice-is-using-location-data-from-games-and-apps-to-track-and-arrest-immigrants-report-says\nReading: Gourville, J. - The Curse of Innovation: A Theory of Why Innovative New Products Fail in the Marketplace https://papers.ssrn.com/sol3/papers.cfm?abstract_id=777644\nReading: Eyal Ch. 2
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042815
-DTSTAMP:20220214T000000Z
-DTSTART;VALUE=DATE:20220214
+UID:00000000-0000-0000-0000-044f9e042809
+DTSTAMP:20240212T000000Z
+DTSTART;VALUE=DATE:20240212
 SUMMARY:CS474 Human Computer Interaction: Reading Reflective Journal: First Notebook and Discussion Board Check Handed Out
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042816
-DTSTAMP:20220214T000000Z
-DTSTART;VALUE=DATE:20220214
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/UX\nReading: Intro to UX: the Norman door https://uxdesign.cc/intro-to-ux-the-norman-door-61f8120b6086\nDeliverable: Reading Reflective Journal: First Notebook and Discussion Board Check Handed Out https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Reflections/NotebookCheck
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042817
-DTSTAMP:20220216T000000Z
-DTSTART;VALUE=DATE:20220216
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nReading: The Formula for Phone Addiction Might Double As a Cure https://www.wired.com/story/phone-addiction-formula/\nReading: Katiyar, S. - Storyboarding and User Interface Design https://uxplanet.org/storyboarding-and-user-interface-design-1786723aa605
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042818
-DTSTAMP:20220218T000000Z
-DTSTART;VALUE=DATE:20220218
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/Motivating\nReading: The US military is trying to read minds https://www.technologyreview.com/2019/10/16/132269/us-military-super-soldiers-control-drones-brain-computer-interfaces/\nReading: The Fogg Behavior Model https://behaviormodel.org/\nReading: Eyal Ch. 3
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042819
-DTSTAMP:20220221T000000Z
-DTSTART;VALUE=DATE:20220221
+UID:00000000-0000-0000-0000-044f9e04280a
+DTSTAMP:20240219T000000Z
+DTSTART;VALUE=DATE:20240219
 SUMMARY:CS474 Human Computer Interaction: Reading Reflective Journal: First Notebook and Discussion Board Check Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04281a
-DTSTAMP:20220221T000000Z
-DTSTART;VALUE=DATE:20220221
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/AugmentedReality\nReading: Stanford Seminar - Augmented Reality and Accessibility https://www.youtube.com/watch?v=lBq-WjXmTDo\nDeliverable: Reading Reflective Journal: First Notebook and Discussion Board Check Due https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Reflections/NotebookCheck
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04281b
-DTSTAMP:20220223T000000Z
-DTSTART;VALUE=DATE:20220223
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nReading: How Technology is Hijacking Your Mind — from a Magician and Google Design Ethicist https://medium.com/thrive-global/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04281c
-DTSTAMP:20220225T000000Z
-DTSTART;VALUE=DATE:20220225
+UID:00000000-0000-0000-0000-044f9e04280b
+DTSTAMP:20240221T000000Z
+DTSTART;VALUE=DATE:20240221
 SUMMARY:CS474 Human Computer Interaction: Homework Assignment: Eye Tracking Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04281d
-DTSTAMP:20220225T000000Z
-DTSTART;VALUE=DATE:20220225
+UID:00000000-0000-0000-0000-044f9e04280c
+DTSTAMP:20240221T000000Z
+DTSTART;VALUE=DATE:20240221
 SUMMARY:CS474 Human Computer Interaction: Homework Assignment: Augmented Reality Handed Out
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04281e
-DTSTAMP:20220225T000000Z
-DTSTART;VALUE=DATE:20220225
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/Accessibility\nReading: Accessible Design for Users With Disabilities https://www.nngroup.com/articles/accessible-design-for-users-with-disabilities/\nReading: Eyal Ch. 4\nDeliverable: Homework Assignment: Eye Tracking Due https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Programming/EyeTracking\nDeliverable: Homework Assignment: Augmented Reality Handed Out https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Programming/AugmentedReality
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04281f
-DTSTAMP:20220228T000000Z
-DTSTART;VALUE=DATE:20220228
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/Bias\nReading: The Bias Blind Spot and Unconscious Bias in Design https://www.interaction-design.org/literature/article/the-bias-blind-spot-and-unconscious-bias-in-design
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042820
-DTSTAMP:20220302T000000Z
-DTSTART;VALUE=DATE:20220302
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nReading: Color blind?  Artificial intelligence could improve the treatment of breast cancer, but there are worries it might worsen disparities https://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?artguid=96716b03-dbbf-43e2-988d-5905d1a1167c&appid=1165
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042821
-DTSTAMP:20220304T000000Z
-DTSTART;VALUE=DATE:20220304
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/VariableReward\nReading: A Code of Ethics for the Human-Robot Interaction Profession https://robots.law.miami.edu/2014/wp-content/uploads/2013/06/a-code-of-ethics-for-the-human-robot-interaction-profession-riek-howard.pdf\nReading: Meppe, J. - Why are instagram, facebook, and twitter so damn addicting? https://www.janmeppe.com/blog/addicting-tech/\nReading: Norman Ch. 2
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042822
-DTSTAMP:20220314T000000Z
-DTSTART;VALUE=DATE:20220314
+UID:00000000-0000-0000-0000-044f9e04280d
+DTSTAMP:20240311T000000Z
+DTSTART;VALUE=DATE:20240311
 SUMMARY:CS474 Human Computer Interaction: Final Project: Project and Presentation Handed Out
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042823
-DTSTAMP:20220314T000000Z
-DTSTART;VALUE=DATE:20220314
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/Intuition\nReading: What Ethics Should Guide the Use of Robots in Policing? https://www.nytimes.com/roomfordebate/2016/07/14/what-ethics-should-guide-the-use-of-robots-in-policing\nDeliverable: Final Project: Project and Presentation Handed Out https://www.billmongan.com/Ursinus-CS474-Spring2022/Projects/Final
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042824
-DTSTAMP:20220316T000000Z
-DTSTART;VALUE=DATE:20220316
-SUMMARY:CS474 Human Computer Interaction: Research Report: Research Report Handed Out
-LOCATION:
-DESCRIPTION:
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042825
-DTSTAMP:20220316T000000Z
-DTSTART;VALUE=DATE:20220316
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/DesignPrinciples\nReading: Types of Design Principles https://www.interaction-design.org/literature/topics/design-principles\nReading: 10 Usability Heuristics for User Interface Design https://www.nngroup.com/articles/ten-usability-heuristics/\nDeliverable: Research Report: Research Report Handed Out https://www.billmongan.com/Ursinus-CS474-Spring2022/Projects/Report
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042826
-DTSTAMP:20220318T000000Z
-DTSTART;VALUE=DATE:20220318
+UID:00000000-0000-0000-0000-044f9e04280e
+DTSTAMP:20240313T000000Z
+DTSTART;VALUE=DATE:20240313
 SUMMARY:CS474 Human Computer Interaction: Homework Assignment: Augmented Reality Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042827
-DTSTAMP:20220318T000000Z
-DTSTART;VALUE=DATE:20220318
+UID:00000000-0000-0000-0000-044f9e04280f
+DTSTAMP:20240313T000000Z
+DTSTART;VALUE=DATE:20240313
 SUMMARY:CS474 Human Computer Interaction: Homework Assignment: Online Tutor Handed Out
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042828
-DTSTAMP:20220318T000000Z
-DTSTART;VALUE=DATE:20220318
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
+UID:00000000-0000-0000-0000-044f9e042810
+DTSTAMP:20240313T000000Z
+DTSTART;VALUE=DATE:20240313
+SUMMARY:CS474 Human Computer Interaction: Research Report: Research Report Handed Out
 LOCATION:
-DESCRIPTION:\nReading: Evil by Design https://evilbydesign.info/\nReading: Norman Ch. 3\nDeliverable: Homework Assignment: Augmented Reality Due https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Programming/AugmentedReality\nDeliverable: Homework Assignment: Online Tutor Handed Out https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Programming/Tutor
+DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042829
-DTSTAMP:20220321T000000Z
-DTSTART;VALUE=DATE:20220321
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/CollectiveMemory\nReading: You Snooze, You Lose: Insurers Make The Old Adage Literally True https://www.propublica.org/article/you-snooze-you-lose-insurers-make-the-old-adage-literally-true\nReading: Mair, A. - The Role of Memory in HCI https://medium.com/@avimair/the-role-of-memory-in-hci-f92204a6980d
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04282a
-DTSTAMP:20220323T000000Z
-DTSTART;VALUE=DATE:20220323
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/ConstrainedApplications\nReading: How US Tech Giants are Helping to Build China's Surveillance State https://theintercept.com/2019/07/11/china-surveillance-google-ibm-semptian/\nReading: Norman Ch. 4
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04282b
-DTSTAMP:20220325T000000Z
-DTSTART;VALUE=DATE:20220325
+UID:00000000-0000-0000-0000-044f9e042811
+DTSTAMP:20240325T000000Z
+DTSTART;VALUE=DATE:20240325
 SUMMARY:CS474 Human Computer Interaction: Final Project: Proposal Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04282c
-DTSTAMP:20220325T000000Z
-DTSTART;VALUE=DATE:20220325
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/ExperimentalObservation\nReading: Boeing 737 Max Safety System Was Vetoed, Engineer Says https://www.nytimes.com/2019/10/02/business/boeing-737-max-crashes.html\nReading: Norman Ch. 5\nDeliverable: Final Project: Proposal Due https://www.billmongan.com/Ursinus-CS474-Spring2022/Projects/Final
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04282d
-DTSTAMP:20220328T000000Z
-DTSTART;VALUE=DATE:20220328
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nReading: Norman and Nielson - Gestural Interfaces: A Step Backward In Usability http://manoa.hawaii.edu/hci/readings/interactions2010_norman_nielsen.pdf
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04282e
-DTSTAMP:20220330T000000Z
-DTSTART;VALUE=DATE:20220330
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/EthicalConsiderations\nReading: How Robot Carers could be the Future for Lonely Elderly People https://www.independent.co.uk/life-style/gadgets-and-tech/features/robot-carer-elderly-people-loneliness-ageing-population-care-homes-a8659801.html
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04282f
-DTSTAMP:20220401T000000Z
-DTSTART;VALUE=DATE:20220401
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nReading: The US Military Is Working on Tech That Could Turn Soldiers Into Cyborgs https://www.sciencealert.com/the-us-military-is-working-on-neural-interfaces-to-connect-humans-to-the-digital-world
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042830
-DTSTAMP:20220404T000000Z
-DTSTART;VALUE=DATE:20220404
+UID:00000000-0000-0000-0000-044f9e042812
+DTSTAMP:20240401T000000Z
+DTSTART;VALUE=DATE:20240401
 SUMMARY:CS474 Human Computer Interaction: Reading Reflective Journal: Second Notebook and Discussion Board Check Handed Out
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042831
-DTSTAMP:20220404T000000Z
-DTSTART;VALUE=DATE:20220404
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/RobotRights\nReading: Robot Rights? Let's Talk about Human Welfare Instead https://arxiv.org/abs/2001.05046v1\nDeliverable: Reading Reflective Journal: Second Notebook and Discussion Board Check Handed Out https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Reflections/NotebookCheck
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042832
-DTSTAMP:20220406T000000Z
-DTSTART;VALUE=DATE:20220406
+UID:00000000-0000-0000-0000-044f9e042813
+DTSTAMP:20240403T000000Z
+DTSTART;VALUE=DATE:20240403
 SUMMARY:CS474 Human Computer Interaction: Final Project: Design Plan Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042833
-DTSTAMP:20220406T000000Z
-DTSTART;VALUE=DATE:20220406
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Activities/DesignThinking\nReading: Toward a Sociology of Artificial Intelligence: A Call for Research on Inequalities and Structural Change https://journals.sagepub.com/doi/full/10.1177/2378023121999581\nReading: Chathurika, H. - Principles of Design Thinking - Part 1 https://uxplanet.org/principles-of-design-thinking-stages-of-design-thinking-b2cc219063ac\nReading: 5 Stages in the Design Thinking Process https://www.interaction-design.org/literature/article/5-stages-in-the-design-thinking-process\nDeliverable: Final Project: Design Plan Due https://www.billmongan.com/Ursinus-CS474-Spring2022/Projects/Final
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042834
-DTSTAMP:20220408T000000Z
-DTSTART;VALUE=DATE:20220408
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nReading: Reference Man - Everything is designed for this man, even drugs https://www.youtube.com/watch?v=CVdn-2KE2bs\nReading: Norman Ch. 6
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042835
-DTSTAMP:20220411T000000Z
-DTSTART;VALUE=DATE:20220411
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nReading: About the Paper that Forced Timnit Gerbu out of Google https://www.technologyreview.com/2020/12/04/1013294/google-ai-ethics-research-paper-forced-out-timnit-gebru/
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042836
-DTSTAMP:20220413T000000Z
-DTSTART;VALUE=DATE:20220413
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nReading: Microsoft AI Principles https://www.microsoft.com/en-us/ai/responsible-ai?activetab=pivot1:primaryr6
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042837
-DTSTAMP:20220415T000000Z
-DTSTART;VALUE=DATE:20220415
+UID:00000000-0000-0000-0000-044f9e042814
+DTSTAMP:20240410T000000Z
+DTSTART;VALUE=DATE:20240410
 SUMMARY:CS474 Human Computer Interaction: Homework Assignment: Online Tutor Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042838
-DTSTAMP:20220415T000000Z
-DTSTART;VALUE=DATE:20220415
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nReading: A Health Care Algorithm Offered Less Care to Black Patients https://www.wired.com/story/how-algorithm-favored-whites-over-blacks-health-care/\nReading: Dissecting racial bias in an algorithm used to manage the health of populations https://www.science.org/doi/10.1126/science.aax2342\nDeliverable: Homework Assignment: Online Tutor Due https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Programming/Tutor
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042839
-DTSTAMP:20220418T000000Z
-DTSTART;VALUE=DATE:20220418
+UID:00000000-0000-0000-0000-044f9e042815
+DTSTAMP:20240415T000000Z
+DTSTART;VALUE=DATE:20240415
 SUMMARY:CS474 Human Computer Interaction: Research Report: Research Report First Draft Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04283a
-DTSTAMP:20220418T000000Z
-DTSTART;VALUE=DATE:20220418
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nReading: Ackerman, E. - My Fight With a Sidewalk Robot https://www.bloomberg.com/news/articles/2019-11-19/why-tech-needs-more-designers-with-disabilities\nDeliverable: Research Report: Research Report First Draft Due https://www.billmongan.com/Ursinus-CS474-Spring2022/Projects/Report
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04283b
-DTSTAMP:20220420T000000Z
-DTSTART;VALUE=DATE:20220420
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nReading: Gonzales-Cameron, A. - Hello, My Name is Error https://alistapart.com/article/hello-my-name-is-error/
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04283c
-DTSTAMP:20220422T000000Z
-DTSTART;VALUE=DATE:20220422
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04283d
-DTSTAMP:20220425T000000Z
-DTSTART;VALUE=DATE:20220425
+UID:00000000-0000-0000-0000-044f9e042816
+DTSTAMP:20240422T000000Z
+DTSTART;VALUE=DATE:20240422
 SUMMARY:CS474 Human Computer Interaction: Reading Reflective Journal: Second Notebook and Discussion Board Check Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04283e
-DTSTAMP:20220425T000000Z
-DTSTART;VALUE=DATE:20220425
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Written/EthicalConsiderations\nDeliverable: Reading Reflective Journal: Second Notebook and Discussion Board Check Due https://www.billmongan.com/Ursinus-CS474-Spring2022/Assignments/Reflections/NotebookCheck
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04283f
-DTSTAMP:20220427T000000Z
-DTSTART;VALUE=DATE:20220427
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042840
-DTSTAMP:20220429T000000Z
-DTSTART;VALUE=DATE:20220429
+UID:00000000-0000-0000-0000-044f9e042817
+DTSTAMP:20240424T000000Z
+DTSTART;VALUE=DATE:20240424
 SUMMARY:CS474 Human Computer Interaction: Research Report: Research Report Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042841
-DTSTAMP:20220429T000000Z
-DTSTART;VALUE=DATE:20220429
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nDeliverable: Research Report: Research Report Due https://www.billmongan.com/Ursinus-CS474-Spring2022/Projects/Report
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042842
-DTSTAMP:20220502T000000Z
-DTSTART;VALUE=DATE:20220502
+UID:00000000-0000-0000-0000-044f9e042818
+DTSTAMP:20240429T000000Z
+DTSTART;VALUE=DATE:20240429
 SUMMARY:CS474 Human Computer Interaction: Final Project: Project and Presentation Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042843
-DTSTAMP:20220502T000000Z
-DTSTART;VALUE=DATE:20220502
-SUMMARY:CS474 Human Computer Interaction: Class Meeting
-LOCATION:
-DESCRIPTION:\nDeliverable: Final Project: Project and Presentation Due https://www.billmongan.com/Ursinus-CS474-Spring2022/Projects/Final
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042844
-DTSTAMP;TZID=US-Eastern:20220117T120000
-DTSTART;TZID=US-Eastern:20220117T120000
-DTEND;TZID=US-Eastern:20220117T123000
-RRULE:FREQ=WEEKLY;BYDAY=MO;INTERVAL=1;UNTIL=20220505T235959Z
-EXDATE:20220117
-EXDATE:20220118
-EXDATE:20220305
-EXDATE:20220306
-EXDATE:20220307
-EXDATE:20220308
-EXDATE:20220309
-EXDATE:20220310
-EXDATE:20220311
-EXDATE:20220312
-EXDATE:20220313
-EXDATE:20220504
+UID:00000000-0000-0000-0000-044f9e042819
+DTSTAMP;TZID=US-Eastern:20240116T113000
+DTSTART;TZID=US-Eastern:20240116T113000
+DTEND;TZID=US-Eastern:20240116T143000
+RRULE:FREQ=WEEKLY;BYDAY=TU;INTERVAL=1;UNTIL=20240501T235959Z
+EXDATE:20240115
+EXDATE:20240304
+EXDATE:20240305
+EXDATE:20240306
+EXDATE:20240307
+EXDATE:20240308
 SUMMARY:CS474 Human Computer Interaction Office Hours with William Mongan
 LOCATION:Pfahler Hall 101L
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042845
-DTSTAMP;TZID=US-Eastern:20220117T120000
-DTSTART;TZID=US-Eastern:20220117T120000
-DTEND;TZID=US-Eastern:20220117T140000
-RRULE:FREQ=WEEKLY;BYDAY=TU;INTERVAL=1;UNTIL=20220505T235959Z
-EXDATE:20220117
-EXDATE:20220118
-EXDATE:20220305
-EXDATE:20220306
-EXDATE:20220307
-EXDATE:20220308
-EXDATE:20220309
-EXDATE:20220310
-EXDATE:20220311
-EXDATE:20220312
-EXDATE:20220313
-EXDATE:20220504
+UID:00000000-0000-0000-0000-044f9e04281a
+DTSTAMP;TZID=US-Eastern:20240118T113000
+DTSTART;TZID=US-Eastern:20240118T113000
+DTEND;TZID=US-Eastern:20240118T143000
+RRULE:FREQ=WEEKLY;BYDAY=TH;INTERVAL=1;UNTIL=20240501T235959Z
+EXDATE:20240115
+EXDATE:20240304
+EXDATE:20240305
+EXDATE:20240306
+EXDATE:20240307
+EXDATE:20240308
 SUMMARY:CS474 Human Computer Interaction Office Hours with William Mongan
 LOCATION:Pfahler Hall 101L
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042846
-DTSTAMP;TZID=US-Eastern:20220117T120000
-DTSTART;TZID=US-Eastern:20220117T120000
-DTEND;TZID=US-Eastern:20220117T140000
-RRULE:FREQ=WEEKLY;BYDAY=WE;INTERVAL=1;UNTIL=20220505T235959Z
-EXDATE:20220117
-EXDATE:20220118
-EXDATE:20220305
-EXDATE:20220306
-EXDATE:20220307
-EXDATE:20220308
-EXDATE:20220309
-EXDATE:20220310
-EXDATE:20220311
-EXDATE:20220312
-EXDATE:20220313
-EXDATE:20220504
-SUMMARY:CS474 Human Computer Interaction Office Hours with William Mongan
-LOCATION:Pfahler Hall 101L
-DESCRIPTION:
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042847
-DTSTAMP;TZID=US-Eastern:20220117T120000
-DTSTART;TZID=US-Eastern:20220117T120000
-DTEND;TZID=US-Eastern:20220117T140000
-RRULE:FREQ=WEEKLY;BYDAY=FR;INTERVAL=1;UNTIL=20220505T235959Z
-EXDATE:20220117
-EXDATE:20220118
-EXDATE:20220305
-EXDATE:20220306
-EXDATE:20220307
-EXDATE:20220308
-EXDATE:20220309
-EXDATE:20220310
-EXDATE:20220311
-EXDATE:20220312
-EXDATE:20220313
-EXDATE:20220504
-SUMMARY:CS474 Human Computer Interaction Office Hours with William Mongan
-LOCATION:Pfahler Hall 101L
-DESCRIPTION:
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042848
-DTSTAMP;TZID=US-Eastern:20220511T130000
-DTSTART;TZID=US-Eastern:20220511T130000
-DTEND;TZID=US-Eastern:20220511T160000
-SUMMARY:CS474 Human Computer Interaction: Final Exam
-LOCATION:PFA 007
-DESCRIPTION:
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042849
-DTSTAMP:20220201T000000Z
-DTSTART;VALUE=DATE:20220201
+UID:00000000-0000-0000-0000-044f9e04281b
+DTSTAMP:20240130T000000Z
+DTSTART;VALUE=DATE:20240130
 SUMMARY:Add Deadline
 LOCATION:
 DESCRIPTION:Add Deadline
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04284a
-DTSTAMP:20210304T000000Z
-DTSTART;VALUE=DATE:20210304
+UID:00000000-0000-0000-0000-044f9e04281c
+DTSTAMP:20240301T000000Z
+DTSTART;VALUE=DATE:20240301
 SUMMARY:Mid Semester Grades Posted
 LOCATION:
 DESCRIPTION:Mid Semester Grades Posted
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04284b
-DTSTAMP:20220323T000000Z
-DTSTART;VALUE=DATE:20220323
+UID:00000000-0000-0000-0000-044f9e04281d
+DTSTAMP:20240320T000000Z
+DTSTART;VALUE=DATE:20240320
 SUMMARY:Drop with a W Deadline
 LOCATION:
 DESCRIPTION:Drop with a W Deadline
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04284c
-DTSTAMP:20220504T000000Z
-DTSTART;VALUE=DATE:20220504
-SUMMARY:Designated Thursday Schedule
-LOCATION:
-DESCRIPTION:Designated Thursday Schedule
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04284d
-DTSTAMP:20220505T000000Z
-DTSTART;VALUE=DATE:20220505
+UID:00000000-0000-0000-0000-044f9e04281e
+DTSTAMP:20240502T000000Z
+DTSTART;VALUE=DATE:20240502
 SUMMARY:Reading Day
 LOCATION:
 DESCRIPTION:Reading Day
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04284e
-DTSTAMP:20220506T000000Z
-DTSTART;VALUE=DATE:20220506
+UID:00000000-0000-0000-0000-044f9e04281f
+DTSTAMP:20240503T000000Z
+DTSTART;VALUE=DATE:20240503
 SUMMARY:Finals Week Begins
 LOCATION:
 DESCRIPTION:Finals Week Begins
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e04284f
-DTSTAMP:20220512T000000Z
-DTSTART;VALUE=DATE:20220512
+UID:00000000-0000-0000-0000-044f9e042820
+DTSTAMP:20240509T000000Z
+DTSTART;VALUE=DATE:20240509
 SUMMARY:Finals Week Ends
 LOCATION:
 DESCRIPTION:Finals Week Ends
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042850
-DTSTAMP:20220513T000000Z
-DTSTART;VALUE=DATE:20220513
+UID:00000000-0000-0000-0000-044f9e042821
+DTSTAMP:20240510T000000Z
+DTSTART;VALUE=DATE:20240510
 SUMMARY:Baccalaureate
 LOCATION:
 DESCRIPTION:Baccalaureate
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-044f9e042851
-DTSTAMP:20220514T000000Z
-DTSTART;VALUE=DATE:20220514
+UID:00000000-0000-0000-0000-044f9e042822
+DTSTAMP:20240511T000000Z
+DTSTART;VALUE=DATE:20240511
 SUMMARY:Commencement
 LOCATION:
 DESCRIPTION:Commencement
