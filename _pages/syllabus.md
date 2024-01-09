@@ -19,11 +19,11 @@ info:
   course_description: "The study of human-computer interaction enables system architects to design useful, efficient, and enjoyable computer interfaces. This course teaches the theory, design procedure, and programming practices behind effective human interaction with computers. This course satisfies the College requirement for a capstone experience in the major. Offered in the spring semester of even years. Three hours per week."
   welcome_message: "Welcome to CS474!  In this course we will examine the scientific methods by which effective interfaces between humans and technology are designed.  We will explore the ways in which human psychology and physiology are leveraged to facilitate seamless human experiences, and how these are sometimes exploited to coerce engagement.  We will study how deficiencies in interface design are identified, and how remedies are determined.  We will apply these principles through the iterative design and development of a stakeholder-based system."
   class_meets_days:
-    isM: true
-    isT: false
-    isW: true
-    isR: false
-    isF: true 
+    isM: false
+    isT: true
+    isW: false
+    isR: true
+    isF: false 
     isS: false
     isU: false
   class_meets_locations:
