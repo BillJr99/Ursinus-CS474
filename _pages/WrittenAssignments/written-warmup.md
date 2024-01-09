@@ -5,12 +5,13 @@ title: "CS474: Human Computer Interaction - Warmup"
 excerpt: "CS474: Human Computer Interaction - Warmup"
 
 info:
-  coursenum: CS173
-  officehourspoll: "https://doodle.com/poll/kff5n5g5ca5tc6qm?utm_source=poll&utm_medium=link"
-  class_notebook: "https://ursinuscollege365-my.sharepoint.com/personal/wmongan_ursinus_edu/Documents/Class%20Notebooks/CS474%20Spring%202022"
+  coursenum: CS474
+  officehourspoll: "https://www.when2meet.com/?23019667-NDA7c"
+  class_notebook: "https://ursinuscollege365-my.sharepoint.com/personal/wmongan_ursinus_edu/Documents/Class%20Notebooks/CS474%20Spring%202024"
   class_notebook_name: "OneNote"
   chatname: "Microsoft Teams"
   submission: "We will complete this assignment using Teams, so there is no need to write up any documentation (as we will in future programming assignments) nor is it necessary to submit anything to Canvas.  It is fine to just follow the directions in each part and send me messages as appropriate!"
+  vpn: false
   points: 15
   
 tags:
@@ -28,15 +29,16 @@ I gave a couple of fun facts about myself in the class, but I want to get to kno
 2.  What is your reason for taking the course? (Blunt honesty is perfectly fine here, if applicable)
 3.  What are you majoring in / interested in majoring in?
 4.  What do you think you might want to do after Ursinus?
-5.  Have you had any experience with computer science / programming? (It's okay if you haven't!)
-7.  What are you most excited about in this course?
-8.  What are you the most worried about in this course?
+5.  Have you had any experience with computer science / programming? 
+6.  What are you most excited about in this course?
+7.  What are you the most worried about in this course?
+8.  What is your dream job?  What do you want to do with computing?  Are there ways in which we could personalize this course to help you explore your personal goals and passions?
 9.  A fun fact about yourself
 10.  Anything else you think I should know?
-11.  Please attach **a headshot** picture to your message. I will use this to help get to know your name, but we will also use this in class to arrange groups.
-12. Please post a short introduction and a hello to the class on the Canvas Introductions discussion forum.  There is also a Water Cooler discussion group that you can use for social discussions as well!
-13.  We will be sharing work with each other through electronic means.  To protect your privacy, you are welcome to use a pseudonym on your work in lieu of your name.  Let me know if you'd like to use a pseudonym on your assignments, and what name you'll use.
-14.  Are you thinking about majoring or minoring in Computer Science, Math, or Statistics?  No pressure here - if the department hosts events for students, we'd be happy to share those opportunities with you if you are interested!
+11.  We will be sharing work with each other through electronic means.  To protect your privacy, you are welcome to use a pseudonym on your work in lieu of your name.  Let me know if you'd like to use a pseudonym on your assignments, and what name you'll use.
+12.  Please attach **a headshot** picture to your message. I will use this to help get to know your name, but we will also use this in class to arrange groups.
+13. Please post a short introduction and a hello to the class on the Canvas Introductions discussion forum.  There is also a Water Cooler discussion group that you can use for social discussions as well!
+14. Please post a reply to at least one person's introduction that does not yet have a response.  If everyone has at least one reply, feel free to reply to anyone!
 
 ## Web Poll for Office Hours
 
@@ -60,16 +62,17 @@ If you are not a commuter student, please skip this step!
 
 ## Syllabus (10 Pts)
 
-Please take a moment to familiarize yourself with [the course syllabus]({{ site.baseurl }}). Then, **please send me a third and final message on {{ page.info.chatname }} with the answers to the following questions**
+Please take a moment to familiarize yourself with [the course syllabus]({{ site.baseurl }}). Then, **please send me an additional message on {{ page.info.chatname }} with the answers to the following questions**
 
 1.  True/False: If you choose to work with a buddy, you are allowed to look at your buddy's code and show them your code during labs
 2.  True/False: If you choose to work with a buddy, you are allowed to look at your buddy's code and show them your code for regular assignments.
 3.  True/False: You may look at a classmate's code during a regular assignment.
 4.  True/False: Although I can work with my buddy on labs, we cannot email or copy each other's code directly, and our submissions should be substantially unique.
-<!--4.  What happens if you show up after the lecture has already started?-->
-4.  Where is the help room located?
-<!--5.  Extra credit (+2) Send me a selfie of yourself inside of the help room.-->
-5.  When and where are my office hours?
-6.  What is the link to sign up for one-on-one tutoring with the Institute for Student Success?
-7.  What is the grade reduction per day for late work?
-8.  How many slack days do you have to use throughout the semester for extensions?
+5.  True/False: I can request an incomplete if I am failing the class in order to submit assignments from earlier in the semester.
+6.  Where is the help room located?
+7.  When and where are my office hours?
+8.  What is the link to sign up for one-on-one tutoring with the Institute for Student Success?
+9.  What is the grade reduction per day for late work?
+10.  How many extensions can you request, and how do you go about doing so?
+<!--11.  What happens if you show up after the lecture has already started?-->
+11.  Extra credit (+2) Send me a selfie of yourself inside of the help room.
