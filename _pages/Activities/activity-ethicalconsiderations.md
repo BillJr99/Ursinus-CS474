@@ -34,7 +34,7 @@ info:
       title: "Toward a Sociology of Artificial Intelligence: A Call for Research on Inequalities and Structural Change" 
   models:      
     - model: |
-        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Now might be a good time to remind everyone that the easiest way to discriminate is to make stringent rules, then to decide when and for whom to enforce them.<br>My submissions were always checked for disclosure of sensitive material, never for the quality of the literature review.</p>&mdash; Nicolas Le Roux (@le_roux_nicolas) <a href="https://twitter.com/le_roux_nicolas/status/1334601960972906496?ref_src=twsrc%5Etfw">December 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Now might be a good time to remind everyone that the easiest way to discriminate is to make stringent rules, then to decide when and for whom to enforce them.<br>My submissions were always checked for disclosure of sensitive material, never for the quality of the literature review.</p>&mdash; Nicolas Le Roux (@le_roux_nicolas) December 3, 2020</blockquote>
       title: "Ethical Considerations and Diversity and Inclusivity"
       questions:
         - "What are the risks inherent in robotic policing or defense systems?"

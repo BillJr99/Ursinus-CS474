@@ -25,6 +25,7 @@ info:
       questions:
         - "What types of impairments would benefit from intentional design for accessibility?"
         - "Name an example in which a universal design would obviate the need for special accessible structures."
+        - "Look up and describe the &quot;curb-cut effect&quot;, and describe some applications in which disability-friendly enhancements have enabled universal accessability."
     - model: |
         <div align="left">
         Navigate to the <a href="https://www.w3.org/WAI/WCAG21/quickref/">Web Accessibility Guidelines quick reference page from the w3</a> and evaluate a before and after page from <a href="https://www.w3.org/WAI/demos/bad/">this list</a>.

@@ -423,6 +423,11 @@ schedule:
     date: "1"
     title: "Ethical Considerations"
     link: "Activities/EthicalConsiderations"
+    deliverables:
+      - dtitle: "Homework Assignment: Ethical Case Studies Handed Out"
+        dlink: "Assignments/Written/EthicalConsiderations"
+        points: 100
+        submission_types: "written"
     readings:
       - rtitle: "How Robot Carers could be the Future for Lonely Elderly People"
         rlink: "https://www.independent.co.uk/life-style/gadgets-and-tech/features/robot-carer-elderly-people-loneliness-ageing-population-care-homes-a8659801.html"
@@ -495,13 +500,17 @@ schedule:
   - week: "13"
     date: "1"
     title: "Final Project Collaboration and User Experience Study"
+    deliverables:
+      - dtitle: "Homework Assignment: Ethical Case Studies Due"
+        dlink: "Assignments/Written/EthicalConsiderations"
+        points: 100
+        submission_types: "written"
     readings:
       - rtitle: "Gonzales-Cameron, A. - Hello, My Name is Error"
         rlink: "https://alistapart.com/article/hello-my-name-is-error/"
   - week: "14"
     date: "0"
     title: "Ethical Case Studies Presentations"
-    link: "Assignments/Written/EthicalConsiderations"
     deliverables:
       - dtitle: "Reading Reflective Journal: Second Notebook and Discussion Board Check Due"
         dlink: "Assignments/Reflections/NotebookCheck"
@@ -521,7 +530,7 @@ schedule:
     deliverables:
       - dtitle: "Final Project: Project and Presentation Due"
         dlink: "Projects/Final"
-        points: 100    
+        points: 100
     
 university:
   semester: "Spring"
