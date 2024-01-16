@@ -368,10 +368,10 @@ schedule:
         dlink: "Assignments/Programming/AugmentedReality"
         points: 100
         rubricpath: "_pages/ProgrammingAssignments/asmt-ar.md"
-      - dtitle: "Homework Assignment: Online Tutor Handed Out"
-        dlink: "Assignments/Programming/Tutor"
+      - dtitle: "Homework Assignment: AutoGen AI Agents Handed Out"
+        dlink: "Assignments/Programming/AutoGenAI"
         points: 100
-        rubricpath: "_pages/ProgrammingAssignments/asmt-tutor.md"
+        rubricpath: "_pages/ProgrammingAssignments/asmt-autogenai.md"
       - dtitle: "Research Report: Research Report Handed Out"
         dlink: "Projects/Report"
         points: 100
@@ -475,10 +475,10 @@ schedule:
     date: "1"
     title: "Final Project Stakeholder Feedback Session"
     deliverables:
-      - dtitle: "Homework Assignment: Online Tutor Due"
-        dlink: "Assignments/Programming/Tutor"
+      - dtitle: "Homework Assignment: AutoGen AI Agents Due"
+        dlink: "Assignments/Programming/AutoGenAI"
         points: 100
-        rubricpath: "_pages/ProgrammingAssignments/asmt-tutor.md"
+        rubricpath: "_pages/ProgrammingAssignments/asmt-autogenai.md"
     readings:
       - rtitle: "Microsoft AI Principles"
         rlink: "https://www.microsoft.com/en-us/ai/responsible-ai?activetab=pivot1:primaryr6"
