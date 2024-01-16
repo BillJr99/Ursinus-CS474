@@ -175,7 +175,7 @@ BEGIN:VEVENT
 UID:00000000-0000-0000-0000-044f9e04280f
 DTSTAMP:20240314T000000Z
 DTSTART;VALUE=DATE:20240314
-SUMMARY:CS474 Human Computer Interaction: Homework Assignment: Online Tutor Handed Out
+SUMMARY:CS474 Human Computer Interaction: Homework Assignment: AutoGen AI Agents Handed Out
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
@@ -229,7 +229,7 @@ BEGIN:VEVENT
 UID:00000000-0000-0000-0000-044f9e042815
 DTSTAMP:20240411T000000Z
 DTSTART;VALUE=DATE:20240411
-SUMMARY:CS474 Human Computer Interaction: Homework Assignment: Online Tutor Due
+SUMMARY:CS474 Human Computer Interaction: Homework Assignment: AutoGen AI Agents Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
