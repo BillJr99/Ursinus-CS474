@@ -21,6 +21,18 @@ info:
       beginning: The code solution is functional but lacks complexity and shows minimal customization.
       progressing: The code solution is well-implemented with good functionality and some level of customization.
       proficient: The code solution is excellently implemented, showing high functionality, customization, and innovation.
+    - weight: 20 
+      description: Human-Centric Design
+      preemerging: A trivial application of the modality is provided without regard to proper signifiers or affordances to facilitate human interaction
+      beginning: Some consideration is given to the manner by which the modality is incorporated into the program, but it is not clear at all times to the user what to do and how to interact
+      progressing: The user is able to interact with the program using the modality in most cases, with a few minor ambiguities that could be identified through additional testing
+      proficient: The user experience is enhanced by the use of the modality
+    - weight: 20
+      description: Design Report      
+      preemerging: No design report is included
+      beginning: A design report is included that describes the approach taken to solving the problem and incorporating the modality in a trivial way
+      progressing: A design report is included that describes the approach taken to solving the problem and incorporating the modality in a manner that carefully considers the problem from the perspective of one stakeholder
+      proficient: A design report is included that describes the approach taken to solving the problem and incorporating the modality through documented discussions and test cases with a variety of stakeholders      
     - weight: 15
       description: Reflective Write-Up on Personalization and Usability
       preemerging: Reflective write-up lacks insight into personalization and usability aspects of the solution.
@@ -33,18 +45,6 @@ info:
       beginning: Basic understanding of ethical considerations, but lacks depth and practical insights.
       progressing: Good reflection on ethical considerations, showing understanding of implications and responsibilities.
       proficient: In-depth reflection on ethical considerations, demonstrating a comprehensive and responsible approach to automated systems.
-    - weight: 20
-      description: Understanding and Application of AutoGen Framework
-      preemerging: Limited or no understanding of the AutoGen framework's capabilities and functionalities.
-      beginning: Basic understanding of AutoGen's role in AI agent creation but struggles with practical application.
-      progressing: Good grasp of AutoGen functionalities and can apply them in creating simple AI agents.
-      proficient: Demonstrates in-depth understanding and adept application of AutoGen in creating complex AI agents.
-    - weight: 15
-      description: Installation and Utilization of AutoGen Studio
-      preemerging: Unable to install or navigate through AutoGen Studio.
-      beginning: Successfully installs AutoGen Studio but faces challenges in navigation and utilization.
-      progressing: Comfortably installs and navigates AutoGen Studio, using basic features effectively.
-      proficient: Exhibits expertise in installing, navigating, and fully utilizing all features of AutoGen Studio.
     - weight: 20
       description: Creation and Customization of Agents and Skills
       preemerging: Shows minimal understanding and ability in creating or customizing agents and skills.
@@ -67,6 +67,7 @@ info:
 tags:
   - ai
   - gpt
+  - psychology
   
 ---
 
@@ -324,4 +325,18 @@ Since the catalog knows when courses are generally offered, and what prerequisit
 
 ## Part 2 - Developing Your own AI Solution
 
-Using the AutoGen AI Studio or the AutoGen library, create a custom agent with skills for a personalized solution (for example, a "virtual academic advisor," or a programming tutor, etc.).  Write up a tutorial to re-create your solution, and ask another student to execute queries against your chatbot.  Record which queries they execute and your responses, and discuss ways in which you could add additional personalization capabilities to your solution.  In addition reflect upon the ethical considerations of using your solution.  For example, what could go wrong by replacing a faculty advisor with a virtual one; does this mean one should not use a virtual advising solution at all?
+Using the AutoGen AI Studio or the AutoGen library, create a custom agent with skills for a personalized solution (for example, a "virtual academic advisor," or a programming tutor, etc.).  
+
+You may select from this non-exhaustive list of possibilities:
+
+* A tutor for Introduction to Java students
+* A video game that does not feature text-based signifier instructions
+* Learning another language
+
+Utilize the psychological triggers in the Nir Eyal book Hooked to develop your system, and document your strategic approach.  Test your program with classmates and time how long they are incentivized to remain in the system.
+
+I strongly recommend running your program with your classmates to obtain feedback.  Pay particular attention to the way in which they use the program, and look for "mistakes" that they make along the way.  Don't tell them anything, but consider instead that these "mistakes" may be ambiguities in your program that you can address.  Obtain feedback from them at the end, and document and consider it in any revisions you might make.
+
+In addition to your implementation, be sure to include a LaTeX design report in academic journal format (you can use [Overleaf](https://www.overleaf.com/) for this purpose) that describes your initial design, rationale, stakeholder evaluation, and any subsequent revisions you made from your stakeholder input.  Ask another student to execute queries against your chatbot., and record which queries they execute and your responses, and discuss ways in which you could add additional personalization capabilities to your solution.
+
+Write up a tutorial to re-create your solution.  In addition, reflect upon the ethical considerations of using your solution.  For example, what could go wrong by replacing a faculty advisor with a virtual one; does this mean one should not use a virtual advising solution at all?
