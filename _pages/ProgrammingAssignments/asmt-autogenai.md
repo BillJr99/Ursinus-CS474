@@ -313,7 +313,7 @@ ragproxyagent = RetrieveUserProxyAgent(
 )
 ```
 
-This agent reads documents from the docs directory, under the current directory.  Now, you can interact with the agent like before:
+This agent reads documents from the `docs` directory, under the current directory.  Now, you can interact with the agent like before:
 
 ```python
 assistant.reset()
