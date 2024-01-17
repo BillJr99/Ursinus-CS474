@@ -8,7 +8,7 @@ info:
   coursenum: CS474
   points: 100
   goals:
-    - "Experiment with building, defining, and customizing agents and skills in AutoGen Studio."
+    - "Experiment with building, defining, and customizing AI agents and skills in AutoGen Studio."
     - "Create and run a session in AutoGen Studio's Playground using a predefined workflow."
     - "Comprehend the principles and methods of creating custom agents programmatically using the AutoGen library."
     - "Implement a custom AI solution using AutoGen, focusing on a specific application."
