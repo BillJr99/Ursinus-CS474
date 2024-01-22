@@ -15,22 +15,23 @@ info:
         # https://github.com/acgrissom/courses/blob/master/2020-hci/hw1_voiceui.md
         # https://github.com/acgrissom/courses/blob/master/2020-hci/code/recognize_speech.py
         # sudo apt install portaudio19-dev libespeak-dev
+        # possibly sudo apt install libespeak1
         # on mac: brew install portaudio
         # pip3 install pyaudio pyttsx3 speechrecognition
         # alternatively: pip3 install pipwin && python -m pipwin install pyaudio
-
+         
         import speech_recognition as sr
         import pyttsx3
         import sys
         import time
-
-        tts = pyttsx3.init()
-
-
+         
+        tts = pyttsx3.init('dummy') # omit 'dummy' if default driver works
+         
+         
         def speak(tts, text):
             tts.say(text)
             tts.runAndWait()
-
+         
         def main():
             # get audio from the microphone                                                                       
             listener = sr.Recognizer()                                                                                   
@@ -49,7 +50,7 @@ info:
                         #convert audio to text
                         #user_input = listener.recognize_sphinx(audio) #requires PocketSphinx installation
                         user_input = listener.recognize_google(audio, show_all = False) # set show_all to True to get a dictionary of all possible translations
-
+         
                         print(user_input)
                         speak(tts, user_input)
                     except sr.UnknownValueError:
@@ -58,10 +59,10 @@ info:
                         print("Could not request results; {0}".format(e))
                     except OSError:
                         print("No speech detected")
-                        
+                         
                     sys.stdout.write("\n")
-
-
+         
+         
         if __name__ == "__main__":
             main()
         ]]></script>     
