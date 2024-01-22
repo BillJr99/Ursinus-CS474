@@ -146,4 +146,4 @@ tags:
   
 ---
 
-Adapted from [Dr. Alvin Grissom's 2020 HCI course](https://github.com/acgrissom/courses/blob/master/2020-hci/syllabus.md)
+Adapted from Dr. Alvin Grissom's 2020 HCI course

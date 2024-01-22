@@ -70,4 +70,4 @@ I strongly recommend running your program with your classmates to obtain feedbac
 
 In addition to your implementation, be sure to include a LaTeX design report in academic journal format (you can use [Overleaf](https://www.overleaf.com/) for this purpose) that describes your initial design, rationale, stakeholder evaluation, and any subsequent revisions you made from your stakeholder input.
 
-[^1]: Adapted from [Dr. Alvin Grissom's 2020 HCI course](https://github.com/acgrissom/courses/blob/master/2020-hci/hw1_voiceui.md)
+[^1]: Adapted from Dr. Alvin Grissom's 2020 HCI course
