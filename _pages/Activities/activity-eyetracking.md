@@ -34,6 +34,7 @@ info:
       questions:
         - "What kinds of applications can you think of that would benefit from eye tracking?"
         - "How might eye tracking enhance the user experience in applications that might not traditionally incorporate it?  In particular, how might eye tracking applications assist disabled persons using software?"
+        - "What are the pros and cons of using a threshold-based detection strategy?  How might you automatically calibrate such a system, and how might you allow it to adapt to changing conditions over time?"
 
 tags:
   - modalities
