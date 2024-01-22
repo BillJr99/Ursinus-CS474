@@ -17,8 +17,9 @@ info:
         # sudo apt install portaudio19-dev libespeak-dev
         # possibly sudo apt install libespeak1
         # on mac: brew install portaudio
-        # pip3 install pyaudio pyttsx3 speechrecognition
-        # alternatively: pip3 install pipwin && python -m pipwin install pyaudio
+        # install git+https://github.com/BillJr99/pyttsx3.git
+        # pip3 install pyaudio speechrecognition
+        # alternatively: pip3 install pipwin pypiwin32 && python -m pipwin install pyaudio
           
         import speech_recognition as sr
         import pyttsx3
@@ -74,8 +75,9 @@ info:
         # sudo apt install portaudio19-dev libespeak-dev
         # possibly sudo apt install libespeak1
         # on mac: brew install portaudio
-        # pip3 install pyaudio pyttsx3 speechrecognition
-        # alternatively: pip3 install pipwin && python -m pipwin install pyaudio
+        # install git+https://github.com/BillJr99/pyttsx3.git
+        # pip3 install pyaudio speechrecognition
+        # alternatively: pip3 install pipwin pypiwin32 && python -m pipwin install pyaudio
           
         import speech_recognition as sr
         import pyttsx3
