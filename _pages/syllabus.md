@@ -176,7 +176,7 @@ schedule:
         submission_types: "written"
     readings:
       - rtitle: "Bush, V. - As We May Think"
-        rlink: "https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/"
+        rlink: "https://csis.pace.edu/~marchese/CS835/Lec3/bush.pdf"
       - rtitle: "Schalk, Z. - Humans in Control: Thoughts on the Past, Present, and Future of HCI"
         rlink: "https://blogs.commons.georgetown.edu/cctp-797-fall2013/archives/807"
       - rtitle: "How Eye Control Empowers People with Disabilities"
