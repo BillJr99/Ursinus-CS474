@@ -90,6 +90,7 @@ export HISTIGNORE='*'
 pip install autogenstudio autogen
 pip uninstall pyautogen
 pip install pyautogen
+export AUTOGEN_USE_DOCKER=0
 export OPENAI_API_KEY=<your key here>
 autogenstudio ui --port 8081
 ```
