@@ -14,11 +14,10 @@ info:
         <script type="syntaxhighlighter" class="brush: python"><![CDATA[
         # https://github.com/acgrissom/courses/blob/master/2020-hci/hw1_voiceui.md
         # https://github.com/acgrissom/courses/blob/master/2020-hci/code/recognize_speech.py
-        # sudo apt install portaudio19-dev libespeak-dev
-        # possibly sudo apt install libespeak1
+        # on linux: sudo apt install portaudio19-dev libespeak-dev libespeak1
         # on mac: brew install portaudio
         # pip3 install git+https://github.com/BillJr99/pyttsx3.git
-        # pip3 install pyaudio speechrecognition disutils
+        # pip3 install pyaudio speechrecognition disutils setuptools
         # alternatively: pip3 install pipwin pypiwin32 && python -m pipwin install pyaudio
         # Install Visual C++ Tools on Windows https://visualstudio.microsoft.com/visual-cpp-build-tools/
           
@@ -72,12 +71,10 @@ info:
         <script type="syntaxhighlighter" class="brush: python"><![CDATA[
         # https://github.com/acgrissom/courses/blob/master/2020-hci/hw1_voiceui.md
         # https://github.com/acgrissom/courses/blob/master/2020-hci/code/recognize_speech.py
-        # https://github.com/Uberi/speech_recognition/blob/master/examples/background_listening.py
-        # sudo apt install portaudio19-dev libespeak-dev
-        # possibly sudo apt install libespeak1
+        # on linux: sudo apt install portaudio19-dev libespeak-dev libespeak1
         # on mac: brew install portaudio
         # pip3 install git+https://github.com/BillJr99/pyttsx3.git
-        # pip3 install pyaudio speechrecognition disutils
+        # pip3 install pyaudio speechrecognition disutils setuptools
         # alternatively: pip3 install pipwin pypiwin32 && python -m pipwin install pyaudio
         # Install Visual C++ Tools on Windows https://visualstudio.microsoft.com/visual-cpp-build-tools/
 
