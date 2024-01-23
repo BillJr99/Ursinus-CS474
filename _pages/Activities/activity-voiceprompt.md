@@ -18,8 +18,9 @@ info:
         # possibly sudo apt install libespeak1
         # on mac: brew install portaudio
         # pip3 install git+https://github.com/BillJr99/pyttsx3.git
-        # pip3 install pyaudio speechrecognition
+        # pip3 install pyaudio speechrecognition disutils
         # alternatively: pip3 install pipwin pypiwin32 && python -m pipwin install pyaudio
+        # Install Visual C++ Tools on Windows https://visualstudio.microsoft.com/visual-cpp-build-tools/
           
         import speech_recognition as sr
         import pyttsx3
@@ -76,9 +77,10 @@ info:
         # possibly sudo apt install libespeak1
         # on mac: brew install portaudio
         # pip3 install git+https://github.com/BillJr99/pyttsx3.git
-        # pip3 install pyaudio speechrecognition
+        # pip3 install pyaudio speechrecognition disutils
         # alternatively: pip3 install pipwin pypiwin32 && python -m pipwin install pyaudio
-          
+        # Install Visual C++ Tools on Windows https://visualstudio.microsoft.com/visual-cpp-build-tools/
+
         import speech_recognition as sr
         import pyttsx3
         import sys
