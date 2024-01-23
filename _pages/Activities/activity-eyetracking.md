@@ -24,7 +24,7 @@ info:
     - model: |
         Download the <a href="https://visualstudio.microsoft.com/visual-cpp-build-tools/">Visual Studio installer</a> and install the "Desktop Development for C++" module.
         <br>
-        <code>pip install cmake && pip install wheel && pip install dlib && pip install opencv-python face_recognition numpy</code>
+        <code>pip install cmake wheel dlib opencv-python face_recognition numpy</code>
         <br>
         Alternatively: <code>git clone https://github.com/davisking/dlib.git && cd dlib && python setup.py install --user --no DLIB_GIF_SUPPORT</code>
         <script src="https://gist.github.com/vardanagarwal/6e0d62f244d9d3280379689499bf990c.js"></script> 
