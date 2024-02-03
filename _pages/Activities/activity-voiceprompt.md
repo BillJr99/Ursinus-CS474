@@ -16,7 +16,8 @@ info:
         # https://github.com/acgrissom/courses/blob/master/2020-hci/code/recognize_speech.py
         # on linux: sudo apt install portaudio19-dev libespeak-dev libespeak1
         # on mac: brew install portaudio
-        # pip3 install git+https://github.com/BillJr99/pyttsx3.git
+        # on Linux/Windows: pip3 install git+https://github.com/BillJr99/pyttsx3.git
+        # on mac: pip3 install py3-tts
         # pip3 install pyaudio speechrecognition disutils setuptools
         # alternatively: pip3 install pipwin pypiwin32 && python -m pipwin install pyaudio
         # Install Visual C++ Tools on Windows https://visualstudio.microsoft.com/visual-cpp-build-tools/
