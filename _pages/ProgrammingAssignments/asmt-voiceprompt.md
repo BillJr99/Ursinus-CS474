@@ -54,7 +54,7 @@ tags:
   
 ---
 
-In this assignment [[^1]], you will incorporate the [Speech Recognition for Voice Prompts](../Activities/VoicePrompt) program we explored in class into a user application.  **Be sure to use the first version of this program, which does not run a thread in the background, so that you can continue interacting with the user after processing one iteration of speech**.  Specifically, you will write a program to solve one of two problems:
+In this assignment [[^1]], you will incorporate the [Speech Recognition for Voice Prompts](../../Activities/VoicePrompt) program we explored in class into a user application.  **Be sure to use the first version of this program, which does not run a thread in the background, so that you can continue interacting with the user after processing one iteration of speech**.  Specifically, you will write a program to solve one of two problems:
 
 * Find a common time to meet with a group of people, given a text file containing their weekly availabilities
 * Play a role-playing game in which users explore a maze of connected rooms (use a dictionary or hash table structure to manage your collection of rooms), encounter conflicts, and obtain treasure
