@@ -258,6 +258,8 @@ schedule:
     readings:
       - rtitle: "Mind-Controlled VR Game Really Works"
         rlink: "https://www.technologyreview.com/2017/08/09/68005/mind-controlled-vr-game-really-works/"
+      - rtitle: "Designing Better Error Messages"
+        rlink: "https://www.smashingmagazine.com/2022/08/error-messages-ux-design/"
   - week: "4"
     date: "0"
     title: "Psychological Triggers"
