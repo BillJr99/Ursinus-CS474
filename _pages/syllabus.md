@@ -2,7 +2,7 @@
 layout: syllabus
 permalink: /
 title: "CS474: Human Computer Interaction"
-excerpt: "CS474: Human Computer Interaction"
+
     
 info:
   course_number: CS474

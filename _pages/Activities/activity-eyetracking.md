@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/EyeTracking
 title: "CS474: Human Computer Interaction - Modalities - Eye Tracking"
-excerpt: "CS474: Human Computer Interaction - Modalities - Eye Tracking"
+
 
 info: 
   goals: 

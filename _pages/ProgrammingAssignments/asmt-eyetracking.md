@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Programming/EyeTracking
 title: "CS474: Human Computer Interaction - Eye Tracking"
-excerpt: "CS474: Human Computer Interaction - Eye Tracking"
+
 
 info:
   coursenum: CS474

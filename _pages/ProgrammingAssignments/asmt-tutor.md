@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Programming/Tutor
 title: "CS474: Human Computer Interaction - An Online Tutor"
-excerpt: "CS474: Human Computer Interaction - An Online Tutor"
+
 
 info:
   coursenum: CS474

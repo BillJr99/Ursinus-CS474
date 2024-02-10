@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/VoicePrompt
 title: "CS474: Human Computer Interaction - Modalities - Voice Prompts"
-excerpt: "CS474: Human Computer Interaction - Modalities - Voice Prompts"
+
 
 info: 
   goals: 

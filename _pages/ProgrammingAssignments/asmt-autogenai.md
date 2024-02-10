@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Programming/AutoGenAI
 title: "CS474: Human Computer Interaction - AI Agents using AutoGen and OpenAI"
-excerpt: "CS474: Human Computer Interaction - AI Agents using AutoGen and OpenAI"
+
 
 info:
   coursenum: CS474

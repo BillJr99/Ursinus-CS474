@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/AugmentedReality
 title: "CS474: Human Computer Interaction - Augmented Reality"
-excerpt: "CS474: Human Computer Interaction - Augmented Reality"
+
 
 info: 
   goals: 

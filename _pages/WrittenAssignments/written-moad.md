@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Written/MOAD
 title: "CS474: Human Computer Interaction - Mother of All Demos"
-excerpt: "CS474: Human Computer Interaction - Mother of All Demos"
+
 
 info:
   coursenum: CS474

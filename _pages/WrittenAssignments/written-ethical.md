@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Written/EthicalConsiderations
 title: "CS474: Human Computer Interaction - Ethical Considerations"
-excerpt: "CS474: Human Computer Interaction - Ethical Considerations"
+
 
 info:
   coursenum: CS474

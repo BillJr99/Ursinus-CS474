@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Reflections/NotebookCheck
 title: "CS474: Human Computer Interaction - Reading Reflection Notebook Check"
-excerpt: "CS474: Human Computer Interaction - Reading Reflection Notebook Check"
+
 
 info:
   coursenum: CS474

@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/ExperimentalObservation
 title: "CS474: Human Computer Interaction - Experimentally Evaluating UX"
-excerpt: "CS474: Human Computer Interaction - Experimentally Evaluating UX"
+
 
 info: 
   goals: 

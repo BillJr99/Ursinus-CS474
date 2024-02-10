@@ -2,7 +2,7 @@
 layout: module
 permalink: /Modules/GithubClassroom/Module
 title: "CS474: Human Computer Interaction - Cloning an Assignment with Github Classroom"
-excerpt: "CS474: Human Computer Interaction - Cloning an Assignment with Github Classroom"
+
 
 info:
   prev: "../Github/Module2"

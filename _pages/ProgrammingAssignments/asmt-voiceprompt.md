@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Programming/VoicePrompt
 title: "CS474: Human Computer Interaction - Voice Prompts"
-excerpt: "CS474: Human Computer Interaction - Voice Prompts"
+
 
 info:
   coursenum: CS474

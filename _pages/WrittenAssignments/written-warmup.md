@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Written/Warmup
 title: "CS474: Human Computer Interaction - Warmup"
-excerpt: "CS474: Human Computer Interaction - Warmup"
+
 
 info:
   coursenum: CS474

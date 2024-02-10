@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Projects/Report
 title: "CS474: Human Computer Interaction - Research Report"
-excerpt: "CS474: Human Computer Interaction - Research Report"
+
 
 info:
   coursenum: CS474

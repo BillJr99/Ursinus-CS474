@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Programming/AugmentedReality
 title: "CS474: Human Computer Interaction - Augmented Reality"
-excerpt: "CS474: Human Computer Interaction - Augmented Reality"
+
 
 info:
   coursenum: CS474
