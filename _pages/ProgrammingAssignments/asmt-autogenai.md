@@ -90,6 +90,7 @@ export HISTIGNORE='*'
 pip install autogenstudio autogen
 pip uninstall pyautogen
 pip install pyautogen
+pip install pyautogen[retrievechat]
 export AUTOGEN_USE_DOCKER=0
 export OPENAI_API_KEY=<your key here>
 autogenstudio ui --port 8081
@@ -306,7 +307,6 @@ assistant = RetrieveAssistantAgent(
     name="assistant",
     system_message="You are a helpful assistant.",
     llm_config=llm_config,
-    },
 )
 
 ragproxyagent = RetrieveUserProxyAgent(
