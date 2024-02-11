@@ -13,6 +13,7 @@ info:
   course_homepage: "https://www.billmongan.com/Ursinus-CS474-Spring2024/"
   class_notebook: https://ursinuscollege365-my.sharepoint.com/personal/wmongan_ursinus_edu/Documents/Class%20Notebooks/CS474%20Spring%202024
   ical: files/CS474.ics
+  teamshelproom: "https://teams.microsoft.com/l/team/19%3Aa_H_6LGr5PsSF6nknCufQzn1nx9qGh95VkYgxWenvUE1%40thread.tacv2/conversations?groupId=90faf494-d8e2-43dc-9a93-f3cf7240d1d2&tenantId=921f1c03-8689-4e60-a722-f5ea581e00fe"
   course_prerequisites: "CS275 Software Engineering"
   course_start_date: "2024/01/15"
   course_end_date: "2024/05/01"
