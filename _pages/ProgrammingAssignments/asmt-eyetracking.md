@@ -234,8 +234,8 @@ ret, img = cap.read()
 The second parameter to `flip` indicates how to flip:
 
 * 0: Flips around the x-axis (vertical flip).
-* > 0: Flips around the y-axis (horizontal flip).
-* < 0: Flips around both axes.
+* positive: Flips around the y-axis (horizontal flip).
+* negative: Flips around both axes.
 
 ## Printing Words to the Screen
 
