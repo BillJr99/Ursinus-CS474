@@ -70,3 +70,201 @@ Your solution should utilize only eye tracking.  In other words, the keyboard an
 I strongly recommend running your program with your classmates to obtain feedback.  Pay particular attention to the way in which they use the program, and look for "mistakes" that they make along the way.  Don't tell them anything, but consider instead that these "mistakes" may be ambiguities in your program that you can address.  Obtain feedback from them at the end, and document and consider it in any revisions you might make.
 
 In addition to your implementation, be sure to include a LaTeX design report in academic journal format (you can use [Overleaf](https://www.overleaf.com/) for this purpose) that describes your initial design, rationale, stakeholder evaluation, and any subsequent revisions you made from your stakeholder input.
+
+## Analyzing Eye Movements
+
+There are a few possible approaches to detecting eye movements using the example we considered in class (reproduced below from [https://gist.githubusercontent.com/vardanagarwal/6e0d62f244d9d3280379689499bf990c/raw/7505fedc8cfaefbc8f26d8b6f506e2c66e2873ec/eye_tracking.py](https://gist.githubusercontent.com/vardanagarwal/6e0d62f244d9d3280379689499bf990c/raw/7505fedc8cfaefbc8f26d8b6f506e2c66e2873ec/eye_tracking.py)):
+
+```python
+import cv2
+import dlib
+import numpy as np
+
+def shape_to_np(shape, dtype="int"):
+	# initialize the list of (x, y)-coordinates
+	coords = np.zeros((68, 2), dtype=dtype)
+	# loop over the 68 facial landmarks and convert them
+	# to a 2-tuple of (x, y)-coordinates
+	for i in range(0, 68):
+		coords[i] = (shape.part(i).x, shape.part(i).y)
+	# return the list of (x, y)-coordinates
+	return coords
+
+def eye_on_mask(mask, side):
+    points = [shape[i] for i in side]
+    points = np.array(points, dtype=np.int32)
+    mask = cv2.fillConvexPoly(mask, points, 255)
+    return mask
+
+def contouring(thresh, mid, img, right=False):
+    cnts, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
+    try:
+        cnt = max(cnts, key = cv2.contourArea)
+        M = cv2.moments(cnt)
+        cx = int(M['m10']/M['m00'])
+        cy = int(M['m01']/M['m00'])
+        if right:
+            cx += mid
+        cv2.circle(img, (cx, cy), 4, (0, 0, 255), 2)
+    except:
+        pass
+
+detector = dlib.get_frontal_face_detector()
+predictor = dlib.shape_predictor('shape_68.dat')
+
+left = [36, 37, 38, 39, 40, 41]
+right = [42, 43, 44, 45, 46, 47]
+
+cap = cv2.VideoCapture(0)
+ret, img = cap.read()
+thresh = img.copy()
+
+cv2.namedWindow('image')
+kernel = np.ones((9, 9), np.uint8)
+
+def nothing(x):
+    pass
+cv2.createTrackbar('threshold', 'image', 0, 255, nothing)
+
+while(True):
+    ret, img = cap.read()
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    rects = detector(gray, 1)
+    for rect in rects:
+
+        shape = predictor(gray, rect)
+        shape = shape_to_np(shape)
+        mask = np.zeros(img.shape[:2], dtype=np.uint8)
+        mask = eye_on_mask(mask, left)
+        mask = eye_on_mask(mask, right)
+        mask = cv2.dilate(mask, kernel, 5)
+        eyes = cv2.bitwise_and(img, img, mask=mask)
+        mask = (eyes == [0, 0, 0]).all(axis=2)
+        eyes[mask] = [255, 255, 255]
+        mid = (shape[42][0] + shape[39][0]) // 2
+        eyes_gray = cv2.cvtColor(eyes, cv2.COLOR_BGR2GRAY)
+        threshold = cv2.getTrackbarPos('threshold', 'image')
+        _, thresh = cv2.threshold(eyes_gray, threshold, 255, cv2.THRESH_BINARY)
+        thresh = cv2.erode(thresh, None, iterations=2) #1
+        thresh = cv2.dilate(thresh, None, iterations=4) #2
+        thresh = cv2.medianBlur(thresh, 3) #3
+        thresh = cv2.bitwise_not(thresh)
+        contouring(thresh[:, 0:mid], mid, img)
+        contouring(thresh[:, mid:], mid, img, True)
+        # for (x, y) in shape[36:48]:
+        #     cv2.circle(img, (x, y), 2, (255, 0, 0), -1)
+    # show the image with the face detections + facial landmarks
+    cv2.imshow('eyes', img)
+    cv2.imshow("image", thresh)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+    
+cap.release()
+cv2.destroyAllWindows()
+```
+
+### Tracing Eye Center Movement over Time
+
+You can call the function below from your processing loop, which will return an array of numbers representing the x and y coordinate of the detected center of the eye gaze.  This gaze is defined as the mean of the predicted left and right eye positions.
+
+You could store this value in each iteration, and compare it to the value you observed in the prior iteration.  If the x or y coordinate has increased or decreased, you can infer that the eye gaze has moved up or down the screen.  You might play with the thresholds by which these values have changed: for example, you wouldn't want to decide that the eye has moved up the screen if the pixel value changed by 1 or 2.  You can experiment with a threshold value for this purpose.
+
+Your predictions won't be perfect, so don't expect perfection!  Rather, experiment with different possibilities and document what you find.
+
+```python
+def get_eye_center(shape, left, right):
+    # Calculate the center of the left eye
+    left_eye_center = np.mean(shape[left], axis=0).astype(int)
+    # Calculate the center of the right eye
+    right_eye_center = np.mean(shape[right], axis=0).astype(int)
+    # Calculate the midpoint between the two eyes
+    eye_center = ((left_eye_center[0] + right_eye_center[0]) // 2, 
+                  (left_eye_center[1] + right_eye_center[1]) // 2)
+    return eye_center # [0] is x coordinate, [1] is y coordinate
+```    
+
+### Measuring Relative Eye Contour Brightness
+
+Another approach is to compare the detected eye brightness on the left side of the eye versus the right side (and the top versus the bottom).  The briger portion of the eye indicates that more of that part of the eye was detected and visible, and thus you are looking in the opposite direction.  Here is a function you can call from your loop to do this:
+
+```python
+def analyze_gaze_direction(eye_region):
+    # Split the eye region into left and right for horizontal analysis
+    h, w = eye_region.shape[:2]
+    left_side = eye_region[:, 0:w//2]
+    right_side = eye_region[:, w//2:]
+    
+    # Split the eye region into upper and lower for vertical analysis
+    upper_side = eye_region[0:h//2, :]
+    lower_side = eye_region[h//2:, :]
+    
+    # Calculate the average brightness of each section
+    left_brightness = np.mean(left_side)
+    right_brightness = np.mean(right_side)
+    upper_brightness = np.mean(upper_side)
+    lower_brightness = np.mean(lower_side)
+    
+    # Determine the horizontal direction based on brightness
+    horizontal_direction = "left" if left_brightness > right_brightness else "right"
+    
+    # Determine the vertical direction based on brightness
+    vertical_direction = "up" if upper_brightness > lower_brightness else "down"
+    
+    print(f"Looking {vertical_direction} and {horizontal_direction}")
+
+    return vertical_direction, horizontal_direction
+```
+
+You can pass `eyes` or `eyes_grey` to this function for the color or greyscale contours, respectively..  You could use either or both of these in tandem, or something else entirely!  Experimentation is the important thing here.
+
+## Mirroring your Webcam
+
+If (and only if) you need to mirror your webcam horizontally using OpenCV, you can add this line:
+
+```python
+img = cv2.flip(img, 1) # 1 = flip horizontally
+```
+
+after:
+
+```python
+ret, img = cap.read()
+```
+
+The second parameter to `flip` indicates how to flip:
+
+* 0: Flips around the x-axis (vertical flip).
+* > 0: Flips around the y-axis (horizontal flip).
+* < 0: Flips around both axes.
+
+## Printing Words to the Screen
+
+You can display words on the screen using OpenCV with the following code.  You can make this into a function and call it from your processing loop (perhaps before you check the eye position):
+
+```python
+import numpy as np
+import cv2
+
+# Create a blank canvas (image) of size 800x600 with 3 channels (RGB), filled with black (0)
+canvas = np.zeros((600, 800, 3), dtype="uint8")
+
+# Text properties
+text = "Hello, World!"
+font = cv2.FONT_HERSHEY_SIMPLEX  # Font type
+font_scale = 1.5  # Font scale (size)
+thickness = 3  # Thickness of the text
+
+# Color and location
+color = (0, 255, 0)  # Text color in BGR (green)
+position = (50, 300)  # Bottom-left corner of the text in the canvas
+
+# Draw
+cv2.putText(canvas, text, position, font, font_scale, color, thickness)
+
+# Show 
+cv2.imshow("Canvas with Text", canvas)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+
+If you are timing eye movements to a certain location, you can use `time.time()` after importing the `time` package to take the time before displaying the window to the time your processing loop detects the presence of the eyes in that quadrant, or you can time this manually.
