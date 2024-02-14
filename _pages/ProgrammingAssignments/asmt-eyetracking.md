@@ -263,8 +263,7 @@ cv2.putText(canvas, text, position, font, font_scale, color, thickness)
 
 # Show 
 cv2.imshow("Canvas with Text", canvas)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+cv2.waitKey(10) # wait for 10 seconds before refreshing the window, if you want
 ```
 
 If you are timing eye movements to a certain location, you can use `time.time()` after importing the `time` package to take the time before displaying the window to the time your processing loop detects the presence of the eyes in that quadrant, or you can time this manually.
