@@ -70,4 +70,67 @@ I strongly recommend running your program with your classmates to obtain feedbac
 
 In addition to your implementation, be sure to include a LaTeX design report in academic journal format (you can use [Overleaf](https://www.overleaf.com/) for this purpose) that describes your initial design, rationale, stakeholder evaluation, and any subsequent revisions you made from your stakeholder input.
 
+## Scrutinizing the Code Example
+
+The code example to get started is reproduced below; however, it features several protocol issues that you will want to experiment with (among others!).  For example, should certain code be executing where it is to set various thresholds?  Should you be more judicious about catching exceptions so that the program does not quit over a trivial error?  How can you use the return values (and potential return values) of these functions to help determine what the user said?  How might you create a generic function to prompt the user in a natural way, and confirm their response every time?  How will you handle small mistakes in what you hear?  The goal is not to aim for perfection, but rather to experiment with many different ideas, to observe their results, and to document the process.
+
+```python
+        <script type="syntaxhighlighter" class="brush: python"><![CDATA[
+        # https://github.com/acgrissom/courses/blob/master/2020-hci/hw1_voiceui.md
+        # https://github.com/acgrissom/courses/blob/master/2020-hci/code/recognize_speech.py
+        # on linux: sudo apt install portaudio19-dev libespeak-dev libespeak1
+        # on mac: brew install portaudio
+        # on linux/windows: pip3 install git+https://github.com/BillJr99/pyttsx3.git
+        # on mac: pip3 install py3-tts (pip3 install pyobjc followed by pyttsx3 might also work)
+        # pip3 install pyaudio speechrecognition disutils setuptools
+        # alternatively: pip3 install pipwin pypiwin32 && python -m pipwin install pyaudio
+        # Install Visual C++ Tools on Windows https://visualstudio.microsoft.com/visual-cpp-build-tools/
+          
+        import speech_recognition as sr
+        import pyttsx3
+        import sys
+        import time
+          
+        tts = pyttsx3.init() # pass 'dummy' to this constructor if this call fails due to a lack of voice drivers (but will disable speech)
+          
+        def speak(tts, text):
+            tts.say(text)
+            tts.runAndWait()
+          
+        def main():
+            # get audio from the microphone                                                                       
+            listener = sr.Recognizer()                                                                                   
+            with sr.Microphone() as source:
+                listener.adjust_for_ambient_noise(source) # used to detect silence to stop listening after a phrase is spoken
+                while True:
+                    print("Listening.")
+                    speak(tts, "listening") # how do we prevent this from being spoken every time an exception is thrown?
+                    time.sleep(1) # used to prevent hearing any spoken text; what else could we do?
+                    user_input = None
+                    sys.stdout.write(">")
+                    #record audio
+                    listener.pause_threshold = 0.5 # how long, in seconds, to observe silence before processing what was heard
+                    audio = listener.listen(source, timeout=5) #, timeout = N throws an OSError after N seconds if nothing is heard.  can also call listen_in_background(source, callback) and specify a function callback that accepts the recognizer and the audio when data is heard via a thread
+                    try:
+                        #convert audio to text
+                        #user_input = listener.recognize_sphinx(audio) #requires PocketSphinx installation
+                        user_input = listener.recognize_google(audio, show_all = False) # set show_all to True to get a dictionary of all possible translations
+          
+                        print(user_input)
+                        speak(tts, user_input)
+                    except sr.UnknownValueError:
+                        print("Could not understand audio")
+                    except sr.RequestError as e:
+                        print("Could not request results; {0}".format(e))
+                    except OSError:
+                        print("No speech detected")
+                          
+                    sys.stdout.write("\n")
+          
+          
+        if __name__ == "__main__":
+            main()
+        ]]></script>  
+```
+
 [^1]: Adapted from Dr. Alvin Grissom's 2020 HCI course
