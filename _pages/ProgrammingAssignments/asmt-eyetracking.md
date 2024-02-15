@@ -242,28 +242,34 @@ The second parameter to `flip` indicates how to flip:
 You can display words on the screen using OpenCV with the following code.  You can make this into a function and call it from your processing loop (perhaps before you check the eye position):
 
 ```python
-import numpy as np
-import cv2
-
-# Create a blank canvas (image) of size 800x600 with 3 channels (RGB), filled with black (0)
-canvas = np.zeros((600, 800, 3), dtype="uint8")
-
-# Text properties
-text = "Hello, World!"
-font = cv2.FONT_HERSHEY_SIMPLEX  # Font type
-font_scale = 1.5  # Font scale (size)
-thickness = 3  # Thickness of the text
-
-# Color and location
-color = (0, 255, 0)  # Text color in BGR (green)
-position = (50, 300)  # Bottom-left corner of the text in the canvas
-
-# Draw
-cv2.putText(canvas, text, position, font, font_scale, color, thickness)
-
-# Show 
-cv2.imshow("Canvas with Text", canvas)
-cv2.waitKey(10) # wait for 10 seconds before refreshing the window, if you want
+#texts = ["BLUE", "RED"]
+#colors = [(255, 0, 0), (0, 0, 255)] - green, blue, red
+#positions = [(x,y), (x,y)]
+#img is the canvas you want to draw on, or omit for a new window
+def draw_word(texts, colors, positions, img=None):
+    if not (img is None):  
+        canvas = img
+    else:
+        # Create a blank canvas (image) of size 800x600 with 3 channels (RGB), filled with black (0)
+        canvas = np.zeros((600, 800, 3), dtype="uint8")
+ 
+    # Text properties
+    font = cv2.FONT_HERSHEY_SIMPLEX  # Font type
+    font_scale = 1.5  # Font scale (size)
+    thickness = 3  # Thickness of the text
+ 
+    # Color and location
+    ##text = "Hello world"
+    ##color = (0, 255, 0)  # Text color in BGR (green)
+    ##position = (50, 300)  # Bottom-left corner of the text in the canvas
+ 
+    for i in range(len(texts)):
+        # Draw
+        cv2.putText(canvas, texts[i], positions[i], font, font_scale, colors[i], thickness)
+ 
+    # Show
+    if img is None:
+        cv2.imshow("Canvas with Text", canvas)
 ```
 
 If you are timing eye movements to a certain location, you can use `time.time()` after importing the `time` package to take the time before displaying the window to the time your processing loop detects the presence of the eyes in that quadrant, or you can time this manually.
