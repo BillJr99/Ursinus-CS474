@@ -15,6 +15,7 @@ info:
       title: "How Technology is Hijacking Your Mind — from a Magician and Google Design Ethicist"
   models:
     - model: |
+        <code>pip install opencv-contrib-python==4.6.0.66 imutils</code>
         <iframe src="https://www.pyimagesearch.com/2021/01/04/opencv-augmented-reality-ar/" width="100%" height="800"></iframe>  
       title: Augmented Reality
       questions:
