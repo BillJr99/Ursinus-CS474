@@ -106,6 +106,7 @@ while True:
     print("[INFO] detecting markers...")
     arucoDict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_ARUCO_ORIGINAL)
     arucoParams =  cv2.aruco.DetectorParameters()
+    arucoParams.cornerRefinementMethod = cv2.aruco.CORNER_REFINE_NONE # speed up detection at the cost of precision
     detector = cv2.aruco.ArucoDetector(arucoDict, arucoParams)
     corners, ids, rejected = detector.detectMarkers(image)
 
