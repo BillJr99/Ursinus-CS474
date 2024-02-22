@@ -84,70 +84,56 @@ import cv2
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-s", "--source", required=True,
-	help="path to input source image that will be put on input")
+    help="path to input source image that will be put on input")
 args = vars(ap.parse_args())
 
 cap = cv2.VideoCapture(0)
-#cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
-#cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
-#cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
 ret, image = cap.read()
 
 source = cv2.imread(args["source"])
 
+# Initialize a dictionary to store the last known corners for each ArUco marker
+cached_corners = {}
+
 while True:
     ret, image = cap.read()
     
-    #image = imutils.resize(image, width=600)
     (imgH, imgW) = image.shape[:2]  
     
-    # load the ArUCo dictionary, grab the ArUCo parameters, and detect
-    # the markers
     print("[INFO] detecting markers...")
     arucoDict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_ARUCO_ORIGINAL)
-    arucoParams =  cv2.aruco.DetectorParameters()
-    arucoParams.cornerRefinementMethod = cv2.aruco.CORNER_REFINE_NONE # speed up detection at the cost of precision
-    detector = cv2.aruco.ArucoDetector(arucoDict, arucoParams)
-    corners, ids, rejected = detector.detectMarkers(image)
+    arucoParams = cv2.aruco.DetectorParameters()
+    corners, ids, rejected = cv2.aruco.detectMarkers(image, arucoDict, parameters=arucoParams)
 
-    # show the found markers
     cv2.aruco.drawDetectedMarkers(image, corners)
-
-    # if we have not found four markers in the input image then we cannot
-    # apply our augmented reality technique
-    if len(corners) != 4:
-        print("[INFO] could not find 4 corners; found {}... press any key to continue or q to quit".format(str(len(corners))))
+    
+    # Update cached corners if new ones are found
+    if ids is not None:
+        for id_val, corner in zip(ids.flatten(), corners):
+            cached_corners[id_val] = corner  # Update or add the corner for this ID
+    
+    # Check if we have all four required corners in the cache
+    all_corners_found = all(id_val in cached_corners for id_val in [923, 1001, 241, 1007])
+    
+    if all_corners_found:
+        # If all corners are found, update 'corners' to use the cached corners in order
+        corners = [cached_corners[id_val] for id_val in [923, 1001, 241, 1007]]
+        ids = np.array([923, 1001, 241, 1007]).reshape(-1, 1)  # Reshape for compatibility with later code
+    else:
+        print("[INFO] could not find 4 corners; found {}... press any key to continue or q to quit".format(len(cached_corners)))
         cv2.imshow("Input", image)
-        key = cv2.waitKey(1) & 0xFF # 3 ms pause
+        key = cv2.waitKey(1) & 0xFF
         if key == ord('q'):
-            sys.exit(0)
-        else:
-            continue
-        
-    # otherwise, we've found the four ArUco markers, so we can continue
-    # by flattening the ArUco IDs list and initializing our list of
-    # reference points
+            break
+        continue
+    
+    # Construct augmented reality visualization only if all corners are found
     print("[INFO] constructing augmented reality visualization...")
-    ids = ids.flatten()
-    refPts = []
-    # loop over the IDs of the ArUco markers in top-left, top-right,
-    # bottom-right, and bottom-left order
-    for i in (923, 1001, 241, 1007):
-        # grab the index of the corner with the current ID and append the
-        # corner (x, y)-coordinates to our list of reference points
-        indices = np.where(ids.flatten() == i)[0]  # This finds all indices where the condition is true
-        if indices.size > 0:
-            j = indices[0]  # Take the first index
-            corner = np.squeeze(corners[j])
-        refPts.append(corner)  
+    refPts = [np.squeeze(corner) for corner in corners]  # Flatten corner arrays
 
-    # unpack our ArUco reference points and use the reference points to
-    # define the *destination* transform matrix, making sure the points
-    # are specified in top-left, top-right, bottom-right, and bottom-left
-    # order
-    (refPtTL, refPtTR, refPtBR, refPtBL) = refPts
-    dstMat = [refPtTL[0], refPtTR[1], refPtBR[2], refPtBL[3]]
-    dstMat = np.array(dstMat)
+    # Define the *destination* transform matrix, ensuring points are in the correct order
+    dstMat = np.array([refPts[0][0], refPts[1][0], refPts[2][0], refPts[3][0]])
+
     # grab the spatial dimensions of the source image and define the
     # transform matrix for the *source* image in top-left, top-right,
     # bottom-right, and bottom-left order
