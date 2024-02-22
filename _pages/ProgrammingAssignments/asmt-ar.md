@@ -135,8 +135,10 @@ while True:
     for i in (923, 1001, 241, 1007):
         # grab the index of the corner with the current ID and append the
         # corner (x, y)-coordinates to our list of reference points
-        j = np.squeeze(np.where(ids == i))
-        corner = np.squeeze(corners[j])
+        indices = np.where(ids.flatten() == i)[0]  # This finds all indices where the condition is true
+        if indices.size > 0:
+            j = indices[0]  # Take the first index
+            corner = np.squeeze(corners[j])
         refPts.append(corner)  
 
     # unpack our ArUco reference points and use the reference points to
