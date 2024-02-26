@@ -207,15 +207,14 @@ def get_wifi_info(os_name):
                 networks[current_ssid] = int(signal_match.group(1))
         return networks
 
-    # Function to parse macOS Wi-Fi information
     def parse_mac(output):
         networks = {}
-        lines = output.split('\n')
-        for line in lines:
-            parts = line.split()  # Split the line into parts by whitespace
+        for line in output.split('\n')[1:]:  # Skip the header line
+            parts = line.strip().split()  # Remove leading spaces and split by whitespace
             if len(parts) >= 3:  # Ensure there are enough parts to include SSID, RSSI, etc.
-                rssi = parts[2]  # RSSI is the third element based on your output
-                ssid = ' '.join(parts[3:-6])  # SSID seems to be after RSSI up to the CHANNEL, merging parts back
+                # The SSID could contain spaces, so we need to handle it specially
+                ssid = ' '.join(parts[:-6])  # SSID is all parts except the last six (assuming fixed format)
+                rssi = parts[-6]  # RSSI is now the sixth last element, based on your output format
                 # Validate and convert RSSI to integer
                 try:
                     rssi_int = int(rssi)  # Convert RSSI to integer
