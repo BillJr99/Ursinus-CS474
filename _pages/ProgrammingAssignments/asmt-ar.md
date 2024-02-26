@@ -67,7 +67,7 @@ For your application, detect a particular marker on the screen (if you like, you
 
 In addition to your implementation, be sure to include a LaTeX design report in academic journal format (you can use [Overleaf](https://www.overleaf.com/) for this purpose) that describes your initial design, rationale, stakeholder evaluation, and any subsequent revisions you made from your stakeholder input.
 
-## Starter Code
+## Example Code for ArUCo Card Detection and Image Overlay
 
 Here is an example for how to detect the ArUCo Pantone Color Cards:
 
@@ -179,4 +179,98 @@ while True:
         sys.exit(0)
     else:
         continue
+```
+
+## Example Code for Measuring WiFi Signal Strength
+
+Below is starter code to return a dictionary of WiFi names (SSID's) and their signal strengths:
+
+```python
+import subprocess
+import re
+import platform
+
+def get_wifi_info(os_name):
+    wifi_info = {}
+
+    # Function to parse Linux Wi-Fi information
+    def parse_linux(output):
+        networks = {}
+        current_ssid = None
+        for line in output.split('\n'):
+            ssid_match = re.search(r'SSID: (.+)$', line)
+            signal_match = re.search(r'signal: (-\d+) dBm', line)
+            if ssid_match:
+                current_ssid = ssid_match.group(1)
+                networks[current_ssid] = None  # Initialize the SSID with no signal strength
+            elif signal_match and current_ssid:
+                networks[current_ssid] = int(signal_match.group(1))
+        return networks
+
+    # Function to parse macOS Wi-Fi information
+    def parse_mac(output):
+        networks = {}
+        lines = output.split('\n')
+        for i, line in enumerate(lines):
+            if 'SSID' in line:
+                ssid = line.split(': ')[1]
+                signal_strength = int(re.search(r'(-\d+) dBm', lines[i + 1]).group(1))
+                networks[ssid] = signal_strength
+        return networks
+
+    # Function to parse Windows Wi-Fi information
+    def parse_windows(output):
+        networks = {}
+        # Windows netsh command has a different output format
+        for block in output.split('\n\n'):
+            ssid_match = re.search(r'SSID\s+\d+\s+:\s(.+)', block)
+            signal_match = re.search(r'Signal\s+:\s(\d+)%', block)
+            if ssid_match and signal_match:
+                networks[ssid_match.group(1)] = int(signal_match.group(1))  # Assuming % as signal 'strength'
+        return networks
+
+    if os_name.lower() == 'linux':
+        result = subprocess.run(['nmcli', '-t', 'device', 'wifi', 'list'], capture_output=True, text=True)
+        wifi_info = parse_linux(result.stdout)
+    elif os_name.lower() == 'mac' or os_name.lower() == 'darwin' or os_name.lower() == 'macos':
+        result = subprocess.run(['/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport', '-s'], capture_output=True, text=True)
+        wifi_info = parse_mac(result.stdout)
+    elif os_name.lower() == 'windows':
+        result = subprocess.run(['netsh', 'wlan', 'show', 'networks', 'mode=Bssid'], capture_output=True, text=True, shell=True)
+        wifi_info = parse_windows(result.stdout)
+    else:
+        raise ValueError("Unsupported operating system")
+
+    return wifi_info
+
+# Example usage:
+os_name = platform.system()  # Automatically detect the OS
+wifi_info = get_wifi_info(os_name)
+print(wifi_info)
+```
+
+## Example Code for Determining the GPS Coordinates Corresponding to Your Location
+
+Below is a function that returns your approximate latitude and longitude if geocoding services are available on your device:
+
+```python
+# pip install geocoder
+import geocoder
+
+def get_current_location():
+    # Attempt to get the user's location using their IP address
+    location = geocoder.ip('me')
+    
+    if location.ok:
+        # Return a dictionary containing the latitude and longitude
+        return {
+            'latitude': location.lat,
+            'longitude': location.lng
+        }
+    else:
+        # Return a message indicating that the location could not be determined
+        return "Location information is not available."
+
+# Example usage:
+print(get_current_location())
 ```
