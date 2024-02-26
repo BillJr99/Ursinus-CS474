@@ -211,11 +211,20 @@ def get_wifi_info(os_name):
     def parse_mac(output):
         networks = {}
         lines = output.split('\n')
-        for i, line in enumerate(lines):
-            if 'SSID' in line:
-                ssid = line.split(': ')[1]
-                signal_strength = int(re.search(r'(-\d+) dBm', lines[i + 1]).group(1))
-                networks[ssid] = signal_strength
+        for line in lines:
+            parts = line.split()  # Split the line into parts by whitespace
+            if len(parts) >= 3:  # Ensure there are enough parts to include SSID, RSSI, etc.
+                rssi = parts[2]  # RSSI is the third element based on your output
+                ssid = ' '.join(parts[3:-6])  # SSID seems to be after RSSI up to the CHANNEL, merging parts back
+                # Validate and convert RSSI to integer
+                try:
+                    rssi_int = int(rssi)  # Convert RSSI to integer
+                    # Check if SSID is already in the dictionary, update if existing RSSI is weaker
+                    if ssid not in networks or networks[ssid] < rssi_int:
+                        networks[ssid] = rssi_int
+                except ValueError:
+                    # This can happen if RSSI is not a number, so we skip this line
+                    continue
         return networks
 
     # Function to parse Windows Wi-Fi information
