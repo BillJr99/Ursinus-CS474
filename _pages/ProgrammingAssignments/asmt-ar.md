@@ -207,22 +207,22 @@ def get_wifi_info(os_name):
                 networks[current_ssid] = int(signal_match.group(1))
         return networks
 
+    # Function to parse Mac Wi-Fi information
     def parse_mac(output):
         networks = {}
-        for line in output.split('\n')[1:]:  # Skip the header line
-            parts = line.strip().split()  # Remove leading spaces and split by whitespace
-            if len(parts) >= 3:  # Ensure there are enough parts to include SSID, RSSI, etc.
-                # The SSID could contain spaces, so we need to handle it specially
-                ssid = ' '.join(parts[:-6])  # SSID is all parts except the last six (assuming fixed format)
-                rssi = parts[-6]  # RSSI is now the sixth last element, based on your output format
+        # Split the output by newlines and ignore the first line (header)
+        for line in output.split('\n')[1:]:
+            parts = line.strip().split()  # Split by whitespace
+            if len(parts) >= 7:  # Ensure there are enough parts
+                bssid = parts[1]  # BSSID is the second element
+                rssi = parts[2]  # RSSI is the third element
                 # Validate and convert RSSI to integer
                 try:
-                    rssi_int = int(rssi)  # Convert RSSI to integer
-                    # Check if SSID is already in the dictionary, update if existing RSSI is weaker
-                    if ssid not in networks or networks[ssid] < rssi_int:
-                        networks[ssid] = rssi_int
+                    rssi_int = int(rssi)
+                    # Add BSSID and RSSI to the dictionary
+                    networks[bssid] = rssi_int
                 except ValueError:
-                    # This can happen if RSSI is not a number, so we skip this line
+                    # Skip this line if RSSI conversion fails
                     continue
         return networks
 
