@@ -181,6 +181,35 @@ while True:
         continue
 ```
 
+### Replacing the Stock Image with a Custom OpenCV Canvas
+
+You can create your own objects and display them instead of a static image, if you like.  OpenCV creates a `canvas` object to represent these graphic panes, including images loaded from files.  So, you could remove the `source = cv2.imread(args["source"])` line (and the `argparse` code above it, which parses your command line arguments to obtain the file path of this source image), and replace it with something like `source = create_canvas()`, which is a function you can create.  Here's a demo function:
+
+```python
+def create_canvas(width=640, height=480):
+    # Create an empty canvas
+    canvas = np.zeros((height, width, 3), dtype=np.uint8)
+    
+    # Draw text on the canvas
+    text = "Canvas for AR"
+    text_color = (255, 255, 255)  # White color
+    font = cv2.FONT_HERSHEY_SIMPLEX
+    font_scale = 1
+    thickness = 2
+    text_size = cv2.getTextSize(text, font, font_scale, thickness)[0]
+    text_x = int((width - text_size[0]) / 2)
+    text_y = int((height + text_size[1]) / 2)
+    cv2.putText(canvas, text, (text_x, text_y), font, font_scale, text_color, thickness)
+    
+    # Draw a shape on the canvas (in this case, a rectangle)
+    shape_color = (0, 255, 0)  # Green color
+    shape_start_point = (50, 50)
+    shape_end_point = (width - 50, height - 50)
+    cv2.rectangle(canvas, shape_start_point, shape_end_point, shape_color, thickness)
+    
+    return canvas
+```
+
 ## Example Code for Measuring WiFi Signal Strength
 
 Below is starter code to return a dictionary of WiFi names (SSID's) and their signal strengths:
