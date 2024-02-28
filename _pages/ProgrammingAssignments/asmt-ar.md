@@ -241,7 +241,7 @@ def get_wifi_info(os_name):
         networks = {}
         for line in output.split('\n')[1:]:  # Skip the header line
             parts = line.strip().split()  # Remove leading spaces and split by whitespace
-            if len(parts) >= 3:  # Ensure there are enough parts to include SSID, BSSID, etc.
+            if len(parts) >= 5:  # Ensure there are enough parts to include SSID, BSSID, etc.
                 # The SSID could contain spaces, so we need to handle it specially
                 # Since SSID can contain spaces and we assume it's at the beginning, we'll join all parts but the last five
                 bssid = ' '.join(parts[:-5])  # Joining all parts except the last five assuming those are other metrics
@@ -266,7 +266,9 @@ def get_wifi_info(os_name):
             ssid_match = re.search(r'SSID\s+\d+\s+:\s(.+)', block)
             signal_match = re.search(r'Signal\s+:\s(\d+)%', block)
             if ssid_match and signal_match:
-                networks[ssid_match.group(1)] = int(signal_match.group(1))  # Assuming % as signal 'strength'
+                rssi = int(signal_match.group(1))  # Assuming % as signal 'strength'
+                rssi = (rssi / 2) - 100 # convert from percentage to dB from -100 to -50
+                networks[ssid_match.group(1)] = rssi
         return networks
 
     if os_name.lower() == 'linux':
