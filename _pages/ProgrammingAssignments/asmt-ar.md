@@ -130,10 +130,12 @@ while True:
     # Construct augmented reality visualization only if all corners are found
     print("[INFO] constructing augmented reality visualization...")
     refPts = [np.squeeze(corner) for corner in corners]  # Flatten corner arrays
-
+    
     # Define the *destination* transform matrix, ensuring points are in the correct order
-    dstMat = np.array([refPts[0][0], refPts[1][0], refPts[2][0], refPts[3][0]])
-
+    (refPtTL, refPtTR, refPtBR, refPtBL) = refPts
+    dstMat = [refPtTL[0], refPtTR[1], refPtBR[2], refPtBL[3]]
+    dstMat = np.array(dstMat)
+    
     # grab the spatial dimensions of the source image and define the
     # transform matrix for the *source* image in top-left, top-right,
     # bottom-right, and bottom-left order
