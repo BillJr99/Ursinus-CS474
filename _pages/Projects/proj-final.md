@@ -54,5 +54,5 @@ Before you begin, create a design plan in LaTeX that documents the requirements,
 
 ## Version Control 
 
-See [this video](../Modules/Github/Module) for more information on using Git as a version control system to synchronize your project with your partners.
+See [this video](../Modules/Github/Module) for more information on using Git as a version control system to synchronize your project with your partners.  You might consider creating a project website using Github Pages; this is free, and I strongly encourage you to do so!  You could link to this from your LinkedIn profile or resume.
 
