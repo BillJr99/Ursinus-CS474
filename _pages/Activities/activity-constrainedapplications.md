@@ -14,7 +14,7 @@ info:
       link: false   
   models:
     - model: |
-        <img src="http://www.rvpedestal.com/images/electr_srvc_pedestals/RV-Power-Pedestal-Unmetered-370.jpg" alt="An RV power pedestal showing various American electrical outlet shapes">
+        <img src="https://i.pinimg.com/474x/02/db/10/02db10315f8830eb4339f14dea30624d.jpg" alt="An RV power pedestal showing various American electrical outlet shapes, from Pintrest">
       title: "Leveraging Constraints for Discovery"
       questions:
         - "What makes the assembly in Norman Figure 4.1 so easy to put together without instructions?"
