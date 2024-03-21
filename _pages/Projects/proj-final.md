@@ -15,6 +15,7 @@ info:
     - "Each item required for a grade of B is included"
     - "The group consists of at least 2 and no more than 3 members"
     - "The project submitted was substantially consistent with the project proposed to and approved by the Professor"     
+    - "The project includes revisions based on user stakeholder feedback of the design and/or prototype, and includes a report of those revisions"
     b:
     - "Each item required for a grade of C is included"
     - "A substantial design report is included in the submission which documents the affordances and signifiers, modalities, design testing and feedback obtained during the project"
@@ -49,7 +50,7 @@ Should a member of the team fail to participate to the standards set in the prop
 
 ## Design Plan (25 Points)
 
-Before you begin, create a design plan in LaTeX that documents the requirements, UI/UX workflow, affordances and signifiers, modalities, design testing, based on stakeholder input obtained and documented for the report.
+Before you begin, create a design plan in LaTeX that documents the requirements, UI/UX workflow, affordances and signifiers, modalities, design testing, based on stakeholder input obtained and documented for the report.  Include a figma or lucid chart wireframe to describe your user interface.  Show that interface and project prototype implementation to a stakeholder and document the feedback that you receive from them.  Also document how you revise your project based on this feedback (be sure that you do so!).
 
 ## Version Control 
 
