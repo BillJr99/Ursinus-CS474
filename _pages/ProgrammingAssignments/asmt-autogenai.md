@@ -98,6 +98,8 @@ autogenstudio ui --port 8081
 
 An API key will be provided to you for use in this class.  Please shut down your applications when you're not using them, to avoid incurring additional charges against this API key!  Your instructor is funding this API key directly, and is sharing it with the entire class.  Please be judicious about its usage.  You are welcome to create an account and key for yourself for further exploration, but this is not required for this class.
 
+Once this executes, you can open the autogen tool using a web browser by navigating to [http://localhost:8081](http://localhost:8081).
+
 To try it out, click on the **Build** tab and select **Skills** from the left menu.  You can click on the sample skills to view the code that drives each.  Notice that each invokes a custom API to answer your question (such as scraping a web page, or writing code to create visualizations in `matplotlib`, etc.).  Agents can invoke these skills, which you can think of as functions, to answer questions.
 
 In the **Agents** menu, you can create your own custom agents.  It's possible to do this directly from the **Workflows** section, so just take a look at some of the provided agents for now.  Notice that they can import skills as well as language models like `gpt-4` to answer questions.
