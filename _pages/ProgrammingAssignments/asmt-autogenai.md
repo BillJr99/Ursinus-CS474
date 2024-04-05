@@ -195,6 +195,7 @@ Now, your Python program can do the following:
 
 ```python
 from autogen import AssistantAgent, UserProxyAgent, config_list_from_json
+import autogen
 
 config_list = autogen.config_list_from_json(
     env_or_file="OAI_CONFIG_LIST",
