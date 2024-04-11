@@ -11,6 +11,8 @@ info:
   additional_reading:  
     - link: "https://en.wikipedia.org/wiki/Abductive_reasoning"
       title: "Abductive Reasoning"
+    - link: "https://mindmatters.ai/2021/04/abduction-the-underrated-thinking-skill-computers-cant-have/"
+      title: "Abductive Reasoning - A thinking skill you can do but computers can't"
     - link: "https://uxplanet.org/principles-of-design-thinking-stages-of-design-thinking-b2cc219063ac"
       title: "Chathurika, H. - Principles of Design Thinking - Part 1"
     - link: "https://www.interaction-design.org/literature/article/5-stages-in-the-design-thinking-process"
