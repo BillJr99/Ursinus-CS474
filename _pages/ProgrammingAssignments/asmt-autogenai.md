@@ -86,13 +86,13 @@ In recent years, AI has transformed from an estimator/predictor to a creator wit
 You can specify AutoGen agent behaviors, and invoke those behaviors, in Python.  However, there is also a no-code solution called [AutoGen Studio](https://github.com/microsoft/autogen/tree/main/samples/apps/autogen-studio) in which you can add skills, define agents, and chat with the resulting system using a web interface.  You can install this web interface directly within your local environment.  To do this, run:
 
 ```
-export HISTIGNORE='*'
+export HISTIGNORE='*' # skip on Windows
 pip install autogenstudio autogen
 pip uninstall pyautogen
 pip install pyautogen
 pip install pyautogen[retrievechat] # pip install pyautogen\[retrievechat\] on zsh shells (mac)
-export AUTOGEN_USE_DOCKER=0
-export OPENAI_API_KEY=<your key here>
+export AUTOGEN_USE_DOCKER=0 # replace export with set on Windows
+export OPENAI_API_KEY=<your key here> # replace export with set on Windows
 autogenstudio ui --port 8081
 ```
 
