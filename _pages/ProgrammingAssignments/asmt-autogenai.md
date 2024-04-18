@@ -328,8 +328,7 @@ This agent reads documents from the `docs` directory, under the current director
 
 ```python
 assistant.reset()
-userproxyagent = autogen.UserProxyAgent(name="userproxyagent")
-ragproxyagent.initiate_chat(assistant, problem="Recommend courses based on my interest in Machine Learning and Biomedicine")
+ragproxyagent.initiate_chat(assistant, message=ragproxyagent.message_generator, problem="Recommend courses based on my interest in Machine Learning and Biomedicine")
 ```
 
 Since the catalog knows when courses are generally offered, and what prerequisites courses have, etc., you could ask it more interesting questions like "Suggest courses for the Fall Semester of 2024 for a Computer Science major."  Additionally, you could add documents to the knowledge base repository that provide information about major requirements.  `docs_path` supports URL's, so you could provide it the URL of the course major page itself and create a "virtual advisor" agent.
