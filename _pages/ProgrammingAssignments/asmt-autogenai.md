@@ -91,8 +91,8 @@ pip install autogenstudio autogen
 pip uninstall pyautogen
 pip install pyautogen
 pip install pyautogen[retrievechat] # pip install pyautogen\[retrievechat\] on zsh shells (mac)
-export AUTOGEN_USE_DOCKER=0 # replace export with set on Windows
-export OPENAI_API_KEY=<your key here> # replace export with set on Windows
+export AUTOGEN_USE_DOCKER=0 # set AUTOGEN_USE_DOCKER=0 on Windows, or $env:AUTOGEN_USE_DOCKER=0 on PowerShell (VSCode)
+export OPENAI_API_KEY=<your key here> # replace export with set on Windows, or with $env: on PowerShell as above
 autogenstudio ui --port 8081
 ```
 
