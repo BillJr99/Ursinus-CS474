@@ -56,7 +56,7 @@ info:
     - rtitle: "AutoGen Studio - Interactively Explore Multi-Agent Workflows"
       rlink: "https://microsoft.github.io/autogen/blog/2023/12/01/AutoGenStudio/"
     - rtitle: "AutoGen Studio"
-      rlink: "https://github.com/microsoft/autogen/tree/main/samples/apps/autogen-studio"
+      rlink: "https://github.com/microsoft/autogen/tree/main/python/packages/autogen-studio"
     - rlink: "https://microsoft.github.io/autogen/docs/Use-Cases/agent_chat/#diverse-applications-implemented-with-autogen"
       rtitle: "Multi-agent Conversation Framework"
     - rlink: "https://www.mlq.ai/building-ai-agents-autogen/"
