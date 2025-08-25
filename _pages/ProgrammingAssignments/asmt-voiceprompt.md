@@ -75,7 +75,6 @@ In addition to your implementation, be sure to include a LaTeX design report in 
 The code example to get started is reproduced below; however, it features several protocol issues that you will want to experiment with (among others!).  For example, should certain code be executing where it is to set various thresholds?  Should you be more judicious about catching exceptions so that the program does not quit over a trivial error?  How can you use the return values (and potential return values) of these functions to help determine what the user said?  How might you create a generic function to prompt the user in a natural way, and confirm their response every time?  How will you handle small mistakes in what you hear?  The goal is not to aim for perfection, but rather to experiment with many different ideas, to observe their results, and to document the process.
 
 ```python
-        <script type="syntaxhighlighter" class="brush: python"><![CDATA[
         # https://github.com/acgrissom/courses/blob/master/2020-hci/hw1_voiceui.md
         # https://github.com/acgrissom/courses/blob/master/2020-hci/code/recognize_speech.py
         # on linux: sudo apt install portaudio19-dev libespeak-dev libespeak1
@@ -130,7 +129,6 @@ The code example to get started is reproduced below; however, it features severa
           
         if __name__ == "__main__":
             main()
-        ]]></script>  
 ```
 
 [^1]: Adapted from Dr. Alvin Grissom's 2020 HCI course
