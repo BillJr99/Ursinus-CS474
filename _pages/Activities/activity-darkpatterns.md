@@ -32,7 +32,7 @@ info:
     - model: |
         <img src="https://static.scientificamerican.com/sciam/cache/file/01E7FF34-0BE9-4D4E-8A9AD915B3A8E146_source.png?w=590&h=800&EBA6CE72-3658-49DF-89E1B976C04931A4" alt="A Snopes.com screenshot on a Scientific American article discussing a fake news post claiming that the Pope endorsed a US presidential candidate.">
         <br>
-        <a title="Lord Belbury, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Clickjacking.png"><img width="512" alt="Clickjacking" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Clickjacking.png/512px-Clickjacking.png"></a>
+        <a title="Lord Belbury, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Clickjacking.png"><img width="512" alt="Clickjacking" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Clickjacking.png"></a>
         <br>
         <a title="Andrew Levine, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:PhishingTrustedBank.png"><img width="512" alt="PhishingTrustedBank" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/PhishingTrustedBank.png"></a>
         <br>

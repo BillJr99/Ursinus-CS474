@@ -26,9 +26,23 @@ info:
         - "An A/B test evaluates if one call to action is more effective than another.  How might you employ this in a software system to evaluate different user interface designs or workflows?"
         - "What would likely happen in these studies if all the stakeholders in a medical application UX study had the same job title?"
       embed: |
-        <iframe height="400px" width="100%" src="https://repl.it/@BillJr99/ProportionsHypothesisTest?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <iframe src="https://www.billmongan.com/Ursinus-CS474/assets/code-viewer.html?zip=https%3A%2F%2Fraw.githubusercontent.com%2FBillJr99%2FUrsinus-CS474%2Fgh-pages%2Ffiles%2Freplit%2FProportionsHypothesisTest.zip&title=ProportionsHypothesisTest"
+          height="600px"
+          width="100%"
+          scrolling="yes"
+          frameborder="no"
+          allowfullscreen="true"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
         <br>
-        <iframe height="400px" width="100%" src="https://repl.it/@BillJr99/MeansTTest?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <iframe src="https://www.billmongan.com/Ursinus-CS474/assets/code-viewer.html?zip=https%3A%2F%2Fraw.githubusercontent.com%2FBillJr99%2FUrsinus-CS474%2Fgh-pages%2Ffiles%2Freplit%2FMeansTTest.zip&title=MeansTTest"
+          height="600px"
+          width="100%"        
+          scrolling="yes"
+          frameborder="no"
+          allowfullscreen="true"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
         
 tags:
   - design

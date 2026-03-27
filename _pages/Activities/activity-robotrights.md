@@ -13,7 +13,7 @@ info:
       title: "Robot Rights? Let's Talk about Human Welfare Instead"       
   models:
     - model: |
-        <a title="Mikael Häggström, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Hospital_delivery_robot_having_priority_to_elevators.jpg"><img width="256" alt="Hospital delivery robot having priority to elevators" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Hospital_delivery_robot_having_priority_to_elevators.jpg/256px-Hospital_delivery_robot_having_priority_to_elevators.jpg"></a>
+        <a title="Mikael Häggström, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Hospital_delivery_robot_having_priority_to_elevators.jpg"><img width="256" alt="Hospital delivery robot having priority to elevators" src="https://upload.wikimedia.org/wikipedia/commons/3/34/Hospital_delivery_robot_having_priority_to_elevators.jpg"></a>
       title: "Robot Rights"
       questions:
         - "Why do robots need rights to protect them?"
