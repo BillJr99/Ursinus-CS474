@@ -53,10 +53,10 @@ info:
     <div style="width: 100%; display: table; border-collapse:separate; border-spacing:5px;">
     <div style="width: 100%; display: table-row;">
         <div style="display: table-cell; padding:5px; width:33%;">
-            <a title="Shmuel Csaba Otto Traian, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Linux_kernel_INPUT_OUPUT_evdev_gem_USB_framebuffer.svg"><img width="100%" alt="Linux kernel INPUT OUPUT evdev gem USB framebuffer" src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Linux_kernel_INPUT_OUPUT_evdev_gem_USB_framebuffer.svg"></a>
+            <a title="Shmuel Csaba Otto Traian, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Linux_kernel_INPUT_OUPUT_evdev_gem_USB_framebuffer.svg"><img width="100%" alt="Linux kernel INPUT OUPUT evdev gem USB framebuffer" src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Linux_kernel_INPUT_OUPUT_evdev_gem_USB_framebuffer.svg"></a>
         </div>
         <div style="display: table-cell; padding:5px; width:33%;">
-            <a title="Laurens R. Krol, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:EEG_10-10_system_with_additional_information.svg"><img width="100%" alt="EEG 10-10 system with additional information" src="https://upload.wikimedia.org/wikipedia/commons/f/fb/EEG_10-10_system_with_additional_information.svg"></a>
+            <a title="Laurens R. Krol, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:EEG_10-10_system_with_additional_information.svg"><img width="100%" alt="EEG 10-10 system with additional information" src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/EEG_10-10_system_with_additional_information.svg"></a>
         </div>
         <div style="display: table-cell; padding:5px; width:33%;">
             <img width="100%" style="display:block;" alt="SimBaby Wireless Respiratory Analysis with the Smart Fabric Bellyband" src="https://www.billmongan.com/files/media/software-iotframework/simbaby.jpg">

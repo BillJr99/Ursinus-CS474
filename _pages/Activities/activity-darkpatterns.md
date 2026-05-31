@@ -22,7 +22,7 @@ info:
   models:
     - model: |
         <a title="Jimmy answering questions.jpg: Wikimania2009  Beatrice Murch
-        derivative work: Sylenius, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Face_detection.jpg"><img width="512" alt="Face detection" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Face_detection.jpg"></a>
+        derivative work: Sylenius, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Face_detection.jpg"><img width="512" alt="Face detection" src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Face_detection.jpg"></a>
       title: Facial Recognition Software
       questions:
         - "What are some examples in which we use facial recognition software today?"
@@ -32,9 +32,9 @@ info:
     - model: |
         <img src="https://static.scientificamerican.com/sciam/cache/file/01E7FF34-0BE9-4D4E-8A9AD915B3A8E146_source.png?w=590&h=800&EBA6CE72-3658-49DF-89E1B976C04931A4" alt="A Snopes.com screenshot on a Scientific American article discussing a fake news post claiming that the Pope endorsed a US presidential candidate.">
         <br>
-        <a title="Lord Belbury, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Clickjacking.png"><img width="512" alt="Clickjacking" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Clickjacking.png"></a>
+        <a title="Lord Belbury, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Clickjacking.png"><img width="512" alt="Clickjacking" src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Clickjacking.png"></a>
         <br>
-        <a title="Andrew Levine, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:PhishingTrustedBank.png"><img width="512" alt="PhishingTrustedBank" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/PhishingTrustedBank.png"></a>
+        <a title="Andrew Levine, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:PhishingTrustedBank.png"><img width="512" alt="PhishingTrustedBank" src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/PhishingTrustedBank.png"></a>
         <br>
         <img src="https://www.ricksdailytips.com/wp-content/uploads/2019/08/fraudulent-unsubscribe-email.jpg" alt="A fake unsubscribe email link as shown on Ricks Daily Tips">
       title: Manipulating Human Behavior

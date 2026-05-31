@@ -16,9 +16,9 @@ info:
       title: "Eyal, N. - Hooked, Chapters 1-2"    
   models:
     - model: |
-        <a title="Martin, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Captcha.jpg"><img width="256" alt="Captcha" src="https://upload.wikimedia.org/wikipedia/commons/6/69/Captcha.jpg"></a>
+        <a title="Martin, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Captcha.jpg"><img width="256" alt="Captcha" src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Captcha.jpg"></a>
         <br>
-        <a title="BMaurer at English Wikipedia, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Modern-captcha.jpg"><img width="256" alt="Modern-captcha" src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Modern-captcha.jpg"></a>
+        <a title="BMaurer at English Wikipedia, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Modern-captcha.jpg"><img width="256" alt="Modern-captcha" src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Modern-captcha.jpg"></a>
       title: "Psychology of HCI - Triggers"
       questions:
         - "Why do so many people use Google for searching, when more privacy-friendly solutions may exist?"
