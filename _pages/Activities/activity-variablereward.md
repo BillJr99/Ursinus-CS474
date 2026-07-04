@@ -29,3 +29,12 @@ tags:
   - variablereward
   
 ---
+
+## Explore Further
+
+These curated resources trace variable reward from the psychology lab to your phone:
+
+- [Simply Psychology - Skinner's Operant Conditioning](https://www.simplypsychology.org/operant-conditioning.html) — a clear written primer on reinforcement schedules; pay particular attention to why *variable-ratio* schedules produce the highest, most extinction-resistant response rates.  That schedule is the pull-to-refresh gesture.
+- [Nir Eyal - Variable Rewards: Want To Hook Users? Drive Them Crazy](https://www.nirandfar.com/want-to-hook-your-users-drive-them-crazy/) — from the author of *Hooked* (our course text): the three types of variable reward (tribe, hunt, self) with product examples of each.
+- [Schull, N. D. - Addiction by Design](https://press.princeton.edu/books/paperback/9780691160887/addiction-by-design) — an anthropologist's landmark study of machine gambling in Las Vegas; the introduction (readable via the publisher preview) shows the deliberate engineering of "the zone," the state many social apps now optimize for.
+- [Tristan Harris - How Technology is Hijacking Your Mind](https://medium.com/thrive-global/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3) — a former Google design ethicist's essay framing your phone as a slot machine in your pocket; read the "intermittent variable rewards" section alongside the Skinner primer above.

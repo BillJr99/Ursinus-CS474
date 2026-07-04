@@ -44,3 +44,12 @@ tags:
   - humanfactors
   
 ---
+
+## Explore Further
+
+These curated resources dig into the cognitive and perceptual foundations of human factors:
+
+- [Miller, G. A. (1956) - The Magical Number Seven, Plus or Minus Two](https://psychclassics.yorku.ca/Miller/) — the full text of one of the most cited papers in psychology, on the limits of human working memory.  You don't need the math; read the introduction and conclusion and consider what "channel capacity" means for interface complexity.
+- [Laws of UX - Hick's Law](https://lawsofux.com/hicks-law/) — a one-page visual summary showing that decision time grows with the number and complexity of choices; the design consequence is ruthless prioritization of options.
+- [Nielsen Norman Group - Minimize Cognitive Load to Maximize Usability](https://www.nngroup.com/articles/minimize-cognitive-load/) — a practical checklist of what spends your users' limited mental budget (visual clutter, recall demands, unclear actions) and how to spend it wisely.
+- [NASA Task Load Index (NASA-TLX)](https://humansystems.arc.nasa.gov/groups/TLX/) — the standard instrument human factors engineers use to *measure* subjective workload across mental, physical, and temporal demands.  Skim the six scales; you can use this instrument in your own final project evaluation.

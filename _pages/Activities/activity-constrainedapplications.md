@@ -29,3 +29,12 @@ tags:
   - psychology
   
 ---
+
+## Explore Further
+
+These curated resources show constraints used deliberately in demanding, real-world environments:
+
+- [Nielsen Norman Group - Preventing User Errors: Avoiding Unconscious Slips](https://www.nngroup.com/articles/slips/) — how constraints and forcing functions prevent skilled users' slips (Norman's Ch. 5 territory); note the examples of interlocks and confirmations that make dangerous actions physically harder.
+- [Apple Human Interface Guidelines - CarPlay](https://developer.apple.com/design/human-interface-guidelines/carplay) — a design environment where the constraint is safety-critical: every element must survive the "two-second glance."  Notice how much functionality is deliberately *removed* relative to the phone app.
+- [Android for TV - Design Guidelines](https://developer.android.com/design/ui/tv) — the "10-foot UI" problem: a low-precision D-pad remote, a distant screen, and a relaxed user.  Compare the focus-based navigation model to a touchscreen's, and count the constraints doing signifier work.
+- [Interaction Design Foundation - Constraints in Design](https://www.interaction-design.org/literature/topics/constraints) — a written overview of Norman's physical, cultural, semantic, and logical constraint categories with everyday examples to classify.

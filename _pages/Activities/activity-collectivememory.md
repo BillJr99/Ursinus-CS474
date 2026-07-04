@@ -32,3 +32,12 @@ tags:
   - psychology
   
 ---
+
+## Explore Further
+
+These curated resources connect human memory research to concrete design guidance:
+
+- [Nielsen Norman Group - Recognition vs. Recall in UX](https://www.nngroup.com/articles/recognition-and-recall/) — the core design consequence of memory research: showing options (recognition) beats making users remember them (recall).  Count how many recall demands your favorite app makes of you.
+- [Sparrow, Liu, & Wegner - Google Effects on Memory (Science, 2011)](https://www.science.org/doi/10.1126/science.1207745) — the famous "Google effect" study: when people expect information to remain available, they remember *where* to find it rather than the information itself — transactive memory extended to machines.
+- [Laws of UX - Miller's Law](https://lawsofux.com/millers-law/) — a one-page visual summary of the "7 +/- 2" working-memory result and its practical (and frequently overstated) implications for chunking information in interfaces.
+- [Interaction Design Foundation - Mental Models](https://www.interaction-design.org/literature/topics/mental-models) — how shared, culturally-accumulated expectations (a form of collective memory) determine what users find intuitive, and what happens when a design violates them.

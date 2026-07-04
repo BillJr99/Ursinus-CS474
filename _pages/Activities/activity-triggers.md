@@ -40,3 +40,12 @@ tags:
   - psychology
   
 ---
+
+## Explore Further
+
+These curated resources examine how products prompt behavior — and how to prompt responsibly:
+
+- [Nir Eyal - The Hooked Model](https://www.nirandfar.com/hooked/) — the author's own summary of the trigger-action-variable reward-investment loop from our course text, with links to deeper essays on internal vs. external triggers.
+- [Stanford Behavior Design Lab](https://behaviordesign.stanford.edu/) — BJ Fogg's lab, where the "prompt" (trigger) was formalized: no behavior happens without one, and a prompt only works when motivation and ability are already sufficient.  Useful theory for diagnosing why some notifications work and others get swiped away.
+- [Center for Humane Technology](https://www.humanetech.com/) — documents the harms of attention-capturing triggers and proposes humane alternatives; browse their design guide to see what "respectful triggering" could look like in your own projects.
+- [Laws of UX - Peak-End Rule](https://lawsofux.com/peak-end-rule/) — people judge experiences by their peak and their end, not their average; one page that explains why well-timed triggers (and well-designed endings) shape how users remember your product.

@@ -31,3 +31,12 @@ tags:
   - design
   
 ---
+
+## Explore Further
+
+These curated resources catalog design principles you can apply immediately:
+
+- [Laws of UX](https://lawsofux.com/) — Jon Yablonski's beautifully illustrated collection of the psychological principles behind interface design (Fitts, Hick, Jakob, Miller, aesthetic-usability, and more), each on a single page with sources.  An excellent quick reference while designing your final project.
+- [Vox - It's not you. Bad doors are everywhere.](https://www.youtube.com/watch?v=yY96hTb8WgI) (video, ~5 min) — the definitive "Norman door" explainer, featuring Don Norman himself.  Written summary: a door that needs a label ("PUSH") is a design failure; affordances and signifiers should communicate operation without instruction — a standard that applies equally to buttons and links.
+- [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) — a production design system in daily use; browse the "Foundations" section and notice how abstract principles (hierarchy, consistency, feedback) become concrete, testable rules.
+- [Material Design 3](https://m3.material.io/) — Google's counterpart; compare its guidance to Apple's on the *same* component (say, buttons or dialogs) to see how shared principles yield different, internally consistent systems.

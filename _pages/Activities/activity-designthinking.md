@@ -52,3 +52,12 @@ Speaking their language
 Surveying stakeholders
 Prototyping
 -->
+
+## Explore Further
+
+These curated resources present the major design thinking frameworks and their critiques:
+
+- [Nielsen Norman Group - Design Thinking 101](https://www.nngroup.com/articles/design-thinking/) — a concise written overview of the empathize/define/ideate/prototype/test cycle, with a helpful diagram distinguishing "understand, explore, materialize" phases.
+- [IDEO Design Thinking](https://designthinking.ideo.com/) — from the firm that popularized the practice; the blog and history pages show how design thinking is applied to wicked problems well beyond software.
+- [Design Council (UK) - The Double Diamond](https://www.designcouncil.org.uk/our-resources/the-double-diamond/) — an alternative framing that emphasizes the alternation of *divergent* thinking (exploring many options) and *convergent* thinking (committing to one) — useful vocabulary for your final project design plan.
+- [Stanford d.school - Resources](https://dschool.stanford.edu/resources) — free facilitation guides and exercises (interviewing for empathy, "how might we" question crafting) you can use directly in your stakeholder feedback sessions.

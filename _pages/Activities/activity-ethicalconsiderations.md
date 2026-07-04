@@ -48,3 +48,12 @@ tags:
   - ethics
   
 ---
+
+## Explore Further
+
+These curated resources support deeper ethical analysis of interactive systems:
+
+- [ACM Code of Ethics and Professional Conduct](https://www.acm.org/code-of-ethics) — the professional code you are implicitly agreeing to as a computing professional.  Note how many principles (avoid harm, be honest, respect privacy) map directly onto interface design decisions.
+- [MIT Moral Machine](https://www.moralmachine.net/) — an interactive experiment where you judge moral dilemmas faced by autonomous vehicles.  Try a session and notice how quickly "obvious" ethical intuitions conflict — then consider who gets to encode the tie-breaker in software.
+- [Markkula Center - Ethics in Technology Practice](https://www.scu.edu/ethics-in-technology-practice/) — a free toolkit of ethical frameworks and case-analysis worksheets designed for working technologists; the "Framework for Ethical Decision Making" is a useful scaffold for the Ethical Case Studies assignment.
+- [Center for Humane Technology](https://www.humanetech.com/) — founded by former tech insiders (including Tristan Harris, from our readings); pairs documented harms of persuasive technology with concrete design alternatives.
