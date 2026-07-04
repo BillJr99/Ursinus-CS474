@@ -56,3 +56,7 @@ Before you begin, create a design plan in LaTeX that documents the requirements,
 
 See [this video](../Modules/Github/Module) for more information on using Git as a version control system to synchronize your project with your partners.  You might consider creating a project website using Github Pages; this is free, and I strongly encourage you to do so!  You could link to this from your LinkedIn profile or resume.
 
+## Implementation Resources
+
+If your project has a web front end (or a project website), the [Front End Development with Bootstrap]({{ site.baseurl }}/Activities/FrontEnd) activity is a practical implementation guide: it walks through semantic HTML, responsive layout, Bootstrap's grid and components, and — most importantly for your design report — how to apply the course's design principles and accessibility checklist to the interface you build.  The accessibility checklist at the end of that activity makes a good appendix to your design plan, and running the [WAVE tool](https://wave.webaim.org/) on your pages is an easy, documentable form of design testing.
+

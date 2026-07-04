@@ -51,3 +51,12 @@ tags:
 ## Did You Know?
 
 I used this tool on these course webpages, and found multiple areas of improvement that I've since developed.  This has been a very useful tool for me, and this is why I wanted to take time to share it with you as well.  Plan to use it everywhere you create web materials.  These principles apply to many visual media, like presentations, as well!
+## Explore Further
+
+These curated resources form a practical accessibility toolkit you can use on every project:
+
+- [W3C WAI - Introduction to Web Accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/) — the authoritative starting point from the standards body itself, including short videos (each with transcripts) showing how people with disabilities actually use the web.
+- [WebAIM - WCAG 2 Overview and Checklist](https://webaim.org/standards/wcag/) — a plain-language translation of the WCAG standard's perceivable/operable/understandable/robust principles into concrete, checkable requirements.
+- [WebAIM - Contrast Checker](https://webaim.org/resources/contrastchecker/) — paste any foreground/background color pair and get an instant WCAG pass/fail; bookmark this and use it on your final project (AA requires 4.5:1 for normal text).
+- [The A11Y Project - Checklist](https://www.a11yproject.com/checklist/) — a community-maintained, WCAG-based checklist ordered the way developers actually work (semantic HTML first, then media, then interaction); a good pre-submission audit companion to the WAVE tool from this activity.
+- [Microsoft - Inclusive Design Toolkit](https://inclusive.microsoft.design/) — reframes disability as a mismatch between a person and a design, and introduces the "permanent, temporary, situational" spectrum (one arm, arm injury, holding a baby) that expands who benefits from accessible design.

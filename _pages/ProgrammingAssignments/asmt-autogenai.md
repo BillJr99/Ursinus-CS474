@@ -17,16 +17,16 @@ info:
   rubric:
     - weight: 15
       description: Implementation and Functionality of Code Solution
-      preemerging: The code solution is non-functional or demonstrates significant errors.
-      beginning: The code solution is functional but lacks complexity and shows minimal customization.
-      progressing: The code solution is well-implemented with good functionality and some level of customization.
-      proficient: The code solution is excellently implemented, showing high functionality, customization, and innovation.
+      preemerging: The code solution does not run, or the agent workflow cannot complete a single end-to-end session.
+      beginning: A session runs end-to-end, but only with stock agents and skills; no custom skill, persona, or workflow beyond the tutorial examples is demonstrated.
+      progressing: A session runs end-to-end using at least one custom skill or custom agent persona that the solution actually invokes; minor failure cases (bad input, an unanswerable query) are unhandled.
+      proficient: A session runs end-to-end using multiple custom skills and/or agents composed toward the chosen application; the demo transcript shows the custom components being invoked, and foreseeable failure cases are handled or documented.
     - weight: 20 
       description: Human-Centric Design
       preemerging: A trivial application of the modality is provided without regard to proper signifiers or affordances to facilitate human interaction
       beginning: Some consideration is given to the manner by which the modality is incorporated into the program, but it is not clear at all times to the user what to do and how to interact
       progressing: The user is able to interact with the program using the modality in most cases, with a few minor ambiguities that could be identified through additional testing
-      proficient: The user experience is enhanced by the use of the modality
+      proficient: A first-time user can accomplish a real task through the agent without verbal coaching; prompts make clear what the system can and cannot do, and a documented outside-tester session shows the conversation staying on track (with timing noted, per Part 2)
     - weight: 20
       description: Design Report      
       preemerging: No design report is included
@@ -47,10 +47,10 @@ info:
       proficient: In-depth reflection on ethical considerations, demonstrating a comprehensive and responsible approach to automated systems.
     - weight: 20
       description: Creation and Customization of Agents and Skills
-      preemerging: Shows minimal understanding and ability in creating or customizing agents and skills.
-      beginning: Can create basic agents and skills but lacks customization depth.
-      progressing: Good competency in creating and customizing agents and skills with some complexity.
-      proficient: Excels in creating highly customized and complex agents and skills, demonstrating innovative thinking.
+      preemerging: No working custom agent or skill is submitted.
+      beginning: A custom skill or agent is created following the tutorial steps, with only cosmetic changes (name, message text) from the examples.
+      progressing: At least one custom skill implements new functionality (an API call, a computation, a data source) and at least one agent persona is tailored to the application via its system message.
+      proficient: Multiple custom skills and tailored agents work together (for example, in a group chat or RAG workflow) to serve the chosen application, and the writeup explains why each agent and skill exists.
 
   readings:
     - rtitle: "AutoGen Studio - Interactively Explore Multi-Agent Workflows"
@@ -74,6 +74,14 @@ tags:
   - psychology
   
 ---
+## Purpose, Task, and Criteria
+
+**Purpose.**  This assignment develops your ability to build *conversational agent systems* - the fastest-growing interaction modality in modern software - and to evaluate them as HCI artifacts, not just as code.  You will practice composing agents, skills, and knowledge bases; applying engagement psychology to a conversational interface; and reflecting on the ethics of automating a human role.
+
+**Task.**  Work through the AutoGen tutorial in Part 1 (Studio, programmatic agents, custom skills, RAG, and multi-agent group chat), then design and build your own personalized agent solution in Part 2, testing it with classmates and documenting the work in a LaTeX design report plus a re-creation tutorial and ethics reflection.
+
+**Criteria.**  Your work is assessed with the rubric above.  Concretely, a strong submission demonstrates custom skills and agent personas that your application actually invokes during a session, a first-time user accomplishing a real task through your agent, and a report that ties design decisions to stakeholder feedback and to the Hooked psychological framework.  The milestones at the end of this page describe what should be working at each checkpoint.
+
 
 In recent years, AI has transformed from an estimator/predictor to a creator with the advent of generative AI.  With the progression of agent systems, AI has become a "doer" capable of engaging multiple personas (or "agents") in conversatios oriented around problem solving.  In this assignment, we will explore the creation of custom AI agents, and develop our own personalized AI solution. 
 
@@ -466,3 +474,19 @@ I strongly recommend running your program with your classmates to obtain feedbac
 In addition to your implementation, be sure to include a LaTeX design report in academic journal format (you can use [Overleaf](https://www.overleaf.com/) for this purpose) that describes your initial design, rationale, stakeholder evaluation, and any subsequent revisions you made from your stakeholder input.  Ask another student to execute queries against your chatbot., and record which queries they execute and your responses, and discuss ways in which you could add additional personalization capabilities to your solution.
 
 Write up a tutorial to re-create your solution.  In addition, reflect upon the ethical considerations of using your solution.  For example, what could go wrong by replacing a faculty advisor with a virtual one; does this mean one should not use a virtual advising solution at all?
+
+## Getting Started
+
+Part 1 of this page is itself the scaffold - work through it in order rather than jumping straight to your own solution:
+
+1. **Get one Studio session working (Part 1.1).**  Install AutoGen Studio, configure the class API key, and run the stock visualization workflow.  This confirms your environment and key before you write any code.  Remember to shut the tool down when not in use - the class shares one API key.
+2. **Add the sample custom skill (Part 1.1.2)** and watch an agent invoke it.  Understanding the skill-invocation flow in the UI makes the programmatic version much easier to follow.
+3. **Reproduce the programmatic agent (Parts 1.2-1.3).**  Get the minimal AssistantAgent/UserProxyAgent pair running, then register one custom function and confirm the agent actually calls it (add a print inside your function to be sure).
+4. **Pick the Part 1 features your application needs.**  RAG (Part 1.4) if your solution needs a knowledge base; group chat (Part 1.5) if it benefits from multiple personas; LangChain tools (Part 1.6) if it needs outside APIs.  You do not need all of them - you need the right ones, and your report should say why.
+5. **Prototype your Part 2 solution with one user path.**  Get a single realistic conversation working end-to-end before broadening; save transcripts as you go - they are evidence for your report.
+
+## Milestones
+
+- **Checkpoint 1 (end of the first week): the tutorial works.**  AutoGen Studio runs a stock workflow session on your machine, and your programmatic agent with one custom skill runs and demonstrably invokes that skill.
+- **Checkpoint 2 (roughly halfway): your solution exists in prototype.**  Your Part 2 application completes one full, realistic user conversation using at least one custom skill or persona of your own design, with the relevant Part 1 features (RAG, group chat, or tools) wired in.
+- **Checkpoint 3 (several days before the deadline): tested and documented.**  Classmates have used your system while you recorded their queries, timing, and stumbles; you have made at least one revision in response; and the design report, re-creation tutorial, and ethics reflection are drafted.

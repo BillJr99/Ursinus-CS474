@@ -57,3 +57,12 @@ tags:
   - psychology
   
 ---
+
+## Explore Further
+
+These curated resources go deeper into recognizing, cataloging, and regulating dark patterns:
+
+- [Deceptive Design (formerly darkpatterns.org)](https://www.deceptive.design/) — Harry Brignull's original pattern library, with a taxonomy of deceptive patterns and a "hall of shame" of real examples.  Browse a few patterns and notice how each one exploits a specific cognitive habit (skimming, default acceptance, loss aversion).
+- [Mathur et al. - Dark Patterns at Scale: Findings from a Crawl of 11K Shopping Websites (CSCW 2019)](https://arxiv.org/abs/1907.07032) — researchers automated the detection of dark patterns across the web and found them on more than 11% of shopping sites.  Skim the taxonomy in Section 5; it is more rigorous than most popular articles.
+- [FTC Report - Bringing Dark Patterns to Light (2022)](https://www.ftc.gov/reports/bringing-dark-patterns-light) — the U.S. Federal Trade Commission's staff report on deceptive design, showing that dark patterns are now a legal and regulatory issue, not just a UX ethics debate.
+- [Nielsen Norman Group - Deceptive Patterns](https://www.nngroup.com/articles/deceptive-patterns/) — a practitioner-oriented overview connecting deceptive patterns to the usability heuristics they violate, with guidance on how honest designs handle the same flows.

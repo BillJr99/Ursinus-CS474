@@ -26,3 +26,17 @@ tags:
   - bias
   
 ---
+
+## Try It: Measuring Bias with Fairness Metrics
+
+Bias in a system is not just a feeling — it can be measured.  This notebook builds a small simulated resume-screening dataset in which a historical process disadvantaged one group, then computes the standard fairness metrics used in real audits: selection rates, demographic parity, the four-fifths (80%) rule, and equal opportunity.  Along the way you'll see why a model that "never sees" a group attribute can still discriminate through proxies.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BillJr99/Ursinus-CS474/blob/gh-pages/files/notebooks/bias_fairness_metrics.ipynb)
+
+Click the badge to run the notebook in your browser with Google Colab (no installation required), or [download the notebook]({{ site.baseurl }}/files/notebooks/bias_fairness_metrics.ipynb) to run it locally with Jupyter.
+
+## Explore Further
+
+- [ProPublica - Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) — the landmark investigation of the COMPAS recidivism-risk tool; a concrete case where the fairness definitions in the notebook (calibration vs. equal error rates) mathematically conflict.
+- [Gender Shades (Buolamwini & Gebru, 2018)](http://gendershades.org/) — an audit showing commercial face-analysis systems performed far worse on darker-skinned women; the interactive site summarizes the paper visually and in text.
+- [Google - People + AI Guidebook](https://pair.withgoogle.com/guidebook/) — practical design patterns for building AI-backed interfaces that make model limitations and confidence visible to users, one mitigation for the "rubber-stamping" problem explored in the notebook.

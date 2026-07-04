@@ -41,3 +41,17 @@ tags:
   - eyetracking
   
 ---
+
+## Try It: Analyzing Eye Tracking (Gaze) Data
+
+Eye trackers produce a stream of `(x, y)` gaze positions; the interesting part is turning that stream into *fixations*, *scanpaths*, and *heatmaps* that tell us where a user's attention went.  This notebook walks through a classic fixation-detection algorithm (I-DT) and both standard visualizations on synthetic gaze data, so you can experiment even without eye tracking hardware — and it previews the threshold-calibration questions from the models above.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BillJr99/Ursinus-CS474/blob/gh-pages/files/notebooks/eyetracking_gaze_analysis.ipynb)
+
+Click the badge to run the notebook in your browser with Google Colab (no installation required), or [download the notebook]({{ site.baseurl }}/files/notebooks/eyetracking_gaze_analysis.ipynb) to run it locally with Jupyter.
+
+## Explore Further
+
+- [WebGazer.js](https://webgazer.cs.brown.edu/) — a Brown University library that does real-time eye tracking with only an ordinary webcam, right in the browser.  Try the live demo and notice how much calibration quality affects accuracy — the same threshold/calibration trade-off you'll face in the programming assignment.
+- [Salvucci & Goldberg - Identifying Fixations and Saccades in Eye-Tracking Protocols (ETRA 2000)](https://dl.acm.org/doi/10.1145/355017.355028) — the short, readable paper that defines the I-DT algorithm used in the notebook and compares it to velocity-based alternatives.
+- [Nielsen Norman Group - F-Shaped Pattern of Reading on the Web](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/) — a famous eyetracking finding (with heatmaps like the one you'll build) showing users read web pages in an "F" pattern, and what that implies for where important content should go.

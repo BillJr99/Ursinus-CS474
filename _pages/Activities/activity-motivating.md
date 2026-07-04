@@ -28,3 +28,12 @@ tags:
   - action
   
 ---
+
+## Explore Further
+
+These curated resources cover the major models of motivation used in product design:
+
+- [BJ Fogg - Behavior Design Lab at Stanford](https://behaviordesign.stanford.edu/) — the research lab behind the B=MAP model (behavior happens when Motivation, Ability, and a Prompt converge); browse the resources page for the model's academic grounding beyond the one-page site in our readings.
+- [Self-Determination Theory](https://selfdeterminationtheory.org/theory/) — the leading academic theory of *intrinsic* motivation: autonomy, competence, and relatedness.  Contrast this with points-and-badges gamification, which relies on extrinsic reward — and often backfires for exactly the reasons SDT predicts.
+- [Deterding et al. - From Game Design Elements to Gamefulness (MindTrek 2011)](https://dl.acm.org/doi/10.1145/2181037.2181040) — the paper that gave "gamification" its accepted academic definition; useful for distinguishing meaningful game mechanics from superficial "pointsification."
+- [Yu-kai Chou - The Octalysis Framework](https://yukaichou.com/gamification-examples/octalysis-complete-gamification-framework/) — a practitioner framework decomposing motivation into eight "core drives," including explicitly *black hat* drives (scarcity, loss avoidance) — a useful bridge between this activity and our dark patterns discussion.

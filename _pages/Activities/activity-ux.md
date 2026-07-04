@@ -29,3 +29,12 @@ tags:
   - ux
   
 ---
+
+## Explore Further
+
+These curated resources define UX and the trade-offs within it:
+
+- [Nielsen Norman Group - The Definition of User Experience (UX)](https://www.nngroup.com/articles/definition-user-experience/) — Don Norman and Jakob Nielsen's own definition, distinguishing UX from usability and from UI; Norman coined the term, so this is the primary source.
+- [Nielsen Norman Group - Usability 101: Introduction to Usability](https://www.nngroup.com/articles/usability-101-introduction-to-usability/) — defines the five quality components (learnability, efficiency, memorability, errors, satisfaction) that give you a vocabulary for critiquing designs more precisely than "good" or "bad."
+- [Peter Morville - User Experience Design (the UX Honeycomb)](https://semanticstudios.com/user_experience_design/) — the classic honeycomb model arguing valuable experiences must be useful, usable, desirable, findable, accessible, and credible — a checklist worth applying to your storyboards.
+- [Figma](https://www.figma.com/) — the industry-standard collaborative design and prototyping tool, free for education; consider using it to storyboard and prototype your final project before writing any code.
