@@ -17,7 +17,7 @@ info:
       preemerging: A trivial application of the modality is provided without regard to proper signifiers or affordances to facilitate human interaction
       beginning: Some consideration is given to the manner by which a voice modality is incorporated into the program, but it is not clear at all times to the user what to do and how to interact
       progressing: The user is able to interact with the program using the voice modality in most cases, with a few minor ambiguities that could be identified through additional testing
-      proficient: The user experience is enhanced by the use of a voice modality
+      proficient: A first-time user can complete the primary task end-to-end using speech alone; every prompt makes clear when to speak and what kinds of responses are expected, recognition errors are detected and re-prompted rather than crashing or silently misfiring, and at least one outside tester's session is documented in the writeup
     - weight: 20
       description: Design Report      
       preemerging: No design report is included
@@ -53,6 +53,14 @@ tags:
   - voiceprompt
   
 ---
+## Purpose, Task, and Criteria
+
+**Purpose.**  This assignment builds three skills you will reuse all semester: designing for a modality with *no visual signifiers* (every affordance must be communicated in sound and timing), handling the inevitable errors of a probabilistic input channel gracefully, and running and documenting stakeholder tests of your own design.  These are the same skills your final project's design report will be graded on.
+
+**Task.**  Choose one of the two problems below and implement it as a voice-only application in Python, using the speech recognition and text-to-speech example from the class activity as your starting point.  Accompany the program with a LaTeX design report documenting your design rationale and stakeholder testing.
+
+**Criteria.**  Your work is assessed with the rubric above.  Concretely, a strong submission is one where a classmate who has never seen your program can complete the task by voice alone, and your report shows how testing changed your design.  The milestones at the end of this page describe what should be working at each checkpoint along the way.
+
 
 In this assignment [[^1]], you will incorporate the [Speech Recognition for Voice Prompts](../../Activities/VoicePrompt) program we explored in class into a user application.  **Be sure to use the first version of this program, which does not run a thread in the background, so that you can continue interacting with the user after processing one iteration of speech**.  Specifically, you will write a program to solve one of two problems:
 
@@ -132,3 +140,21 @@ The code example to get started is reproduced below; however, it features severa
 ```
 
 [^1]: Adapted from Dr. Alvin Grissom's 2020 HCI course
+
+## Getting Started
+
+Don't start by writing your application - start by making the pipeline work, then grow it:
+
+1. **Run the class example unmodified.**  Get the microphone, recognizer, and text-to-speech working on your machine first (the install commands are in the comments at the top of the example).  Debugging your environment and your design at the same time is miserable; separate them.
+2. **Sketch the conversation.**  Draw the flowchart of your whole interaction *before* coding it: every prompt the system speaks, every response class you expect, and what happens on a misrecognition at each step.  This flowchart becomes a figure in your design report.
+3. **Wrap the messy parts in one function.**  Write a helper like `ask(prompt_text) -> str` that speaks the prompt, listens, handles the three exception types, and re-prompts on failure.  Add a `confirm(value) -> bool` helper next.  Your application logic should never call the recognizer directly.
+4. **Build the logic with a keyboard stub.**  Temporarily implement `ask` with `input()` so you can build and test your scheduling or maze logic quickly; swap the voice implementation back in once the logic works.  (The finished program must be voice-only - the stub is scaffolding, not the product.)
+5. **Test with a human early.**  Even a two-minute hallway test after Checkpoint 2 will reveal prompts that made sense only to you.
+
+## Milestones
+
+Pace yourself against these checkpoints; each is an observable state of your program, not a promise:
+
+- **Checkpoint 1 (end of the first few days): the pipeline works.**  The unmodified class example runs on your machine: it hears you, prints what you said, and speaks it back.  You have chosen your problem and drafted your conversation flowchart.
+- **Checkpoint 2 (roughly halfway): the application works, the voice layer works - separately.**  Your core logic (finding a common meeting time, or navigating the room graph) runs correctly with the keyboard stub, and your `ask`/`confirm` helpers work reliably in isolation, including re-prompting after a deliberate mumble.
+- **Checkpoint 3 (several days before the deadline): end-to-end by voice.**  The full task can be completed without keyboard, mouse, or screen.  You have run at least one classmate through it, recorded what confused them, made at least one revision, and drafted the design report.  The remaining days are for polish, not construction.

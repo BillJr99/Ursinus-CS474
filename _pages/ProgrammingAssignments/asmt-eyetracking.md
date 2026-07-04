@@ -17,7 +17,7 @@ info:
       preemerging: A trivial application of the modality is provided without regard to proper signifiers or affordances to facilitate human interaction
       beginning: Some consideration is given to the manner by which eye tracking is incorporated into the program, but it is not clear at all times to the user what to do and how to interact
       progressing: The user is able to interact with the program using eye tracking in most cases, with a few minor ambiguities that could be identified through additional testing
-      proficient: The user experience is enhanced by the use of eye tracking
+      proficient: A first-time user can complete the primary task using gaze alone; on-screen cues make clear where to look and when a selection is registering (for example, a dwell indicator), gaze misdetections are tolerated without derailing the session, and at least one outside tester's session is documented in the writeup
     - weight: 20
       description: Design Report      
       preemerging: No design report is included
@@ -56,6 +56,14 @@ tags:
   - eyetracking
   
 ---
+## Purpose, Task, and Criteria
+
+**Purpose.**  This assignment gives you hands-on experience with a noisy, calibration-sensitive input modality.  You will practice designing feedback loops (how does the user know the system sees their gaze?), choosing and tuning thresholds, and - as with every assignment in this course - testing your design on real people and documenting what you learn.  Gaze interfaces are also a genuine assistive technology, so this is accessibility engineering, not just a demo.
+
+**Task.**  Choose one of the two problems below and implement it in Python using the OpenCV/dlib eye tracking example from the class activity, operated by eye movement alone (no keyboard or mouse), with a LaTeX design report documenting your design and stakeholder testing.
+
+**Criteria.**  Your work is assessed with the rubric above.  Concretely, a strong submission lets a first-time user make selections with their eyes, shows them clearly when a selection is registering, tolerates misdetections without derailing, and documents a tester's session.  The milestones at the end of this page describe what should be working at each checkpoint.
+
 
 In this assignment, you will incorporate [the Eye Tracking](../Activities/EyeTracking) program we explored in class into a user application.  Specifically, you will write a program to solve one of two problems:
 
@@ -272,3 +280,19 @@ def draw_word(texts, colors, positions, img=None):
 ```
 
 If you are timing eye movements to a certain location, you can use `time.time()` after importing the `time` package to take the time before displaying the window to the time your processing loop detects the presence of the eyes in that quadrant, or you can time this manually.
+
+## Getting Started
+
+Eye tracking has more moving parts than the voice assignment, so stage your work deliberately:
+
+1. **Run the class example unmodified.**  Confirm the webcam opens, the 68-point face landmarks are found, and the eye contours render.  You will need the `shape_68.dat` model file and a working `dlib` install (see the activity page for build prerequisites) - solve this before writing any code of your own.
+2. **Log before you interpret.**  Print `get_eye_center(...)` values (or the brightness readings from `analyze_gaze_direction`) to the console while you deliberately look left, right, up, and down.  Watch the numbers: how noisy are they?  How big is a *real* gaze shift compared to jitter?  This tells you your thresholds.
+3. **Classify screen regions, not pixels.**  Divide the screen into a small number of regions (2x2 is plenty to start).  Write a function that maps your gaze measurements to a region, and display the currently-detected region on screen so you can see what the system thinks in real time - this display is also the beginning of your user feedback design.
+4. **Add dwell-time selection.**  A selection should require the gaze to stay in a region for a sustained period (say 1-2 seconds), with a visible progress cue, or you will trigger on every stray glance (the "Midas touch" problem).
+5. **Only then build the application** (dictation or the color-match game) on top of your working region-selection layer.
+
+## Milestones
+
+- **Checkpoint 1 (end of the first few days): detection works.**  The unmodified example runs; you can see eye contours and log gaze measurements while looking around.  You have chosen your problem and sketched the screen layout and interaction flowchart.
+- **Checkpoint 2 (roughly halfway): region selection works.**  The system reliably distinguishes gaze among your screen regions with your tuned thresholds, shows the user which region it currently detects, and dwell-based selection triggers on purpose - and only on purpose - in your own testing.
+- **Checkpoint 3 (several days before the deadline): the application works end-to-end.**  A full round of your game or a full dictated sentence can be completed by eyes alone.  You have run at least one classmate through it (expect their calibration to differ from yours!), documented what you observed, made at least one revision, and drafted the design report.

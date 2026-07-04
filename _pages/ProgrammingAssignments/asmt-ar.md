@@ -16,7 +16,7 @@ info:
       preemerging: A trivial application of the modality is provided without regard to proper signifiers or affordances to facilitate human interaction
       beginning: Some consideration is given to the manner by which augmented reality is incorporated into the program, but it is not clear at all times to the user what to do and how to interact
       progressing: The user is able to interact with the program using augmented reality in most cases, with a few minor ambiguities that could be identified through additional testing
-      proficient: The user experience is enhanced by the use of augmented reality
+      proficient: A first-time user can obtain the intended information from the overlay without verbal coaching; the overlay tracks its marker (or anchor region) stably during moderate camera movement, remains legible without obscuring the scene, and at least one outside tester's session is documented in the writeup
     - weight: 20
       description: Design Report      
       preemerging: No design report is included
@@ -57,6 +57,14 @@ tags:
   - eyetracking
   
 ---
+## Purpose, Task, and Criteria
+
+**Purpose.**  This assignment explores the design constraint that defines augmented reality: information must be presented *in* the user's view of the world without obstructing it.  You will practice composing computer vision building blocks (marker detection, homography, image overlay), generating dynamic visual content from live data, and evaluating legibility and unobtrusiveness with real users.
+
+**Task.**  Choose one of the two problems below and implement it in Python with OpenCV: detect a marker (or use a fixed anchor region), generate a dynamic informational image, and warp it into the live webcam view.  Accompany the program with a LaTeX design report documenting your design rationale and stakeholder testing.
+
+**Criteria.**  Your work is assessed with the rubric above.  Concretely, a strong submission overlays information that a first-time user can actually read and use, keeps tracking the marker through moderate camera motion, and documents how stakeholder feedback shaped the overlay's content and placement.  The milestones at the end of this page describe what should be working at each checkpoint.
+
 
 In this assignment, you will incorporate [the augmented reality](../../Activities/AugmentedReality) program we explored in class into a user application.  Specifically, you will write a program to solve one of two problems:
 
@@ -318,3 +326,19 @@ def get_current_location():
 # Example usage:
 print(get_current_location())
 ```
+
+## Getting Started
+
+Build this in three independently-testable layers:
+
+1. **Run the marker detection example unmodified.**  Print your ArUCo cards (or display them on your phone), run the detection loop, and confirm the marker outlines render on the live video.  Camera, lighting, and library-version issues live here - flush them out first.
+2. **Generate your information image by itself.**  Before any AR, write the function that draws your dynamic content (WiFi signal readings, or scavenger-hunt clues and hot/cold cues) into a plain numpy/OpenCV image, and show it in its own window.  Iterate on its layout and legibility separately - text that is hard to read in a flat window will be impossible once warped onto a marker.
+3. **Wire up your data source.**  Test the WiFi signal-strength or GPS example code from this page on your machine in isolation (these are platform-dependent); fake the data with a stub if you need to keep moving.
+4. **Combine: warp your image onto the marker.**  Replace the example's static source image with your dynamically generated one.  Start with the marker flat on a desk before walking around campus.
+5. **Then walk.**  Test in real conditions - moving camera, changing light - and watch where tracking or legibility breaks down.  Those observations belong in your design report.
+
+## Milestones
+
+- **Checkpoint 1 (end of the first few days): detection works.**  The unmodified example detects your markers in live video on your machine.  You have chosen your problem and sketched what the overlay will show and where.
+- **Checkpoint 2 (roughly halfway): the pieces work separately.**  Your dynamic information image renders correctly in its own window from real (or realistically stubbed) data, and the overlay pipeline warps a static image onto the marker stably.
+- **Checkpoint 3 (several days before the deadline): the system works end-to-end.**  Your live data appears overlaid in the webcam view and updates as conditions change; a first-time user has tried it and could interpret the display; the design report is drafted.  Save the final days for tuning legibility and writing, not integration.
