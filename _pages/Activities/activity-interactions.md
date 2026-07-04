@@ -64,3 +64,17 @@ tags:
   - abc
   
 ---
+
+## Try It: Fitts's Law — Predicting How Fast We Can Point
+
+Affordances invite an action; Fitts's law predicts how *fast* that action can physically be performed.  This notebook simulates a classic pointing experiment, fits the law with a linear regression, and then uses the fitted model to compare real design choices (bigger buttons vs. closer buttons vs. screen-edge targets).  It's one of the few quantitative laws in HCI, and you can reproduce its core analysis in about twenty lines of Python.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BillJr99/Ursinus-CS474/blob/gh-pages/files/notebooks/fitts_law_pointing.ipynb)
+
+Click the badge to run the notebook in your browser with Google Colab (no installation required), or [download the notebook]({{ site.baseurl }}/files/notebooks/fitts_law_pointing.ipynb) to run it locally with Jupyter.
+
+## Explore Further
+
+- [Laws of UX - Fitts's Law](https://lawsofux.com/fittss-law/) — a one-page visual summary of the law and its design takeaways (make targets big, put them where the pointer already is).
+- [Fitts, P. M. (1954) - The Information Capacity of the Human Motor System](https://psycnet.apa.org/record/1955-02059-001) — the original paper: human movement framed as an information channel, an idea borrowed directly from Shannon.
+- [Interaction Design Foundation - Fitts's Law: The Importance of Size and Distance in UI Design](https://www.interaction-design.org/literature/article/fitts-s-law-the-importance-of-size-and-distance-in-ui-design) — a beginner-friendly written walkthrough with annotated interface examples.

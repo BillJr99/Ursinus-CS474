@@ -48,3 +48,16 @@ tags:
   - design
   
 ---
+
+## Try It: Did the Redesign Help?  Analyzing a UX Experiment
+
+Observation tells you *what* goes wrong; experiments tell you whether your fix *helps*.  This notebook analyzes a simulated A/B test of two checkout designs end-to-end: visualizing the distributions, running a t-test, computing an effect size (because "statistically significant" is not the same as "meaningful"), and extending to three designs with an ANOVA.  It is directly reusable for the user experience study in your final project.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BillJr99/Ursinus-CS474/blob/gh-pages/files/notebooks/ab_test_analysis.ipynb)
+
+Click the badge to run the notebook in your browser with Google Colab (no installation required), or [download the notebook]({{ site.baseurl }}/files/notebooks/ab_test_analysis.ipynb) to run it locally with Jupyter.
+
+## Explore Further
+
+- [Nielsen Norman Group - Why You Only Need to Test with 5 Users](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/) — the classic (and often misapplied) argument that small qualitative studies find most usability problems; contrast this with the sample sizes the notebook shows you need for *statistical* claims.
+- [Nielsen Norman Group - Quantitative vs. Qualitative UX Research](https://www.nngroup.com/articles/quant-vs-qual/) — a short guide to choosing between counting and observing, and why mature UX practice does both.

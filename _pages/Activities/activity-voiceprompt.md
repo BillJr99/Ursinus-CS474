@@ -148,3 +148,16 @@ tags:
 ---
 
 Adapted from Dr. Alvin Grissom's 2020 HCI course
+
+## Try It: How Machines "Hear" — Audio Features for Voice Interfaces
+
+Before a voice assistant can recognize words, it must decide whether anyone is speaking at all.  This notebook builds a tiny voice activity detector from scratch on synthetic audio (no microphone needed): you'll compute short-time energy and zero-crossing rate, pick detection thresholds, and read a spectrogram — the representation real speech recognizers start from.  It connects directly to the `pause_threshold` and timeout choices in the code above.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BillJr99/Ursinus-CS474/blob/gh-pages/files/notebooks/voice_audio_features.ipynb)
+
+Click the badge to run the notebook in your browser with Google Colab (no installation required), or [download the notebook]({{ site.baseurl }}/files/notebooks/voice_audio_features.ipynb) to run it locally with Jupyter.
+
+## Explore Further
+
+- [Amazon - Alexa Design Guide](https://developer.amazon.com/en-US/docs/alexa/alexa-design/get-started.html) — a production style guide for voice interaction design; skim the sections on prompts and error handling and notice how many rules exist just to compensate for the missing visual signifiers.
+- [Nielsen Norman Group - Voice First: Designing Conversations](https://www.nngroup.com/articles/voice-first/) — a written overview of how usability heuristics translate (and fail to translate) to voice-only interfaces.

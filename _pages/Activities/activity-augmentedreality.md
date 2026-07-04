@@ -27,3 +27,16 @@ tags:
   - ar
   
 ---
+
+## Try It: The Math Behind AR Overlays
+
+How does an AR app make a virtual card look "glued" to a real surface?  The answer is a 3x3 matrix called a homography.  This notebook computes one from four corner points using plain `numpy` — the same computation `cv2.findHomography` performs — and warps an overlay into a simulated camera frame, so you can see exactly what OpenCV will do for you in the programming assignment.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BillJr99/Ursinus-CS474/blob/gh-pages/files/notebooks/ar_overlay_math.ipynb)
+
+Click the badge to run the notebook in your browser with Google Colab (no installation required), or [download the notebook]({{ site.baseurl }}/files/notebooks/ar_overlay_math.ipynb) to run it locally with Jupyter.
+
+## Explore Further
+
+- [Apple Human Interface Guidelines - Augmented Reality](https://developer.apple.com/design/human-interface-guidelines/augmented-reality) — production design guidance for AR; note how many rules concern *not* obstructing the user's view, echoing this activity's goal of unobtrusive information.
+- [Google - ARCore Design Guidelines](https://developers.google.com/ar/design) — Google's counterpart, with concrete advice on onboarding users into AR and providing signifiers for interactions that have no physical affordance.
