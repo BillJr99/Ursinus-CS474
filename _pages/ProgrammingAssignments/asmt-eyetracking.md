@@ -65,7 +65,7 @@ tags:
 **Criteria.**  Your work is assessed with the rubric above.  Concretely, a strong submission lets a first-time user make selections with their eyes, shows them clearly when a selection is registering, tolerates misdetections without derailing, and documents a tester's session.  The milestones at the end of this page describe what should be working at each checkpoint.
 
 
-In this assignment, you will incorporate [the Eye Tracking](../Activities/EyeTracking) program we explored in class into a user application.  Specifically, you will write a program to solve one of two problems:
+In this assignment, you will incorporate [the Eye Tracking]({{ site.baseurl }}/Activities/EyeTracking) program we explored in class into a user application.  Specifically, you will write a program to solve one of two problems:
 
 * Message Dictation with Eye Tracking: display words on the screen and allow a user to select one by looking at it for some period of time.  Based on the word selected, use a dictionary structure to select a number of appropriate words that could follow that word.  When the user looks at a punctuation mark (for example, a period), the sentence is ended and read aloud via text to speech.
 * A game in which words that represent colors are displayed on-screen.  Each word is displayed in a color other than the text of the word (for example, the word RED would appear in blue), except for one word which will match.  Give the user points inversely proportional to the time it took to fixate on the word that correctly matches its color.
