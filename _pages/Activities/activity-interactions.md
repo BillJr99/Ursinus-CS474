@@ -71,7 +71,7 @@ Affordances invite an action; Fitts's law predicts how *fast* that action can ph
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BillJr99/Ursinus-CS474/blob/gh-pages/files/notebooks/fitts_law_pointing.ipynb)
 
-Click the badge to run the notebook in your browser with Google Colab (no installation required), or [download the notebook]({{ site.baseurl }}/files/notebooks/fitts_law_pointing.ipynb) to run it locally with Jupyter.
+Click the badge to run the notebook in your browser with Google Colab (no installation required), or [download the notebook](https://www.billmongan.com/Ursinus-CS474-Spring2024/files/notebooks/fitts_law_pointing.ipynb) to run it locally with Jupyter.
 
 ## Explore Further
 

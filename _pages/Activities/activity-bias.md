@@ -33,7 +33,7 @@ Bias in a system is not just a feeling — it can be measured.  This notebook bu
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BillJr99/Ursinus-CS474/blob/gh-pages/files/notebooks/bias_fairness_metrics.ipynb)
 
-Click the badge to run the notebook in your browser with Google Colab (no installation required), or [download the notebook]({{ site.baseurl }}/files/notebooks/bias_fairness_metrics.ipynb) to run it locally with Jupyter.
+Click the badge to run the notebook in your browser with Google Colab (no installation required), or [download the notebook](https://www.billmongan.com/Ursinus-CS474-Spring2024/files/notebooks/bias_fairness_metrics.ipynb) to run it locally with Jupyter.
 
 ## Explore Further
 

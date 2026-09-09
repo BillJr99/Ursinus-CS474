@@ -34,7 +34,7 @@ How does an AR app make a virtual card look "glued" to a real surface?  The answ
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BillJr99/Ursinus-CS474/blob/gh-pages/files/notebooks/ar_overlay_math.ipynb)
 
-Click the badge to run the notebook in your browser with Google Colab (no installation required), or [download the notebook]({{ site.baseurl }}/files/notebooks/ar_overlay_math.ipynb) to run it locally with Jupyter.
+Click the badge to run the notebook in your browser with Google Colab (no installation required), or [download the notebook](https://www.billmongan.com/Ursinus-CS474-Spring2024/files/notebooks/ar_overlay_math.ipynb) to run it locally with Jupyter.
 
 ## Explore Further
 
