@@ -1,0 +1,2 @@
+a = 193 ms (start-up cost: reaction + click)
+b = 152 ms/bit  ->  throughput = 6.6 bits/s

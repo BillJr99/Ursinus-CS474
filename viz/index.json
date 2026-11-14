@@ -1,0 +1,267 @@
+{
+ "course": "cs474",
+ "site": "https://billjr99.github.io/Ursinus-CS474",
+ "built": "2026-11-14 17:46",
+ "examples": [
+  {
+   "id": "cs474-nb-ab-test-analysis-2",
+   "viz": "env",
+   "lang": "python",
+   "page": "files/notebooks/ab_test_analysis.ipynb",
+   "line": 2,
+   "page_url": "",
+   "error": null,
+   "steps": 6
+  },
+  {
+   "id": "cs474-nb-ab-test-analysis-3",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/ab_test_analysis.ipynb",
+   "line": 3,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-ab-test-analysis-4",
+   "viz": "env",
+   "lang": "python",
+   "page": "files/notebooks/ab_test_analysis.ipynb",
+   "line": 4,
+   "page_url": "",
+   "error": null,
+   "steps": 5
+  },
+  {
+   "id": "cs474-nb-ab-test-analysis-5",
+   "viz": "env",
+   "lang": "python",
+   "page": "files/notebooks/ab_test_analysis.ipynb",
+   "line": 5,
+   "page_url": "",
+   "error": null,
+   "steps": 12
+  },
+  {
+   "id": "cs474-nb-ab-test-analysis-6",
+   "viz": "env",
+   "lang": "python",
+   "page": "files/notebooks/ab_test_analysis.ipynb",
+   "line": 6,
+   "page_url": "",
+   "error": null,
+   "steps": 21
+  },
+  {
+   "id": "cs474-nb-ar-overlay-math-2",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/ar_overlay_math.ipynb",
+   "line": 2,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-ar-overlay-math-3",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/ar_overlay_math.ipynb",
+   "line": 3,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-ar-overlay-math-4",
+   "viz": "env",
+   "lang": "python",
+   "page": "files/notebooks/ar_overlay_math.ipynb",
+   "line": 4,
+   "page_url": "",
+   "error": null,
+   "steps": 25
+  },
+  {
+   "id": "cs474-nb-ar-overlay-math-5",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/ar_overlay_math.ipynb",
+   "line": 5,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-bias-fairness-metrics-3",
+   "viz": "env",
+   "lang": "python",
+   "page": "files/notebooks/bias_fairness_metrics.ipynb",
+   "line": 3,
+   "page_url": "",
+   "error": null,
+   "steps": 12
+  },
+  {
+   "id": "cs474-nb-bias-fairness-metrics-4",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/bias_fairness_metrics.ipynb",
+   "line": 4,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-bias-fairness-metrics-5",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/bias_fairness_metrics.ipynb",
+   "line": 5,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-eyetracking-gaze-analysis-2",
+   "viz": "env",
+   "lang": "python",
+   "page": "files/notebooks/eyetracking_gaze_analysis.ipynb",
+   "line": 2,
+   "page_url": "",
+   "error": null,
+   "steps": 34
+  },
+  {
+   "id": "cs474-nb-eyetracking-gaze-analysis-3",
+   "viz": "env",
+   "lang": "python",
+   "page": "files/notebooks/eyetracking_gaze_analysis.ipynb",
+   "line": 3,
+   "page_url": "",
+   "error": null,
+   "steps": 800
+  },
+  {
+   "id": "cs474-nb-eyetracking-gaze-analysis-4",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/eyetracking_gaze_analysis.ipynb",
+   "line": 4,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-eyetracking-gaze-analysis-5",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/eyetracking_gaze_analysis.ipynb",
+   "line": 5,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-fitts-law-pointing-2",
+   "viz": "env",
+   "lang": "python",
+   "page": "files/notebooks/fitts_law_pointing.ipynb",
+   "line": 2,
+   "page_url": "",
+   "error": null,
+   "steps": 427
+  },
+  {
+   "id": "cs474-nb-fitts-law-pointing-3",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/fitts_law_pointing.ipynb",
+   "line": 3,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-fitts-law-pointing-4",
+   "viz": "env",
+   "lang": "python",
+   "page": "files/notebooks/fitts_law_pointing.ipynb",
+   "line": 4,
+   "page_url": "",
+   "error": null,
+   "steps": 21
+  },
+  {
+   "id": "cs474-nb-habit-learning-curves-2",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/habit_learning_curves.ipynb",
+   "line": 2,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-habit-learning-curves-3",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/habit_learning_curves.ipynb",
+   "line": 3,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-habit-learning-curves-4",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/habit_learning_curves.ipynb",
+   "line": 4,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-voice-audio-features-2",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/voice_audio_features.ipynb",
+   "line": 2,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-voice-audio-features-3",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/voice_audio_features.ipynb",
+   "line": 3,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-voice-audio-features-4",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/voice_audio_features.ipynb",
+   "line": 4,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  },
+  {
+   "id": "cs474-nb-voice-audio-features-5",
+   "viz": "plain",
+   "lang": "python",
+   "page": "files/notebooks/voice_audio_features.ipynb",
+   "line": 5,
+   "page_url": "",
+   "error": null,
+   "steps": 0
+  }
+ ]
+}

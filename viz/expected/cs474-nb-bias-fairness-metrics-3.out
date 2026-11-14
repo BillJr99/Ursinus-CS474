@@ -1,0 +1,9 @@
+Selection rates:
+group
+A    0.340
+B    0.125
+Name: selected, dtype: float64
+
+Demographic parity difference (A - B): 0.215
+Disparate impact ratio (B / A):          0.368
+Four-fifths (80%) rule FAILS (US EEOC guideline: ratio should be at least 0.80)
