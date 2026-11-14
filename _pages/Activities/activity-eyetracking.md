@@ -48,6 +48,8 @@ Eye trackers produce a stream of `(x, y)` gaze positions; the interesting part i
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BillJr99/Ursinus-CS474/blob/gh-pages/files/notebooks/eyetracking_gaze_analysis.ipynb)
 
+[Visualize this notebook's examples](https://billjr99.github.io/Ursinus-CS474/viz/#cs474-nb-eyetracking-gaze-analysis-2): [cell 2](https://billjr99.github.io/Ursinus-CS474/viz/#cs474-nb-eyetracking-gaze-analysis-2) [cell 3](https://billjr99.github.io/Ursinus-CS474/viz/#cs474-nb-eyetracking-gaze-analysis-3) [cell 4](https://billjr99.github.io/Ursinus-CS474/viz/#cs474-nb-eyetracking-gaze-analysis-4) [cell 5](https://billjr99.github.io/Ursinus-CS474/viz/#cs474-nb-eyetracking-gaze-analysis-5) <!-- code-viz link -->
+
 Click the badge to run the notebook in your browser with Google Colab (no installation required), or [download the notebook](https://www.billmongan.com/Ursinus-CS474-Spring2024/files/notebooks/eyetracking_gaze_analysis.ipynb) to run it locally with Jupyter.
 
 ## Explore Further
