@@ -1,0 +1,22 @@
+{
+ "code": "noise_floor = np.percentile(energy, 20)      # estimate background level\nthreshold = noise_floor * 20                 # speech must be well above it\nis_speech = energy > threshold\n\nplt.figure(figsize=(9, 2.8))\nplt.plot(t, audio, lw=0.5, alpha=0.6, label='audio')\nplt.fill_between(frame_t, -0.9, 0.9, where=is_speech, alpha=0.25,\n                 color='tab:green', label='detected speech')\nplt.legend(loc='upper right'); plt.xlabel('time (s)')\nplt.title('Threshold-based voice activity detection')\nplt.show()\n\nprint(f\"noise floor {noise_floor:.2e}, threshold {threshold:.2e}\")\nprint(f\"speech detected in {is_speech.mean()*100:.0f}% of frames\")",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-voice-audio-features-4",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-13 run the main code and print the results.",
+   "kind": "reveal",
+   "lines": "1-13"
+  },
+  {
+   "description": "Line 14 continues the main code and print the results.",
+   "kind": "reveal",
+   "lines": "14"
+  }
+ ],
+ "title": "Notebook voice_audio_features.ipynb",
+ "version": 1
+}

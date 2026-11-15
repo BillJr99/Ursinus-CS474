@@ -1,0 +1,22 @@
+{
+ "code": "OV_W, OV_H = 200, 150\noverlay = np.ones((OV_H, OV_W, 3))\noverlay[:, :] = [0.13, 0.35, 0.60]            # card background\noverlay[10:40, 10:190] = [0.95, 0.80, 0.20]   # title bar\nfor row in range(60, 140, 20):                # \"text\" lines\n    overlay[row:row+8, 15:185] = [0.92, 0.92, 0.92]\n\nplt.figure(figsize=(3, 2.2))\nplt.imshow(overlay); plt.title('Overlay (in its own coordinates)'); plt.axis('off')\nplt.show()",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-ar-overlay-math-3",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-10 run the main code.",
+   "kind": "reveal",
+   "lines": "1-10"
+  },
+  {
+   "description": "Line 5 loops over `range(60, 140, 20)`.",
+   "kind": "focus",
+   "lines": "5"
+  }
+ ],
+ "title": "Notebook ar_overlay_math.ipynb",
+ "version": 1
+}

@@ -1,0 +1,22 @@
+{
+ "code": "fig, ax = plt.subplots(figsize=(7, 3.5))\nfor g, color in [('A', 'tab:blue'), ('B', 'tab:orange')]:\n    ax.hist(df.loc[df.group == g, 'score'], bins=40, alpha=0.55, label=f'group {g}', color=color)\nax.axvline(75, color='red', ls='--', label='selection threshold')\nax.set_xlabel('observed score'); ax.set_ylabel('applicants')\nax.set_title('Same true skill, shifted observed scores')\nax.legend()\nplt.show()",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-bias-fairness-metrics-5",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-8 run the main code.",
+   "kind": "reveal",
+   "lines": "1-8"
+  },
+  {
+   "description": "Line 2 loops over `[('A', 'tab:blue'), ('B', 'tab:orange')]`.",
+   "kind": "focus",
+   "lines": "2"
+  }
+ ],
+ "title": "Notebook bias_fairness_metrics.ipynb",
+ "version": 1
+}

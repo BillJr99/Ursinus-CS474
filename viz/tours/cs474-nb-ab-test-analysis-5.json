@@ -1,0 +1,45 @@
+{
+ "code": "def cohens_d(a, b):\n    pooled_sd = np.sqrt(((len(a) - 1) * a.std(ddof=1) ** 2 +\n                         (len(b) - 1) * b.std(ddof=1) ** 2) / (len(a) + len(b) - 2))\n    return (a.mean() - b.mean()) / pooled_sd\n\nd = cohens_d(time_A, time_B)\nprint(f\"Cohen's d = {d:.2f}\")\nprint(f\"Design B saves about {time_A.mean() - time_B.mean():.1f} s per checkout on average.\")",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-ab-test-analysis-5",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-4 define `cohens_d(a, b)`.",
+   "kind": "reveal",
+   "lines": "1-4"
+  },
+  {
+   "description": "Line 4 returns `(a.mean() - b.mean()) / pooled_sd`.",
+   "kind": "focus",
+   "lines": "4"
+  },
+  {
+   "description": "Lines 6-8 run the main code and print the results.",
+   "kind": "reveal",
+   "lines": "6-8"
+  },
+  {
+   "description": "Here `cohens_d` is called for the first time; its frame appears on the right.",
+   "kind": "run",
+   "lines": "2",
+   "trace_step": 2
+  },
+  {
+   "description": "Here `cohens_d` returns, the first time it does.",
+   "kind": "run",
+   "lines": "4",
+   "trace_step": 8
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "8",
+   "trace_step": 11
+  }
+ ],
+ "title": "Notebook ab_test_analysis.ipynb",
+ "version": 1
+}

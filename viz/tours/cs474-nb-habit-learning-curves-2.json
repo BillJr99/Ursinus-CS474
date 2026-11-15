@@ -1,0 +1,22 @@
+{
+ "code": "N_TRIALS = 100\nT1, ALPHA = 40.0, 0.35        # first-trial time (s), learning rate\ntrials = np.arange(1, N_TRIALS + 1)\n\ntrue_time = T1 * trials ** (-ALPHA)\nobserved = true_time * rng.lognormal(0, 0.12, N_TRIALS)  # multiplicative noise\n\nplt.figure(figsize=(7, 3.5))\nplt.plot(trials, observed, 'o', ms=4, alpha=0.5, label='observed trials')\nplt.plot(trials, true_time, '-', color='tab:red', label='underlying power law')\nplt.xlabel('trial number'); plt.ylabel('task time (s)')\nplt.title('Learning curve: practice makes fast')\nplt.legend()\nplt.show()",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-habit-learning-curves-2",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-12 run the main code.",
+   "kind": "reveal",
+   "lines": "1-12"
+  },
+  {
+   "description": "Lines 13-14 continue the main code.",
+   "kind": "reveal",
+   "lines": "13-14"
+  }
+ ],
+ "title": "Notebook habit_learning_curves.ipynb",
+ "version": 1
+}

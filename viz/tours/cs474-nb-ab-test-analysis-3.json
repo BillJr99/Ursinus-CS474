@@ -1,0 +1,22 @@
+{
+ "code": "fig, ax = plt.subplots(figsize=(6.5, 3.5))\nax.boxplot([time_A, time_B], labels=['Design A', 'Design B'])\nfor i, data in enumerate([time_A, time_B], 1):\n    jitter = rng.normal(0, 0.04, len(data))\n    ax.plot(np.full(len(data), i) + jitter, data, 'o', alpha=0.4, ms=4)\nax.set_ylabel('task completion time (s)')\nax.set_title('Checkout time by design (each dot = one participant)')\nplt.show()",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-ab-test-analysis-3",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-8 run the main code.",
+   "kind": "reveal",
+   "lines": "1-8"
+  },
+  {
+   "description": "Line 3 loops over `enumerate([time_A, time_B], 1)`.",
+   "kind": "focus",
+   "lines": "3"
+  }
+ ],
+ "title": "Notebook ab_test_analysis.ipynb",
+ "version": 1
+}

@@ -1,0 +1,60 @@
+{
+ "code": "def detect_fixations(points, hz, dispersion_px=50, min_duration_s=0.10):\n    \"\"\"Return a list of (start_idx, end_idx, centroid_x, centroid_y, duration_s).\"\"\"\n    min_len = int(min_duration_s * hz)\n    fixations = []\n    i = 0\n    while i < len(points) - min_len:\n        j = i + min_len\n        window = points[i:j]\n        disp = (np.ptp(window[:, 0])) + (np.ptp(window[:, 1]))\n        if disp <= dispersion_px:\n            # grow the window while dispersion stays small\n            while j < len(points):\n                window = points[i:j + 1]\n                if (np.ptp(window[:, 0])) + (np.ptp(window[:, 1])) > dispersion_px:\n                    break\n                j += 1\n            cx, cy = points[i:j].mean(axis=0)\n            fixations.append((i, j, cx, cy, (j - i) / hz))\n            i = j\n        else:\n            i += 1\n    return fixations\n\nfixations = detect_fixations(gaze, HZ)\nfor k, (i, j, cx, cy, dur) in enumerate(fixations, 1):\n    print(f\"Fixation {k}: ({cx:6.1f}, {cy:6.1f})  duration {dur*1000:5.0f} ms\")",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-eyetracking-gaze-analysis-3",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-22 define `detect_fixations(points, hz, dispersion_px, min_duration_s)`.",
+   "kind": "reveal",
+   "lines": "1-22"
+  },
+  {
+   "description": "Line 6 repeats while `i < len(points) - min_len` is true.",
+   "kind": "focus",
+   "lines": "6"
+  },
+  {
+   "description": "Line 10 checks `disp <= dispersion_px`.",
+   "kind": "focus",
+   "lines": "10"
+  },
+  {
+   "description": "Line 14 makes a decision.",
+   "kind": "focus",
+   "lines": "14"
+  },
+  {
+   "description": "Line 22 returns `fixations`.",
+   "kind": "focus",
+   "lines": "22"
+  },
+  {
+   "description": "Lines 24-26 run the main code and print the results.",
+   "kind": "reveal",
+   "lines": "24-26"
+  },
+  {
+   "description": "Here `detect_fixations` is called for the first time; its frame appears on the right.",
+   "kind": "run",
+   "lines": "3",
+   "trace_step": 2
+  },
+  {
+   "description": "Here `detect_fixations` returns, the first time it does.",
+   "kind": "run",
+   "lines": "22",
+   "trace_step": 782
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "25",
+   "trace_step": 799
+  }
+ ],
+ "title": "Notebook eyetracking_gaze_analysis.ipynb",
+ "version": 1
+}

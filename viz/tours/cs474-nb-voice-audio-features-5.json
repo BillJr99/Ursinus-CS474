@@ -1,0 +1,17 @@
+{
+ "code": "plt.figure(figsize=(9, 3.2))\nplt.specgram(audio, NFFT=256, Fs=SR, noverlap=128, cmap='magma')\nplt.xlabel('time (s)'); plt.ylabel('frequency (Hz)')\nplt.title('Spectrogram')\nplt.colorbar(label='power (dB)')\nplt.ylim(0, 1500)\nplt.show()",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-voice-audio-features-5",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-7 run the main code.",
+   "kind": "reveal",
+   "lines": "1-7"
+  }
+ ],
+ "title": "Notebook voice_audio_features.ipynb",
+ "version": 1
+}

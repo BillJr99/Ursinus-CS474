@@ -1,0 +1,43 @@
+{
+ "code": "a_true, b_true = 0.20, 0.15   # seconds, seconds/bit — typical mouse values\ndistances = [64, 128, 256, 512]   # px\nwidths = [8, 24, 64]              # px\nTRIALS = 15\n\nrows = []\nfor D in distances:\n    for W in widths:\n        ID = np.log2(D / W + 1)\n        mt = a_true + b_true * ID + rng.normal(0, 0.04, TRIALS)\n        for m in mt:\n            rows.append((D, W, ID, max(m, 0.05)))\n\ndata = np.array(rows)  # columns: D, W, ID, MT\nprint(f\"{len(data)} pointing trials, ID range \"\n      f\"{data[:,2].min():.2f}-{data[:,2].max():.2f} bits\")",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-fitts-law-pointing-2",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-12 run the main code.",
+   "kind": "reveal",
+   "lines": "1-12"
+  },
+  {
+   "description": "Line 7 loops over `distances`.",
+   "kind": "focus",
+   "lines": "7"
+  },
+  {
+   "description": "Line 8 loops over `widths`.",
+   "kind": "focus",
+   "lines": "8"
+  },
+  {
+   "description": "Line 11 loops over `mt`.",
+   "kind": "focus",
+   "lines": "11"
+  },
+  {
+   "description": "Lines 14-16 continue the main code and print the results.",
+   "kind": "reveal",
+   "lines": "14-16"
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "15",
+   "trace_step": 426
+  }
+ ],
+ "title": "Notebook fitts_law_pointing.ipynb",
+ "version": 1
+}

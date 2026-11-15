@@ -1,0 +1,27 @@
+{
+ "code": "fig, ax = plt.subplots(figsize=(8, 4.5))\nax.plot(gaze[:, 0], gaze[:, 1], '.', ms=2, alpha=0.3, label='raw gaze samples')\n\ncx = [f[2] for f in fixations]\ncy = [f[3] for f in fixations]\ndurs = [f[4] for f in fixations]\nax.plot(cx, cy, '-', color='gray', lw=1)\nax.scatter(cx, cy, s=[d * 800 for d in durs], alpha=0.6, zorder=3, label='fixations')\nfor k, (x, y) in enumerate(zip(cx, cy), 1):\n    ax.annotate(str(k), (x, y), ha='center', va='center', fontweight='bold')\n\nax.set_xlim(0, SCREEN_W); ax.set_ylim(SCREEN_H, 0)  # invert y: screen coords\nax.set_title('Scanpath: fixation order and duration')\nax.legend(loc='lower left')\nplt.show()",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-eyetracking-gaze-analysis-4",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-12 run the main code.",
+   "kind": "reveal",
+   "lines": "1-12"
+  },
+  {
+   "description": "Line 9 loops over `enumerate(zip(cx, cy), 1)`.",
+   "kind": "focus",
+   "lines": "9"
+  },
+  {
+   "description": "Lines 12-15 continue the main code.",
+   "kind": "reveal",
+   "lines": "12-15"
+  }
+ ],
+ "title": "Notebook eyetracking_gaze_analysis.ipynb",
+ "version": 1
+}

@@ -1,0 +1,17 @@
+{
+ "code": "qualified = df[df['true_skill'] > 75]\ntpr = qualified.groupby('group')['selected'].mean()\nprint(\"Selection rate among TRULY qualified applicants:\")\nprint(tpr.round(3))\nprint(f\"\\nEqual opportunity difference (A - B): {tpr['A'] - tpr['B']:.3f}\")\n\nax = tpr.plot.bar(color=['tab:blue', 'tab:orange'], rot=0, figsize=(4.5, 3))\nax.set_ylabel('P(selected | truly qualified)')\nax.set_title('Equal opportunity: qualified applicants selected')\nax.axhline(tpr.max(), ls=':', color='gray')\nplt.show()",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-bias-fairness-metrics-4",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-11 run the main code and print the results.",
+   "kind": "reveal",
+   "lines": "1-11"
+  }
+ ],
+ "title": "Notebook bias_fairness_metrics.ipynb",
+ "version": 1
+}

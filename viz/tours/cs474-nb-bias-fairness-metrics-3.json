@@ -1,0 +1,23 @@
+{
+ "code": "df['selected'] = df['score'] > 75\n\nrates = df.groupby('group')['selected'].mean()\nprint(\"Selection rates:\")\nprint(rates.round(3))\n\ndp_diff = rates['A'] - rates['B']\nratio = rates['B'] / rates['A']\nprint(f\"\\nDemographic parity difference (A - B): {dp_diff:.3f}\")\nprint(f\"Disparate impact ratio (B / A):          {ratio:.3f}\")\nprint(f\"Four-fifths (80%) rule {'PASSES' if ratio >= 0.8 else 'FAILS'}\"\n      f\" (US EEOC guideline: ratio should be at least 0.80)\")",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-bias-fairness-metrics-3",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-12 run the main code and print the results.",
+   "kind": "reveal",
+   "lines": "1-12"
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "11",
+   "trace_step": 11
+  }
+ ],
+ "title": "Notebook bias_fairness_metrics.ipynb",
+ "version": 1
+}

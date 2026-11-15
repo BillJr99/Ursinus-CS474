@@ -1,0 +1,22 @@
+{
+ "code": "Hinv = np.linalg.inv(H)\n\ncomposite = scene.copy()\nys, xs = np.mgrid[0:FRAME_H, 0:FRAME_W]\npts = np.stack([xs.ravel(), ys.ravel(), np.ones(xs.size)])   # homogeneous frame coords\nsrc = Hinv @ pts\nsrc /= src[2]                                                # divide by scale s\nsx, sy = src[0].reshape(FRAME_H, FRAME_W), src[1].reshape(FRAME_H, FRAME_W)\n\ninside = (sx >= 0) & (sx < OV_W - 1) & (sy >= 0) & (sy < OV_H - 1)\ncomposite[inside] = overlay[sy[inside].astype(int), sx[inside].astype(int)]\n\nplt.figure(figsize=(6, 4.5))\nplt.imshow(composite)\nplt.title('Overlay warped onto the marker: basic AR!')\nplt.show()",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-ar-overlay-math-5",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-13 run the main code.",
+   "kind": "reveal",
+   "lines": "1-13"
+  },
+  {
+   "description": "Lines 14-16 continue the main code.",
+   "kind": "reveal",
+   "lines": "14-16"
+  }
+ ],
+ "title": "Notebook ar_overlay_math.ipynb",
+ "version": 1
+}

@@ -1,0 +1,42 @@
+{
+ "code": "def vowel(duration, f0, sr=SR):\n    \"\"\"A crude vowel: fundamental + two harmonics, with a fade in/out.\"\"\"\n    t = np.arange(int(duration * sr)) / sr\n    sig = (1.0 * np.sin(2 * np.pi * f0 * t)\n           + 0.5 * np.sin(2 * np.pi * 2 * f0 * t)\n           + 0.25 * np.sin(2 * np.pi * 3 * f0 * t))\n    fade = np.minimum(1, np.minimum(t, t[::-1]) / 0.05)  # 50 ms fade\n    return 0.5 * sig * fade\n\ndef silence(duration, sr=SR):\n    return rng.normal(0, 0.01, int(duration * sr))  # faint background noise\n\naudio = np.concatenate([\n    silence(0.6),\n    vowel(0.7, f0=140),   # lower-pitched voice\n    silence(0.5),\n    vowel(0.8, f0=220),   # higher-pitched voice\n    silence(0.4),\n])\nt = np.arange(len(audio)) / SR\n\nplt.figure(figsize=(9, 2.5))\nplt.plot(t, audio, lw=0.5)\nplt.xlabel('time (s)'); plt.title('Synthetic audio: silence / vowel / silence / vowel')\nplt.show()",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-voice-audio-features-2",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-8 define `vowel(duration, f0, sr)`.",
+   "kind": "reveal",
+   "lines": "1-8"
+  },
+  {
+   "description": "Line 8 returns `0.5 * sig * fade`.",
+   "kind": "focus",
+   "lines": "8"
+  },
+  {
+   "description": "Lines 10-11 define `silence(duration, sr)`.",
+   "kind": "reveal",
+   "lines": "10-11"
+  },
+  {
+   "description": "Line 11 returns `rng.normal(0, 0.01, int(duration * sr))`.",
+   "kind": "focus",
+   "lines": "11"
+  },
+  {
+   "description": "Lines 13-24 run the main code.",
+   "kind": "reveal",
+   "lines": "13-24"
+  },
+  {
+   "description": "Lines 24-25 continue the main code.",
+   "kind": "reveal",
+   "lines": "24-25"
+  }
+ ],
+ "title": "Notebook voice_audio_features.ipynb",
+ "version": 1
+}

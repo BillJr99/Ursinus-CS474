@@ -1,0 +1,17 @@
+{
+ "code": "fig, ax = plt.subplots(figsize=(8, 4.5))\nh = ax.hist2d(gaze[:, 0], gaze[:, 1], bins=[64, 36],\n              range=[[0, SCREEN_W], [0, SCREEN_H]], cmap='hot')\nax.set_ylim(SCREEN_H, 0)\nax.set_title('Gaze heatmap (attention density)')\nfig.colorbar(h[3], ax=ax, label='samples per bin')\nplt.show()",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs474-nb-eyetracking-gaze-analysis-5",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-7 run the main code.",
+   "kind": "reveal",
+   "lines": "1-7"
+  }
+ ],
+ "title": "Notebook eyetracking_gaze_analysis.ipynb",
+ "version": 1
+}
