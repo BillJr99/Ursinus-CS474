@@ -1,0 +1,40 @@
+{
+ "version": 1,
+ "example": "cs474-nb-voice-audio-features-2",
+ "title": "Notebook voice_audio_features.ipynb",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "kind": "reveal",
+   "lines": "1-8",
+   "description": "Lines 1-8 define `vowel(duration, f0, sr)`."
+  },
+  {
+   "kind": "focus",
+   "lines": "8",
+   "description": "Line 8 returns `0.5 * sig * fade`."
+  },
+  {
+   "kind": "reveal",
+   "lines": "10-11",
+   "description": "Lines 10-11 define `silence(duration, sr)`."
+  },
+  {
+   "kind": "focus",
+   "lines": "11",
+   "description": "Line 11 returns `rng.normal(0, 0.01, int(duration * sr))`."
+  },
+  {
+   "kind": "reveal",
+   "lines": "13-24",
+   "description": "Lines 13-24 run the main code."
+  },
+  {
+   "kind": "reveal",
+   "lines": "24-25",
+   "description": "Lines 24-25 continue the main code."
+  }
+ ]
+}

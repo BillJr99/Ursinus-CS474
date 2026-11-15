@@ -1,0 +1,48 @@
+{
+ "version": 1,
+ "example": "cs474-nb-ar-overlay-math-4",
+ "title": "Notebook ar_overlay_math.ipynb",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "kind": "reveal",
+   "lines": "1-10",
+   "description": "Lines 1-10 define `find_homography(src, dst)`."
+  },
+  {
+   "kind": "focus",
+   "lines": "4",
+   "description": "Line 4 loops over `zip(src, dst)`."
+  },
+  {
+   "kind": "focus",
+   "lines": "10",
+   "description": "Line 10 returns `H / H[2, 2]`."
+  },
+  {
+   "kind": "reveal",
+   "lines": "12-15",
+   "description": "Lines 12-15 run the main code and print the results."
+  },
+  {
+   "kind": "run",
+   "trace_step": 3,
+   "lines": "3",
+   "description": "Here `find_homography` is called for the first time; its frame appears on the right."
+  },
+  {
+   "kind": "run",
+   "trace_step": 21,
+   "lines": "10",
+   "description": "Here `find_homography` returns, the first time it does."
+  },
+  {
+   "kind": "run",
+   "trace_step": 24,
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "lines": "15"
+  }
+ ]
+}

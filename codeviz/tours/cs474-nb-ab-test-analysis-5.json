@@ -1,0 +1,43 @@
+{
+ "version": 1,
+ "example": "cs474-nb-ab-test-analysis-5",
+ "title": "Notebook ab_test_analysis.ipynb",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "kind": "reveal",
+   "lines": "1-4",
+   "description": "Lines 1-4 define `cohens_d(a, b)`."
+  },
+  {
+   "kind": "focus",
+   "lines": "4",
+   "description": "Line 4 returns `(a.mean() - b.mean()) / pooled_sd`."
+  },
+  {
+   "kind": "reveal",
+   "lines": "6-8",
+   "description": "Lines 6-8 run the main code and print the results."
+  },
+  {
+   "kind": "run",
+   "trace_step": 2,
+   "lines": "2",
+   "description": "Here `cohens_d` is called for the first time; its frame appears on the right."
+  },
+  {
+   "kind": "run",
+   "trace_step": 8,
+   "lines": "4",
+   "description": "Here `cohens_d` returns, the first time it does."
+  },
+  {
+   "kind": "run",
+   "trace_step": 11,
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "lines": "8"
+  }
+ ]
+}

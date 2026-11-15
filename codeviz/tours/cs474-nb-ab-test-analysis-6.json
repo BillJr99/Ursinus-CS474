@@ -1,0 +1,31 @@
+{
+ "version": 1,
+ "example": "cs474-nb-ab-test-analysis-6",
+ "title": "Notebook ab_test_analysis.ipynb",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "kind": "reveal",
+   "lines": "1-12",
+   "description": "Lines 1-12 run the main code and print the results."
+  },
+  {
+   "kind": "focus",
+   "lines": "6",
+   "description": "Line 6 checks `p_anova < 0.05`."
+  },
+  {
+   "kind": "focus",
+   "lines": "8",
+   "description": "Line 8 starts a loop."
+  },
+  {
+   "kind": "run",
+   "trace_step": 20,
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "lines": "8"
+  }
+ ]
+}

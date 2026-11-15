@@ -1,0 +1,15 @@
+{
+ "version": 1,
+ "example": "cs474-nb-eyetracking-gaze-analysis-5",
+ "title": "Notebook eyetracking_gaze_analysis.ipynb",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "kind": "reveal",
+   "lines": "1-7",
+   "description": "Lines 1-7 run the main code."
+  }
+ ]
+}

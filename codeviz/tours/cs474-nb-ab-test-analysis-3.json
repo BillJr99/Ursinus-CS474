@@ -1,0 +1,20 @@
+{
+ "version": 1,
+ "example": "cs474-nb-ab-test-analysis-3",
+ "title": "Notebook ab_test_analysis.ipynb",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "kind": "reveal",
+   "lines": "1-8",
+   "description": "Lines 1-8 run the main code."
+  },
+  {
+   "kind": "focus",
+   "lines": "3",
+   "description": "Line 3 loops over `enumerate([time_A, time_B], 1)`."
+  }
+ ]
+}

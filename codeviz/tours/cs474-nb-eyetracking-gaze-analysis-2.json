@@ -1,0 +1,31 @@
+{
+ "version": 1,
+ "example": "cs474-nb-eyetracking-gaze-analysis-2",
+ "title": "Notebook eyetracking_gaze_analysis.ipynb",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "kind": "reveal",
+   "lines": "1-13",
+   "description": "Lines 1-13 run the main code."
+  },
+  {
+   "kind": "reveal",
+   "lines": "14-24",
+   "description": "Lines 14-24 continue the main code and print the results."
+  },
+  {
+   "kind": "focus",
+   "lines": "14",
+   "description": "Line 14 loops over `aois`."
+  },
+  {
+   "kind": "run",
+   "trace_step": 33,
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "lines": "24"
+  }
+ ]
+}
