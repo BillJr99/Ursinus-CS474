@@ -1,15 +1,1 @@
-{
- "version": 1,
- "example": "cs474-nb-habit-learning-curves-3",
- "title": "Notebook habit_learning_curves.ipynb",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
- "reviewed": false,
- "source": "skeleton",
- "steps": [
-  {
-   "kind": "reveal",
-   "lines": "1-11",
-   "description": "Lines 1-11 run the main code and print the results."
-  }
- ]
-}
+{"version":1,"example":"cs474-nb-habit-learning-curves-3","title":"Fitting a power law in log coordinates","description":"You can connect a straight-line fit with the model's original parameters.","reviewed":false,"source":"draft: codex free model","steps":[{"kind":"reveal","lines":"1","description":"You take logarithms of trials and observed before fitting a line. polyfit returns the slope and intercept in those transformed coordinates."},{"kind":"predict","lines":"2","question":"How does the code recover alpha_hat from the fitted slope?","answer":"It negates the slope. The same assignment exponentiates the intercept to recover T1_hat."},{"kind":"reveal","lines":"2-7","description":"The supplied output reports alpha_hat as 0.346. You use the recovered parameters in T1_hat times trials raised to negative alpha_hat."},{"kind":"reveal","lines":"8-11","description":"You label both axes as logarithmic and show observations beside the fitted power law. The recording supplies a parameter summary but no rendered plot."}]}
