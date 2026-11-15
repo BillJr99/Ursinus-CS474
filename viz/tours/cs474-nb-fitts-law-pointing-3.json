@@ -1,22 +1,33 @@
 {
  "code": "ID, MT = data[:, 2], data[:, 3]\nb_hat, a_hat = np.polyfit(ID, MT, 1)\nprint(f\"a = {a_hat*1000:.0f} ms (start-up cost: reaction + click)\")\nprint(f\"b = {b_hat*1000:.0f} ms/bit  ->  throughput = {1/b_hat:.1f} bits/s\")\n\nplt.figure(figsize=(7, 4))\nplt.plot(ID, MT, 'o', ms=4, alpha=0.35, label='trials')\nxs = np.linspace(ID.min(), ID.max(), 50)\nplt.plot(xs, a_hat + b_hat * xs, '-', color='tab:red', lw=2,\n         label=f'fit: MT = {a_hat:.2f} + {b_hat:.2f} x ID')\nplt.xlabel('index of difficulty (bits)'); plt.ylabel('movement time (s)')\nplt.title(\"Fitts's law: movement time vs. index of difficulty\")\nplt.legend()\nplt.show()",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can connect fitted coefficients to the plotted prediction formula.",
  "example": "cs474-nb-fitts-law-pointing-3",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Lines 1-12 run the main code and print the results.",
+   "description": "You select two data columns as ID and MT. polyfit with degree one returns the slope b_hat and intercept a_hat, which the next statements format for display.",
    "kind": "reveal",
-   "lines": "1-12"
+   "lines": "1-4"
   },
   {
-   "description": "Lines 13-14 continue the main code.",
+   "description": "The plot places trial markers at the observed ID and MT values. You build xs across the observed ID range for the fitted line.",
    "kind": "reveal",
-   "lines": "13-14"
+   "lines": "6-8"
+  },
+  {
+   "answer": "No. Every prediction uses the same coefficients in a_hat + b_hat * xs.",
+   "kind": "predict",
+   "lines": "9-10",
+   "question": "Does the fitted line use a new fit for each xs value?"
+  },
+  {
+   "description": "You add the fitted line, axis labels, title and legend before show. The supplied text output reports the fitted coefficients and reciprocal-slope throughput.",
+   "kind": "reveal",
+   "lines": "9-14"
   }
  ],
- "title": "Notebook fitts_law_pointing.ipynb",
+ "title": "Fitting a line to pointing trials",
  "version": 1
 }

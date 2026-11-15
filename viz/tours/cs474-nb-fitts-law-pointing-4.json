@@ -1,50 +1,33 @@
 {
  "code": "def predict_mt(D, W):\n    return a_hat + b_hat * np.log2(D / W + 1)\n\ndesigns = [\n    (\"Small close button, far corner\",        800, 12),\n    (\"Same button, doubled in size\",          800, 24),\n    (\"Button moved near the pointer\",         200, 12),\n    (\"Edge-of-screen target (infinite width)\", 800, 200),  # edge lets you overshoot\n]\nprint(f\"{'design':42s} {'D(px)':>6} {'W(px)':>6} {'predicted MT':>13}\")\nfor name, D, W in designs:\n    print(f\"{name:42s} {D:6d} {W:6d} {predict_mt(D, W)*1000:10.0f} ms\")",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can follow four distance-width pairs through the same fitted formula.",
  "example": "cs474-nb-fitts-law-pointing-4",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Lines 1-2 define `predict_mt(D, W)`.",
+   "description": "predict_mt uses the existing fitted coefficients with log2(D / W + 1). You supply distance and width as the changing inputs.",
    "kind": "reveal",
    "lines": "1-2"
   },
   {
-   "description": "Line 2 returns `a_hat + b_hat * np.log2(D / W + 1)`.",
-   "kind": "focus",
-   "lines": "2"
-  },
-  {
-   "description": "Lines 4-12 run the main code and print the results.",
+   "description": "The design list changes width, distance or both relative to the first case. The edge-target label still supplies a finite width of 200 to the formula.",
    "kind": "reveal",
-   "lines": "4-12"
+   "lines": "4-9"
   },
   {
-   "description": "Line 11 loops over `designs`.",
-   "kind": "focus",
-   "lines": "11"
+   "answer": "No. Every row calls the same predict_mt function using the existing a_hat and b_hat.",
+   "kind": "predict",
+   "lines": "11-12",
+   "question": "Does the loop refit the coefficients for each design?"
   },
   {
-   "description": "Here `predict_mt` is called for the first time; its frame appears on the right.",
-   "kind": "run",
-   "lines": "2",
-   "trace_step": 5
-  },
-  {
-   "description": "Here `predict_mt` returns, the first time it does.",
-   "kind": "run",
-   "lines": "2",
-   "trace_step": 6
-  },
-  {
-   "description": "This is the end of the run: the final state, and all of the output.",
-   "kind": "run",
-   "lines": "11",
-   "trace_step": 20
+   "description": "You see one prediction per design in the output table. In the supplied recording, the larger-width and nearer-target cases all receive lower predictions than the first case.",
+   "kind": "reveal",
+   "lines": "10-12"
   }
  ],
- "title": "Notebook fitts_law_pointing.ipynb",
+ "title": "Comparing pointing-design inputs",
  "version": 1
 }

@@ -1,22 +1,33 @@
 {
  "code": "fig, ax = plt.subplots(figsize=(6.5, 3.5))\nax.boxplot([time_A, time_B], labels=['Design A', 'Design B'])\nfor i, data in enumerate([time_A, time_B], 1):\n    jitter = rng.normal(0, 0.04, len(data))\n    ax.plot(np.full(len(data), i) + jitter, data, 'o', alpha=0.4, ms=4)\nax.set_ylabel('task completion time (s)')\nax.set_title('Checkout time by design (each dot = one participant)')\nplt.show()",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can follow two samples into summary boxes and individual markers.",
  "example": "cs474-nb-ab-test-analysis-3",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Lines 1-8 run the main code.",
+   "description": "You create one axis and draw two labeled boxplots. The supplied arrays remain separate as Design A and Design B.",
    "kind": "reveal",
-   "lines": "1-8"
+   "lines": "1-2"
   },
   {
-   "description": "Line 3 loops over `enumerate([time_A, time_B], 1)`.",
-   "kind": "focus",
-   "lines": "3"
+   "description": "The loop assigns positions 1 and 2 to the groups. You generate one small horizontal offset for every observation.",
+   "kind": "reveal",
+   "lines": "3-4"
+  },
+  {
+   "answer": "No. It changes the x position, while data supplies the unchanged y values.",
+   "kind": "predict",
+   "lines": "5",
+   "question": "Does jitter change each marker's vertical data value?"
+  },
+  {
+   "description": "You overlay participant markers, label the axis and call show. The supplied recording contains no figure or text output from which to read sample comparisons.",
+   "kind": "reveal",
+   "lines": "5-8"
   }
  ],
- "title": "Notebook ab_test_analysis.ipynb",
+ "title": "Combining boxplots with participant dots",
  "version": 1
 }

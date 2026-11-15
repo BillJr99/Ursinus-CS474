@@ -1,22 +1,33 @@
 {
  "code": "Hinv = np.linalg.inv(H)\n\ncomposite = scene.copy()\nys, xs = np.mgrid[0:FRAME_H, 0:FRAME_W]\npts = np.stack([xs.ravel(), ys.ravel(), np.ones(xs.size)])   # homogeneous frame coords\nsrc = Hinv @ pts\nsrc /= src[2]                                                # divide by scale s\nsx, sy = src[0].reshape(FRAME_H, FRAME_W), src[1].reshape(FRAME_H, FRAME_W)\n\ninside = (sx >= 0) & (sx < OV_W - 1) & (sy >= 0) & (sy < OV_H - 1)\ncomposite[inside] = overlay[sy[inside].astype(int), sx[inside].astype(int)]\n\nplt.figure(figsize=(6, 4.5))\nplt.imshow(composite)\nplt.title('Overlay warped onto the marker: basic AR!')\nplt.show()",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can follow inverse coordinates into selected pixel replacements.",
  "example": "cs474-nb-ar-overlay-math-5",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Lines 1-13 run the main code.",
+   "description": "You invert H and copy scene into composite. The grid creates one homogeneous coordinate, an x-y pair with an added scale component, for every frame pixel.",
    "kind": "reveal",
-   "lines": "1-13"
+   "lines": "1-5"
   },
   {
-   "description": "Lines 14-16 continue the main code.",
+   "description": "Multiplying by Hinv maps frame coordinates toward the overlay. You divide by the third component and reshape the resulting x and y arrays.",
    "kind": "reveal",
-   "lines": "14-16"
+   "lines": "6-8"
+  },
+  {
+   "answer": "No. It replaces only pixels whose mapped source coordinates pass the inside mask.",
+   "kind": "predict",
+   "lines": "10-11",
+   "question": "Does this assignment replace every pixel in composite?"
+  },
+  {
+   "description": "You convert accepted source coordinates to integer indices and copy overlay colors into composite. The final calls display that result; the recording supplies no rendered figure or text output.",
+   "kind": "reveal",
+   "lines": "10-16"
   }
  ],
- "title": "Notebook ar_overlay_math.ipynb",
+ "title": "Mapping frame pixels back to an overlay",
  "version": 1
 }

@@ -1,43 +1,33 @@
 {
  "code": "a_true, b_true = 0.20, 0.15   # seconds, seconds/bit — typical mouse values\ndistances = [64, 128, 256, 512]   # px\nwidths = [8, 24, 64]              # px\nTRIALS = 15\n\nrows = []\nfor D in distances:\n    for W in widths:\n        ID = np.log2(D / W + 1)\n        mt = a_true + b_true * ID + rng.normal(0, 0.04, TRIALS)\n        for m in mt:\n            rows.append((D, W, ID, max(m, 0.05)))\n\ndata = np.array(rows)  # columns: D, W, ID, MT\nprint(f\"{len(data)} pointing trials, ID range \"\n      f\"{data[:,2].min():.2f}-{data[:,2].max():.2f} bits\")",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can follow distance-width combinations into a four-column dataset.",
  "example": "cs474-nb-fitts-law-pointing-2",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Lines 1-12 run the main code.",
+   "description": "You define model coefficients, four distances and three widths. TRIALS requests 15 observations for each distance-width pair.",
    "kind": "reveal",
-   "lines": "1-12"
+   "lines": "1-6"
   },
   {
-   "description": "Line 7 loops over `distances`.",
-   "kind": "focus",
-   "lines": "7"
-  },
-  {
-   "description": "Line 8 loops over `widths`.",
-   "kind": "focus",
-   "lines": "8"
-  },
-  {
-   "description": "Line 11 loops over `mt`.",
-   "kind": "focus",
-   "lines": "11"
-  },
-  {
-   "description": "Lines 14-16 continue the main code and print the results.",
+   "description": "The nested loops compute ID as log2(D / W + 1). You generate a noisy modeled sample for the current pair.",
    "kind": "reveal",
-   "lines": "14-16"
+   "lines": "7-10"
   },
   {
-   "description": "This is the end of the run: the final state, and all of the output.",
-   "kind": "run",
-   "lines": "15",
-   "trace_step": 426
+   "answer": "They contribute 180 rows: four distances times three widths times 15 trials.",
+   "kind": "predict",
+   "lines": "11-12",
+   "question": "How many rows will all distance-width pairs contribute?"
+  },
+  {
+   "description": "Each tuple stores D, W, ID and the bounded sample value. You see 180 pointing trials and an ID range of 1.00 to 6.02 bits.",
+   "kind": "reveal",
+   "lines": "11-16"
   }
  ],
- "title": "Notebook fitts_law_pointing.ipynb",
+ "title": "Generating pointing-trial rows",
  "version": 1
 }

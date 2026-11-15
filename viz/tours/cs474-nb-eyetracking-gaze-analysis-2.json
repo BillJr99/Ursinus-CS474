@@ -1,33 +1,33 @@
 {
  "code": "SCREEN_W, SCREEN_H = 1280, 720\nHZ = 60  # samples per second\n\n# (x, y, seconds the user dwells there)\naois = [\n    (150, 100, 0.8),   # logo, top-left\n    (640, 100, 0.5),   # navigation menu, top-center\n    (640, 360, 1.2),   # main content\n    (1050, 600, 0.9),  # call-to-action button, bottom-right\n    (640, 360, 0.6),   # back to the content\n]\n\nsamples = []\nfor (x, y, dwell) in aois:\n    n = int(dwell * HZ)\n    # fixation: tight Gaussian jitter around the AOI center\n    fx = rng.normal(x, 8, n)\n    fy = rng.normal(y, 8, n)\n    samples.append(np.column_stack([fx, fy]))\n    # saccade: a few fast samples on the way to the next target (we just leave a gap)\n\ngaze = np.vstack(samples)\nt = np.arange(len(gaze)) / HZ\nprint(f\"{len(gaze)} gaze samples over {t[-1]:.2f} seconds\")",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can follow supplied regions into a synthetic gaze array.",
  "example": "cs474-nb-eyetracking-gaze-analysis-2",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Lines 1-13 run the main code.",
+   "description": "You define screen dimensions and five region visits. Each visit supplies a center coordinate and a dwell value, with the content center appearing twice.",
    "kind": "reveal",
-   "lines": "1-13"
+   "lines": "1-11"
   },
   {
-   "description": "Lines 14-24 continue the main code and print the results.",
+   "description": "For each visit, the code derives n and generates noisy x and y coordinates around its center. column_stack pairs the coordinates into sample rows.",
    "kind": "reveal",
-   "lines": "14-24"
+   "lines": "13-19"
   },
   {
-   "description": "Line 14 loops over `aois`.",
-   "kind": "focus",
-   "lines": "14"
+   "answer": "No. This block appends only the generated clusters and then stacks them directly.",
+   "kind": "predict",
+   "lines": "20-22",
+   "question": "Does the comment about saccades add any transition coordinates?"
   },
   {
-   "description": "This is the end of the run: the final state, and all of the output.",
-   "kind": "run",
-   "lines": "24",
-   "trace_step": 33
+   "description": "You combine all clusters into gaze and build a sample-index-based t array. The supplied output reports 240 gaze samples.",
+   "kind": "reveal",
+   "lines": "22-24"
   }
  ],
- "title": "Notebook eyetracking_gaze_analysis.ipynb",
+ "title": "Generating clustered gaze coordinates",
  "version": 1
 }
