@@ -1,15 +1,1 @@
-{
- "version": 1,
- "example": "cs474-nb-voice-audio-features-5",
- "title": "Notebook voice_audio_features.ipynb",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
- "reviewed": false,
- "source": "skeleton",
- "steps": [
-  {
-   "kind": "reveal",
-   "lines": "1-7",
-   "description": "Lines 1-7 run the main code."
-  }
- ]
-}
+{"version":1,"example":"cs474-nb-voice-audio-features-5","title":"Configuring an audio spectrogram","description":"You can read how the plot represents audio frequency content.","reviewed":false,"source":"draft: codex free model + edit: codex","steps":[{"kind":"reveal","lines":"1-2","description":"A spectrogram displays frequency content across audio segments. You pass audio, the sample rate SR and the supplied FFT size to specgram."},{"kind":"reveal","lines":"3-5","description":"You label the horizontal and vertical axes and add a power colorbar. The magma color map supplies the visual encoding."},{"kind":"predict","lines":"6","question":"Does the vertical limit display every frequency produced by the calculation?","answer":"It displays only the supplied range starting at zero on the frequency axis."},{"kind":"reveal","lines":"7","description":"show requests the configured spectrogram. The supplied recording contains no text output or image from which to identify spectral peaks."}]}

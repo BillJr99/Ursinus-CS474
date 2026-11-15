@@ -1,15 +1,1 @@
-{
- "version": 1,
- "example": "cs474-nb-habit-learning-curves-4",
- "title": "Notebook habit_learning_curves.ipynb",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
- "reviewed": false,
- "source": "skeleton",
- "steps": [
-  {
-   "kind": "reveal",
-   "lines": "1-12",
-   "description": "Lines 1-12 run the main code."
-  }
- ]
-}
+{"version":1,"example":"cs474-nb-habit-learning-curves-4","title":"Joining two modeled learning segments","description":"You can read how the synthetic redesign example restarts its trial index.","reviewed":false,"source":"draft: codex free model + edit: codex","steps":[{"kind":"reveal","lines":"1","description":"before uses the initial slice of trial values in the existing power-law formula. You retain that segment before constructing the second one."},{"kind":"predict","lines":"2-3","question":"Does the after segment continue the original trial indices?","answer":"No. Its arange starts at one, restarting the power-law input for that segment."},{"kind":"reveal","lines":"3-4","description":"You concatenate before and after, then multiply by random factors. The result is a synthetic disrupted series rather than newly collected observations."},{"kind":"reveal","lines":"6-12","description":"You plot the combined series and mark the segment boundary with a vertical line. The supplied recording contains no rendered plot or text output."}]}

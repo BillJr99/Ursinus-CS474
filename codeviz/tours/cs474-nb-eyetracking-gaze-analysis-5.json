@@ -1,15 +1,1 @@
-{
- "version": 1,
- "example": "cs474-nb-eyetracking-gaze-analysis-5",
- "title": "Notebook eyetracking_gaze_analysis.ipynb",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
- "reviewed": false,
- "source": "skeleton",
- "steps": [
-  {
-   "kind": "reveal",
-   "lines": "1-7",
-   "description": "Lines 1-7 run the main code."
-  }
- ]
-}
+{"version":1,"example":"cs474-nb-eyetracking-gaze-analysis-5","title":"Binning gaze samples into a heatmap","description":"You can read how coordinates become counts on a screen-sized grid.","reviewed":false,"source":"draft: codex free model + edit: codex","steps":[{"kind":"reveal","lines":"1-3","description":"hist2d receives the x and y gaze columns. You divide the screen range into the supplied bins and select the hot color map."},{"kind":"predict","lines":"4","question":"Which vertical direction do these axis limits establish?","answer":"They place zero at the top and SCREEN_H at the bottom by reversing the y-axis limits."},{"kind":"reveal","lines":"4-6","description":"You title the plot as a gaze heatmap. The colorbar labels the encoded quantity as samples per bin."},{"kind":"reveal","lines":"7","description":"show requests the completed figure. The supplied recording has no text output or bin counts to inspect."}]}

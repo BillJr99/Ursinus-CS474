@@ -1,15 +1,1 @@
-{
- "version": 1,
- "example": "cs474-nb-bias-fairness-metrics-4",
- "title": "Notebook bias_fairness_metrics.ipynb",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
- "reviewed": false,
- "source": "skeleton",
- "steps": [
-  {
-   "kind": "reveal",
-   "lines": "1-11",
-   "description": "Lines 1-11 run the main code and print the results."
-  }
- ]
-}
+{"version":1,"example":"cs474-nb-bias-fairness-metrics-4","title":"Comparing selection within a qualified subset","description":"You can follow a row filter into conditional group rates.","reviewed":false,"source":"draft: codex free model + edit: codex","steps":[{"kind":"reveal","lines":"1-2","description":"qualified retains rows whose true_skill exceeds the supplied threshold. You calculate each group's selected mean within that subset."},{"kind":"predict","lines":"3-5","question":"Are these rates computed over every applicant in df?","answer":"No. Only the filtered qualified rows contribute to the group means."},{"kind":"reveal","lines":"3-5","description":"The supplied output reports 0.845 for A and 0.378 for B. You see their A-minus-B difference printed as 0.467."},{"kind":"reveal","lines":"7-11","description":"You plot the two rates as bars and add a reference line at their maximum. The text recording reports the rates but supplies no rendered chart."}]}
