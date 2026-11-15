@@ -1,17 +1,33 @@
 {
  "code": "plt.figure(figsize=(9, 3.2))\nplt.specgram(audio, NFFT=256, Fs=SR, noverlap=128, cmap='magma')\nplt.xlabel('time (s)'); plt.ylabel('frequency (Hz)')\nplt.title('Spectrogram')\nplt.colorbar(label='power (dB)')\nplt.ylim(0, 1500)\nplt.show()",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can read how the plot represents audio frequency content.",
  "example": "cs474-nb-voice-audio-features-5",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model + edit: codex",
  "steps": [
   {
-   "description": "Lines 1-7 run the main code.",
+   "description": "A spectrogram displays frequency content across audio segments. You pass audio, the sample rate SR and the supplied FFT size to specgram.",
    "kind": "reveal",
-   "lines": "1-7"
+   "lines": "1-2"
+  },
+  {
+   "description": "You label the horizontal and vertical axes and add a power colorbar. The magma color map supplies the visual encoding.",
+   "kind": "reveal",
+   "lines": "3-5"
+  },
+  {
+   "answer": "It displays only the supplied range starting at zero on the frequency axis.",
+   "kind": "predict",
+   "lines": "6",
+   "question": "Does the vertical limit display every frequency produced by the calculation?"
+  },
+  {
+   "description": "show requests the configured spectrogram. The supplied recording contains no text output or image from which to identify spectral peaks.",
+   "kind": "reveal",
+   "lines": "7"
   }
  ],
- "title": "Notebook voice_audio_features.ipynb",
+ "title": "Configuring an audio spectrogram",
  "version": 1
 }

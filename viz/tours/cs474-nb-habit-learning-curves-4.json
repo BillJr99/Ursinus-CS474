@@ -1,17 +1,33 @@
 {
  "code": "before = T1 * trials[:60] ** (-ALPHA)\n# after redesign: learning restarts from trial ~1 but with some transfer (30 s, not 40 s)\nafter = 30.0 * np.arange(1, N_TRIALS - 60 + 1) ** (-ALPHA)\ndisrupted = np.concatenate([before, after]) * rng.lognormal(0, 0.12, N_TRIALS)\n\nplt.figure(figsize=(7, 3.5))\nplt.plot(trials, disrupted, 'o', ms=4, alpha=0.5)\nplt.axvline(60, color='red', ls='--', label='redesign ships')\nplt.xlabel('trial number'); plt.ylabel('task time (s)')\nplt.title('A redesign that breaks a learned habit')\nplt.legend()\nplt.show()",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can read how the synthetic redesign example restarts its trial index.",
  "example": "cs474-nb-habit-learning-curves-4",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model + edit: codex",
  "steps": [
   {
-   "description": "Lines 1-12 run the main code.",
+   "description": "before uses the initial slice of trial values in the existing power-law formula. You retain that segment before constructing the second one.",
    "kind": "reveal",
-   "lines": "1-12"
+   "lines": "1"
+  },
+  {
+   "answer": "No. Its arange starts at one, restarting the power-law input for that segment.",
+   "kind": "predict",
+   "lines": "2-3",
+   "question": "Does the after segment continue the original trial indices?"
+  },
+  {
+   "description": "You concatenate before and after, then multiply by random factors. The result is a synthetic disrupted series rather than newly collected observations.",
+   "kind": "reveal",
+   "lines": "3-4"
+  },
+  {
+   "description": "You plot the combined series and mark the segment boundary with a vertical line. The supplied recording contains no rendered plot or text output.",
+   "kind": "reveal",
+   "lines": "6-12"
   }
  ],
- "title": "Notebook habit_learning_curves.ipynb",
+ "title": "Joining two modeled learning segments",
  "version": 1
 }
