@@ -1,0 +1,33 @@
+{
+ "code": "FRAME = int(0.025 * SR)   # 25 ms\nHOP = int(0.010 * SR)     # 10 ms step\n\nstarts = np.arange(0, len(audio) - FRAME, HOP)\nenergy = np.array([np.mean(audio[s:s+FRAME] ** 2) for s in starts])\nzcr = np.array([np.mean(np.abs(np.diff(np.sign(audio[s:s+FRAME])))) / 2 for s in starts])\nframe_t = (starts + FRAME / 2) / SR\n\nfig, axes = plt.subplots(2, 1, figsize=(9, 4), sharex=True)\naxes[0].plot(frame_t, energy); axes[0].set_ylabel('energy')\naxes[1].plot(frame_t, zcr, color='tab:orange'); axes[1].set_ylabel('zero-crossing rate')\naxes[1].set_xlabel('time (s)')\naxes[0].set_title('Frame-level features')\nplt.show()",
+ "description": "You can follow repeated slices into energy and sign-change arrays.",
+ "example": "cs474-nb-voice-audio-features-3",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "FRAME and HOP determine slice length and spacing in samples. You generate the starting indices used by both feature calculations.",
+   "kind": "reveal",
+   "lines": "1-4"
+  },
+  {
+   "description": "energy contains the mean squared amplitude for each slice. You calculate one scalar from every selected audio frame.",
+   "kind": "reveal",
+   "lines": "5"
+  },
+  {
+   "answer": "No. Both comprehensions use starts, and frame_t assigns a shared center coordinate to those frames.",
+   "kind": "predict",
+   "lines": "6-7",
+   "question": "Do energy and zcr use different frame starts?"
+  },
+  {
+   "description": "The zcr expression summarizes sign changes, labeled zero-crossing rate on the plot. You display energy and zcr on two shared-axis panels; the recording supplies no rendered figure or text values.",
+   "kind": "reveal",
+   "lines": "6-14"
+  }
+ ],
+ "title": "Extracting audio-frame features",
+ "version": 1
+}

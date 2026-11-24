@@ -1,0 +1,33 @@
+{
+ "code": "def predict_mt(D, W):\n    return a_hat + b_hat * np.log2(D / W + 1)\n\ndesigns = [\n    (\"Small close button, far corner\",        800, 12),\n    (\"Same button, doubled in size\",          800, 24),\n    (\"Button moved near the pointer\",         200, 12),\n    (\"Edge-of-screen target (infinite width)\", 800, 200),  # edge lets you overshoot\n]\nprint(f\"{'design':42s} {'D(px)':>6} {'W(px)':>6} {'predicted MT':>13}\")\nfor name, D, W in designs:\n    print(f\"{name:42s} {D:6d} {W:6d} {predict_mt(D, W)*1000:10.0f} ms\")",
+ "description": "You can follow four distance-width pairs through the same fitted formula.",
+ "example": "cs474-nb-fitts-law-pointing-4",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "predict_mt uses the existing fitted coefficients with log2(D / W + 1). You supply distance and width as the changing inputs.",
+   "kind": "reveal",
+   "lines": "1-2"
+  },
+  {
+   "description": "The design list changes width, distance or both relative to the first case. The edge-target label still supplies a finite width of 200 to the formula.",
+   "kind": "reveal",
+   "lines": "4-9"
+  },
+  {
+   "answer": "No. Every row calls the same predict_mt function using the existing a_hat and b_hat.",
+   "kind": "predict",
+   "lines": "11-12",
+   "question": "Does the loop refit the coefficients for each design?"
+  },
+  {
+   "description": "You see one prediction per design in the output table. In the supplied recording, the larger-width and nearer-target cases all receive lower predictions than the first case.",
+   "kind": "reveal",
+   "lines": "10-12"
+  }
+ ],
+ "title": "Comparing pointing-design inputs",
+ "version": 1
+}

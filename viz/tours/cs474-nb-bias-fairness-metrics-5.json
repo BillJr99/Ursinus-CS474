@@ -1,0 +1,33 @@
+{
+ "code": "fig, ax = plt.subplots(figsize=(7, 3.5))\nfor g, color in [('A', 'tab:blue'), ('B', 'tab:orange')]:\n    ax.hist(df.loc[df.group == g, 'score'], bins=40, alpha=0.55, label=f'group {g}', color=color)\nax.axvline(75, color='red', ls='--', label='selection threshold')\nax.set_xlabel('observed score'); ax.set_ylabel('applicants')\nax.set_title('Same true skill, shifted observed scores')\nax.legend()\nplt.show()",
+ "description": "You can inspect the filters, colors and threshold used in this plot.",
+ "example": "cs474-nb-bias-fairness-metrics-5",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model + edit: codex",
+ "steps": [
+  {
+   "description": "You create one axis and loop over groups A and B. Each group receives an explicit color.",
+   "kind": "reveal",
+   "lines": "1-2"
+  },
+  {
+   "description": "The row filter selects scores for the current group. hist draws those scores with the supplied bin count and a partially transparent fill.",
+   "kind": "reveal",
+   "lines": "3"
+  },
+  {
+   "answer": "No. It draws one vertical reference at the supplied threshold after the loop.",
+   "kind": "predict",
+   "lines": "4",
+   "question": "Does this line draw a separate selection threshold for each group?"
+  },
+  {
+   "description": "You label the axes, add the supplied title and legend, and call show. The recording has no rendered chart or text output, so it supplies no distribution values to inspect.",
+   "kind": "reveal",
+   "lines": "4-8"
+  }
+ ],
+ "title": "Overlaying group score histograms",
+ "version": 1
+}

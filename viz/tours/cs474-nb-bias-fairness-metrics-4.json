@@ -1,0 +1,33 @@
+{
+ "code": "qualified = df[df['true_skill'] > 75]\ntpr = qualified.groupby('group')['selected'].mean()\nprint(\"Selection rate among TRULY qualified applicants:\")\nprint(tpr.round(3))\nprint(f\"\\nEqual opportunity difference (A - B): {tpr['A'] - tpr['B']:.3f}\")\n\nax = tpr.plot.bar(color=['tab:blue', 'tab:orange'], rot=0, figsize=(4.5, 3))\nax.set_ylabel('P(selected | truly qualified)')\nax.set_title('Equal opportunity: qualified applicants selected')\nax.axhline(tpr.max(), ls=':', color='gray')\nplt.show()",
+ "description": "You can follow a row filter into conditional group rates.",
+ "example": "cs474-nb-bias-fairness-metrics-4",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model + edit: codex",
+ "steps": [
+  {
+   "description": "qualified retains rows whose true_skill exceeds the supplied threshold. You calculate each group's selected mean within that subset.",
+   "kind": "reveal",
+   "lines": "1-2"
+  },
+  {
+   "answer": "No. Only the filtered qualified rows contribute to the group means.",
+   "kind": "predict",
+   "lines": "3-5",
+   "question": "Are these rates computed over every applicant in df?"
+  },
+  {
+   "description": "The supplied output reports 0.845 for A and 0.378 for B. You see their A-minus-B difference printed as 0.467.",
+   "kind": "reveal",
+   "lines": "3-5"
+  },
+  {
+   "description": "You plot the two rates as bars and add a reference line at their maximum. The text recording reports the rates but supplies no rendered chart.",
+   "kind": "reveal",
+   "lines": "7-11"
+  }
+ ],
+ "title": "Comparing selection within a qualified subset",
+ "version": 1
+}

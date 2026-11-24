@@ -1,0 +1,33 @@
+{
+ "code": "def cohens_d(a, b):\n    pooled_sd = np.sqrt(((len(a) - 1) * a.std(ddof=1) ** 2 +\n                         (len(b) - 1) * b.std(ddof=1) ** 2) / (len(a) + len(b) - 2))\n    return (a.mean() - b.mean()) / pooled_sd\n\nd = cohens_d(time_A, time_B)\nprint(f\"Cohen's d = {d:.2f}\")\nprint(f\"Design B saves about {time_A.mean() - time_B.mean():.1f} s per checkout on average.\")",
+ "description": "You can follow the pooled spread calculation into Cohen's d.",
+ "example": "cs474-nb-ab-test-analysis-5",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "cohens_d weights each sample variance by its degrees of freedom. You take the square root after dividing by the combined degrees of freedom to obtain pooled_sd.",
+   "kind": "reveal",
+   "lines": "1-3"
+  },
+  {
+   "answer": "The function subtracts b's mean from a's mean, then divides by pooled_sd.",
+   "kind": "predict",
+   "lines": "4",
+   "question": "Which subtraction determines the sign of the returned effect size?"
+  },
+  {
+   "description": "You call the function with A first and B second. The supplied output prints Cohen's d = 0.74.",
+   "kind": "reveal",
+   "lines": "6-7"
+  },
+  {
+   "description": "The final statement separately formats the raw A-minus-B mean difference. You can distinguish that original-scale comparison from the standardized d value.",
+   "kind": "reveal",
+   "lines": "8"
+  }
+ ],
+ "title": "Standardizing a difference in sample means",
+ "version": 1
+}

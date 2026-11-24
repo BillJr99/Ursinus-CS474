@@ -1,0 +1,5 @@
+design                                      D(px)  W(px)  predicted MT
+Small close button, far corner                800     12       1118 ms
+Same button, doubled in size                  800     24        969 ms
+Button moved near the pointer                 200     12        823 ms
+Edge-of-screen target (infinite width)        800    200        546 ms

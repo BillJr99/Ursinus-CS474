@@ -1,0 +1,169 @@
+{
+ "notebooks": [
+  {
+   "file": "files/notebooks/ab_test_analysis.ipynb",
+   "examples": [
+    {
+     "id": "cs474-nb-ab-test-analysis-2",
+     "cell": 2,
+     "viz": "env"
+    },
+    {
+     "id": "cs474-nb-ab-test-analysis-3",
+     "cell": 3,
+     "viz": "plain"
+    },
+    {
+     "id": "cs474-nb-ab-test-analysis-4",
+     "cell": 4,
+     "viz": "env"
+    },
+    {
+     "id": "cs474-nb-ab-test-analysis-5",
+     "cell": 5,
+     "viz": "env"
+    },
+    {
+     "id": "cs474-nb-ab-test-analysis-6",
+     "cell": 6,
+     "viz": "env"
+    }
+   ]
+  },
+  {
+   "file": "files/notebooks/ar_overlay_math.ipynb",
+   "examples": [
+    {
+     "id": "cs474-nb-ar-overlay-math-2",
+     "cell": 2,
+     "viz": "plain"
+    },
+    {
+     "id": "cs474-nb-ar-overlay-math-3",
+     "cell": 3,
+     "viz": "plain"
+    },
+    {
+     "id": "cs474-nb-ar-overlay-math-4",
+     "cell": 4,
+     "viz": "env"
+    },
+    {
+     "id": "cs474-nb-ar-overlay-math-5",
+     "cell": 5,
+     "viz": "plain"
+    }
+   ]
+  },
+  {
+   "file": "files/notebooks/bias_fairness_metrics.ipynb",
+   "examples": [
+    {
+     "id": "cs474-nb-bias-fairness-metrics-3",
+     "cell": 3,
+     "viz": "env"
+    },
+    {
+     "id": "cs474-nb-bias-fairness-metrics-4",
+     "cell": 4,
+     "viz": "plain"
+    },
+    {
+     "id": "cs474-nb-bias-fairness-metrics-5",
+     "cell": 5,
+     "viz": "plain"
+    }
+   ]
+  },
+  {
+   "file": "files/notebooks/eyetracking_gaze_analysis.ipynb",
+   "examples": [
+    {
+     "id": "cs474-nb-eyetracking-gaze-analysis-2",
+     "cell": 2,
+     "viz": "env"
+    },
+    {
+     "id": "cs474-nb-eyetracking-gaze-analysis-3",
+     "cell": 3,
+     "viz": "env"
+    },
+    {
+     "id": "cs474-nb-eyetracking-gaze-analysis-4",
+     "cell": 4,
+     "viz": "plain"
+    },
+    {
+     "id": "cs474-nb-eyetracking-gaze-analysis-5",
+     "cell": 5,
+     "viz": "plain"
+    }
+   ]
+  },
+  {
+   "file": "files/notebooks/fitts_law_pointing.ipynb",
+   "examples": [
+    {
+     "id": "cs474-nb-fitts-law-pointing-2",
+     "cell": 2,
+     "viz": "env"
+    },
+    {
+     "id": "cs474-nb-fitts-law-pointing-3",
+     "cell": 3,
+     "viz": "plain"
+    },
+    {
+     "id": "cs474-nb-fitts-law-pointing-4",
+     "cell": 4,
+     "viz": "env"
+    }
+   ]
+  },
+  {
+   "file": "files/notebooks/habit_learning_curves.ipynb",
+   "examples": [
+    {
+     "id": "cs474-nb-habit-learning-curves-2",
+     "cell": 2,
+     "viz": "plain"
+    },
+    {
+     "id": "cs474-nb-habit-learning-curves-3",
+     "cell": 3,
+     "viz": "plain"
+    },
+    {
+     "id": "cs474-nb-habit-learning-curves-4",
+     "cell": 4,
+     "viz": "plain"
+    }
+   ]
+  },
+  {
+   "file": "files/notebooks/voice_audio_features.ipynb",
+   "examples": [
+    {
+     "id": "cs474-nb-voice-audio-features-2",
+     "cell": 2,
+     "viz": "plain"
+    },
+    {
+     "id": "cs474-nb-voice-audio-features-3",
+     "cell": 3,
+     "viz": "plain"
+    },
+    {
+     "id": "cs474-nb-voice-audio-features-4",
+     "cell": 4,
+     "viz": "plain"
+    },
+    {
+     "id": "cs474-nb-voice-audio-features-5",
+     "cell": 5,
+     "viz": "plain"
+    }
+   ]
+  }
+ ]
+}

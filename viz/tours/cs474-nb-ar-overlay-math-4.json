@@ -1,0 +1,33 @@
+{
+ "code": "def find_homography(src, dst):\n    \"\"\"DLT: solve for H such that dst ~ H @ src (4+ point pairs).\"\"\"\n    A = []\n    for (x, y), (xp, yp) in zip(src, dst):\n        A.append([-x, -y, -1,  0,  0,  0, x*xp, y*xp, xp])\n        A.append([ 0,  0,  0, -x, -y, -1, x*yp, y*yp, yp])\n    A = np.array(A)\n    _, _, Vt = np.linalg.svd(A)\n    H = Vt[-1].reshape(3, 3)\n    return H / H[2, 2]\n\noverlay_corners = np.array([[0, 0], [OV_W - 1, 0], [OV_W - 1, OV_H - 1], [0, OV_H - 1]], float)\nH = find_homography(overlay_corners, marker_corners)\nnp.set_printoptions(precision=3, suppress=True)\nprint(H)",
+ "description": "You can follow matched coordinate pairs into a homography matrix.",
+ "example": "cs474-nb-ar-overlay-math-4",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "A homography maps planar coordinates using a matrix up to scale. You add two equation rows for each paired source and destination corner.",
+   "kind": "reveal",
+   "lines": "1-6"
+  },
+  {
+   "description": "The code applies singular value decomposition to A. You reshape the final row of Vt into a three-by-three matrix and normalize by its bottom-right entry.",
+   "kind": "reveal",
+   "lines": "7-10"
+  },
+  {
+   "answer": "It maps overlay_corners as the source toward marker_corners as the destination.",
+   "kind": "predict",
+   "lines": "12-13",
+   "question": "Which direction does this call request for the mapping?"
+  },
+  {
+   "description": "You print H with precision set to three and small-value suppression enabled. The recorded matrix has bottom-right entry 1 and last-column values 150 and 90 above it.",
+   "kind": "reveal",
+   "lines": "12-15"
+  }
+ ],
+ "title": "Solving a corner-to-corner transformation",
+ "version": 1
+}

@@ -1,0 +1,33 @@
+{
+ "code": "fig, ax = plt.subplots(figsize=(8, 4.5))\nax.plot(gaze[:, 0], gaze[:, 1], '.', ms=2, alpha=0.3, label='raw gaze samples')\n\ncx = [f[2] for f in fixations]\ncy = [f[3] for f in fixations]\ndurs = [f[4] for f in fixations]\nax.plot(cx, cy, '-', color='gray', lw=1)\nax.scatter(cx, cy, s=[d * 800 for d in durs], alpha=0.6, zorder=3, label='fixations')\nfor k, (x, y) in enumerate(zip(cx, cy), 1):\n    ax.annotate(str(k), (x, y), ha='center', va='center', fontweight='bold')\n\nax.set_xlim(0, SCREEN_W); ax.set_ylim(SCREEN_H, 0)  # invert y: screen coords\nax.set_title('Scanpath: fixation order and duration')\nax.legend(loc='lower left')\nplt.show()",
+ "description": "You can read how raw gaze and fixation records become plot layers.",
+ "example": "cs474-nb-eyetracking-gaze-analysis-4",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "You plot raw gaze coordinates as faint dots. Three list comprehensions extract fixation centroids and the measure used for marker sizing.",
+   "kind": "reveal",
+   "lines": "1-6"
+  },
+  {
+   "description": "A gray line joins centroids in their stored order. The scatter layer places a scaled marker at each centroid.",
+   "kind": "reveal",
+   "lines": "7-8"
+  },
+  {
+   "answer": "They begin with 1 because enumerate receives a starting value of 1.",
+   "kind": "predict",
+   "lines": "9-10",
+   "question": "What numbering will the centroid annotations begin with?"
+  },
+  {
+   "description": "You label each fixation, set screen-coordinate limits and add a legend before show. The recording supplies no text output or rendered figure to inspect.",
+   "kind": "reveal",
+   "lines": "9-15"
+  }
+ ],
+ "title": "Building a fixation scanpath plot",
+ "version": 1
+}

@@ -1,0 +1,33 @@
+{
+ "code": "noise_floor = np.percentile(energy, 20)      # estimate background level\nthreshold = noise_floor * 20                 # speech must be well above it\nis_speech = energy > threshold\n\nplt.figure(figsize=(9, 2.8))\nplt.plot(t, audio, lw=0.5, alpha=0.6, label='audio')\nplt.fill_between(frame_t, -0.9, 0.9, where=is_speech, alpha=0.25,\n                 color='tab:green', label='detected speech')\nplt.legend(loc='upper right'); plt.xlabel('time (s)')\nplt.title('Threshold-based voice activity detection')\nplt.show()\n\nprint(f\"noise floor {noise_floor:.2e}, threshold {threshold:.2e}\")\nprint(f\"speech detected in {is_speech.mean()*100:.0f}% of frames\")",
+ "description": "You can follow a background estimate into a Boolean activity mask.",
+ "example": "cs474-nb-voice-audio-features-4",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model + edit: codex",
+ "steps": [
+  {
+   "description": "You estimate noise_floor with the twentieth percentile of energy. Multiplying it by the supplied factor sets the threshold used to mark is_speech.",
+   "kind": "reveal",
+   "lines": "1-3"
+  },
+  {
+   "answer": "No. The comparison uses greater than, so only energy above threshold produces True.",
+   "kind": "predict",
+   "lines": "3",
+   "question": "Does a frame exactly equal to threshold count as speech?"
+  },
+  {
+   "description": "You plot audio and shade frame regions where is_speech is True. The chart labels these regions as detected speech.",
+   "kind": "reveal",
+   "lines": "5-11"
+  },
+  {
+   "description": "The recording prints noise floor 9.81e-05 and threshold 1.96e-03. You see speech detected in 50% of frames under this threshold rule.",
+   "kind": "reveal",
+   "lines": "13-14"
+  }
+ ],
+ "title": "Thresholding audio-frame energy",
+ "version": 1
+}

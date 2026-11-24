@@ -1,0 +1,38 @@
+{
+ "code": "def detect_fixations(points, hz, dispersion_px=50, min_duration_s=0.10):\n    \"\"\"Return a list of (start_idx, end_idx, centroid_x, centroid_y, duration_s).\"\"\"\n    min_len = int(min_duration_s * hz)\n    fixations = []\n    i = 0\n    while i < len(points) - min_len:\n        j = i + min_len\n        window = points[i:j]\n        disp = (np.ptp(window[:, 0])) + (np.ptp(window[:, 1]))\n        if disp <= dispersion_px:\n            # grow the window while dispersion stays small\n            while j < len(points):\n                window = points[i:j + 1]\n                if (np.ptp(window[:, 0])) + (np.ptp(window[:, 1])) > dispersion_px:\n                    break\n                j += 1\n            cx, cy = points[i:j].mean(axis=0)\n            fixations.append((i, j, cx, cy, (j - i) / hz))\n            i = j\n        else:\n            i += 1\n    return fixations\n\nfixations = detect_fixations(gaze, HZ)\nfor k, (i, j, cx, cy, dur) in enumerate(fixations, 1):\n    print(f\"Fixation {k}: ({cx:6.1f}, {cy:6.1f})  duration {dur*1000:5.0f} ms\")",
+ "description": "You can follow candidate windows into fixation records.",
+ "example": "cs474-nb-eyetracking-gaze-analysis-3",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "The function derives a minimum sample count and starts a candidate window at i. You measure dispersion as the sum of the horizontal and vertical ranges.",
+   "kind": "reveal",
+   "lines": "1-9"
+  },
+  {
+   "description": "A sufficiently compact candidate grows one sample at a time. You break when adding a sample exceeds the dispersion threshold.",
+   "kind": "reveal",
+   "lines": "10-16"
+  },
+  {
+   "answer": "No. The centroid uses points[i:j], excluding that newly tested sample at index j.",
+   "kind": "predict",
+   "lines": "17-19",
+   "question": "Does the centroid include the sample that caused the threshold break?"
+  },
+  {
+   "description": "You append the accepted window's indices, centroid and length-derived measure, then continue at j. A rejected initial window instead advances i by one.",
+   "kind": "reveal",
+   "lines": "17-22"
+  },
+  {
+   "description": "The caller prints one record per detected fixation. The supplied output excerpt lists eight records with their centroids.",
+   "kind": "reveal",
+   "lines": "24-26"
+  }
+ ],
+ "title": "Growing low-dispersion gaze windows",
+ "version": 1
+}

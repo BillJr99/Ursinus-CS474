@@ -1,0 +1,7 @@
+Selection rate among TRULY qualified applicants:
+group
+A    0.845
+B    0.378
+Name: selected, dtype: float64
+
+Equal opportunity difference (A - B): 0.467

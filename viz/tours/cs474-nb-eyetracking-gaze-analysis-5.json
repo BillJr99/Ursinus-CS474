@@ -1,0 +1,33 @@
+{
+ "code": "fig, ax = plt.subplots(figsize=(8, 4.5))\nh = ax.hist2d(gaze[:, 0], gaze[:, 1], bins=[64, 36],\n              range=[[0, SCREEN_W], [0, SCREEN_H]], cmap='hot')\nax.set_ylim(SCREEN_H, 0)\nax.set_title('Gaze heatmap (attention density)')\nfig.colorbar(h[3], ax=ax, label='samples per bin')\nplt.show()",
+ "description": "You can read how coordinates become counts on a screen-sized grid.",
+ "example": "cs474-nb-eyetracking-gaze-analysis-5",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model + edit: codex",
+ "steps": [
+  {
+   "description": "hist2d receives the x and y gaze columns. You divide the screen range into the supplied bins and select the hot color map.",
+   "kind": "reveal",
+   "lines": "1-3"
+  },
+  {
+   "answer": "They place zero at the top and SCREEN_H at the bottom by reversing the y-axis limits.",
+   "kind": "predict",
+   "lines": "4",
+   "question": "Which vertical direction do these axis limits establish?"
+  },
+  {
+   "description": "You title the plot as a gaze heatmap. The colorbar labels the encoded quantity as samples per bin.",
+   "kind": "reveal",
+   "lines": "4-6"
+  },
+  {
+   "description": "show requests the completed figure. The supplied recording has no text output or bin counts to inspect.",
+   "kind": "reveal",
+   "lines": "7"
+  }
+ ],
+ "title": "Binning gaze samples into a heatmap",
+ "version": 1
+}

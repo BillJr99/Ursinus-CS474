@@ -1,0 +1,33 @@
+{
+ "code": "df['selected'] = df['score'] > 75\n\nrates = df.groupby('group')['selected'].mean()\nprint(\"Selection rates:\")\nprint(rates.round(3))\n\ndp_diff = rates['A'] - rates['B']\nratio = rates['B'] / rates['A']\nprint(f\"\\nDemographic parity difference (A - B): {dp_diff:.3f}\")\nprint(f\"Disparate impact ratio (B / A):          {ratio:.3f}\")\nprint(f\"Four-fifths (80%) rule {'PASSES' if ratio >= 0.8 else 'FAILS'}\"\n      f\" (US EEOC guideline: ratio should be at least 0.80)\")",
+ "description": "You can trace the supplied threshold into two descriptive group comparisons.",
+ "example": "cs474-nb-bias-fairness-metrics-3",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "A score greater than 75 marks selected as True. You average these Boolean values within each group to obtain selection rates.",
+   "kind": "reveal",
+   "lines": "1-5"
+  },
+  {
+   "description": "The code subtracts B's rate from A's and divides B's rate by A's. You format both comparisons to three decimal places.",
+   "kind": "reveal",
+   "lines": "7-10"
+  },
+  {
+   "answer": "The ratio 0.368 is below the code's 0.8 cutoff, so the label selects FAILS.",
+   "kind": "predict",
+   "lines": "11-12",
+   "question": "Which branch of the printed label does the recorded ratio select?"
+  },
+  {
+   "description": "You see rates 0.340 and 0.125, difference 0.215 and ratio 0.368. The final label reports the result of this coded threshold comparison.",
+   "kind": "reveal",
+   "lines": "11-12"
+  }
+ ],
+ "title": "Comparing group selection rates",
+ "version": 1
+}

@@ -1,0 +1,33 @@
+{
+ "code": "time_C = rng.lognormal(mean=np.log(47), sigma=0.25, size=n)  # C: minor tweak only\n\nf_stat, p_anova = stats.f_oneway(time_A, time_B, time_C)\nprint(f\"ANOVA: F = {f_stat:.2f}, p = {p_anova:.4f}\")\n\nif p_anova < 0.05:\n    print(\"\\nFollow-up pairwise t-tests (Bonferroni-corrected alpha = 0.05/3 = 0.0167):\")\n    for name, (x, y) in {'A vs B': (time_A, time_B),\n                         'A vs C': (time_A, time_C),\n                         'B vs C': (time_B, time_C)}.items():\n        t, p = stats.ttest_ind(x, y, equal_var=False)\n        print(f\"  {name}: p = {p:.4f} {'*' if p < 0.05/3 else ''}\")",
+ "description": "You can read the conditions that control the supplied statistical output.",
+ "example": "cs474-nb-ab-test-analysis-6",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "You generate the third sample and pass three samples to one-way ANOVA. The recording reports F equal to 5.64 and p equal to 0.0050.",
+   "kind": "reveal",
+   "lines": "1-4"
+  },
+  {
+   "answer": "Yes. 0.0050 is below the code's 0.05 cutoff.",
+   "kind": "predict",
+   "lines": "6",
+   "question": "Does that recorded p value enter the follow-up block?"
+  },
+  {
+   "description": "The loop visits A versus B, A versus C and B versus C. Each call uses a two-sample t-test with equal_var set to False.",
+   "kind": "reveal",
+   "lines": "7-11"
+  },
+  {
+   "description": "You add a star when a pair's p value is below 0.05 divided by three. The supplied output stars A versus B and B versus C, while A versus C has no star.",
+   "kind": "reveal",
+   "lines": "12"
+  }
+ ],
+ "title": "Following an omnibus test to pairwise checks",
+ "version": 1
+}

@@ -1,0 +1,33 @@
+{
+ "code": "FRAME_W, FRAME_H = 480, 360\n\n# A simple background scene: soft gradient + noise, as a stand-in for a camera image\nyy, xx = np.mgrid[0:FRAME_H, 0:FRAME_W]\nscene = 0.4 + 0.3 * (yy / FRAME_H) + rng.normal(0, 0.02, (FRAME_H, FRAME_W))\nscene = np.dstack([scene * 0.9, scene, scene * 1.1]).clip(0, 1)  # bluish tint\n\n# Where the detector \"found\" the marker corners in the frame,\n# in order: top-left, top-right, bottom-right, bottom-left\nmarker_corners = np.array([\n    [150,  90],\n    [330, 120],\n    [310, 260],\n    [120, 230],\n], dtype=float)\n\nplt.figure(figsize=(6, 4.5))\nplt.imshow(scene)\npoly = plt.Polygon(marker_corners, fill=False, edgecolor='red', lw=2)\nplt.gca().add_patch(poly)\nplt.title('Camera frame with detected marker (red)')\nplt.show()",
+ "description": "You can distinguish generated pixels from supplied marker coordinates.",
+ "example": "cs474-nb-ar-overlay-math-2",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model + edit: codex",
+ "steps": [
+  {
+   "description": "You create a coordinate grid with the supplied dimensions and generate a gradient with random noise. Three stacked channels give the scene a tint, and clip bounds their values between zero and one.",
+   "kind": "reveal",
+   "lines": "1-6"
+  },
+  {
+   "description": "marker_corners contains four explicit coordinate pairs. The comment orders them around the marker from top-left to bottom-left.",
+   "kind": "reveal",
+   "lines": "8-15"
+  },
+  {
+   "answer": "No. It draws a polygon from the coordinate array supplied above.",
+   "kind": "predict",
+   "lines": "17-20",
+   "question": "Does this block run an image detector to obtain those corners?"
+  },
+  {
+   "description": "You display the generated scene and add an unfilled red polygon. show requests that figure; the supplied recording has no text output or rendered image.",
+   "kind": "reveal",
+   "lines": "17-22"
+  }
+ ],
+ "title": "Building a synthetic marker scene",
+ "version": 1
+}
